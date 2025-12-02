@@ -78,8 +78,10 @@ public class HomePageTest {
             ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'do you like chamilo')]")));
         assertTrue(contributionHeading.isDisplayed(), "Judul Do you like Chamilo? harus terlihat");
 
+        scrollIntoView(contributionHeading);
+
         WebElement contributeButton = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'contribute')]")));
+            ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a[href*='contribute']")));
         scrollIntoView(contributeButton);
         wait.until(ExpectedConditions.elementToBeClickable(contributeButton));
         assertTrue(contributeButton.isDisplayed(), "Tombol CONTRIBUTE harus terlihat");
