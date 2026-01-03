@@ -8,7 +8,8 @@ import java.net.http.HttpResponse;
 import java.time.Duration;
 
 /**
- * Simple entry point that performs a quick health ping to https://chamilo.org/en/.
+ * Simple entry point that performs a quick health ping to
+ * https://chamilo.org/en/.
  */
 public final class MainApp {
 
