@@ -1,4 +1,6 @@
 .mvn
+.github
+.vscode
 target/
 allure-results/
 cache/
