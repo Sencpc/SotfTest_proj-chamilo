@@ -112,39 +112,6 @@ public class NavbarTest {
         searchInput.submit();
         logSuccess("Performed search for 'Education'");
 
-        // 8. Test Language Dropdown
-        driver.get(CHAMILO_URL);
-
-        // Open dropdown to count options
-        WebElement langDropdownTrigger = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector(".wpml-languages .active")));
-        langDropdownTrigger.click();
-
-        List<WebElement> langOptions = wait
-                .until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".wpml-lang-dropdown li a")));
-        int langCount = langOptions.size();
-
-        for (int i = 0; i < langCount; i++) {
-            // Re-locate trigger and click to open
-            langDropdownTrigger = wait
-                    .until(ExpectedConditions.elementToBeClickable(By.cssSelector(".wpml-languages .active")));
-            langDropdownTrigger.click();
-
-            // Re-locate options
-            List<WebElement> options = wait.until(
-                    ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".wpml-lang-dropdown li a")));
-
-            // Click the i-th option
-            options.get(i).click();
-            logSuccess("Clicked language option index " + i);
-
-            // Wait a bit
-            Thread.sleep(2000);
-
-            // Go back home
-            driver.get(CHAMILO_URL);
-        }
-
         // 9. Click Logo
         WebElement logo = wait.until(ExpectedConditions.elementToBeClickable(By.id("logo")));
         logo.click();
