@@ -112,6 +112,9 @@ public class NavbarTest {
         searchInput.submit();
         logSuccess("Performed search for 'Education'");
 
+        // Go back home
+        driver.get(CHAMILO_URL);
+
         // 9. Click Logo
         WebElement logo = wait.until(ExpectedConditions.elementToBeClickable(By.id("logo")));
         logo.click();
