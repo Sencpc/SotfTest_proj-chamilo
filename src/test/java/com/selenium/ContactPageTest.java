@@ -26,7 +26,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class ContactPageTest {
 
     private static final String CONTACT_URL = "https://chamilo.org/en/contact/";
-    private static final String DEFAULT_BRAVE_PATH = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe";
 
     // Automated test data
     private static final String TEST_NAME = "[AUTOMATED TEST] Do Not Reply";
@@ -45,8 +44,8 @@ public class ContactPageTest {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
-        // Use Chrome browser (comment out setBinary line if you want to use regular Chrome)
-        // options.setBinary(resolveBraveBinary()); // Uncomment for Brave browser
+        // Use Brave browser
+        options.setBinary(resolveBraveBinary());
         options.addArguments(
                 "--disable-notifications",
                 "--start-maximized",
@@ -256,15 +255,55 @@ public class ContactPageTest {
     }
 
     /**
-     * Resolve the Brave browser binary path
+     * Resolve the Brave browser binary path by checking multiple common installation locations
      */
     private String resolveBraveBinary() {
-        // Check environment variable first
+        // 1. Check environment variable first (highest priority)
         String envPath = System.getenv("BRAVE_PATH");
         if (envPath != null && Files.exists(Path.of(envPath))) {
+            System.out.println("✓ Using Brave from BRAVE_PATH env variable: " + envPath);
             return envPath;
         }
-        // Fallback to default path
-        return DEFAULT_BRAVE_PATH;
+
+        // 2. Check system property
+        String sysProp = System.getProperty("brave.binary");
+        if (sysProp != null && Files.exists(Path.of(sysProp))) {
+            System.out.println("✓ Using Brave from system property: " + sysProp);
+            return sysProp;
+        }
+
+        // 3. Search common installation paths
+        String userHome = System.getProperty("user.home");
+        List<String> possiblePaths = List.of(
+                // Windows - User installation (most common)
+                userHome + "/AppData/Local/BraveSoftware/Brave-Browser/Application/brave.exe",
+                // Windows - Program Files
+                "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
+                "C:/Program Files (x86)/BraveSoftware/Brave-Browser/Application/brave.exe",
+                // macOS
+                "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+                userHome + "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+                // Linux - Common locations
+                "/usr/bin/brave",
+                "/usr/bin/brave-browser",
+                "/snap/bin/brave",
+                "/opt/brave.com/brave/brave",
+                userHome + "/.local/bin/brave"
+        );
+
+        for (String path : possiblePaths) {
+            if (Files.exists(Path.of(path))) {
+                System.out.println("✓ Found Brave at: " + path);
+                return path;
+            }
+        }
+
+        // 4. If not found, throw helpful error
+        throw new IllegalStateException(
+                "Brave browser not found. Please either:\n" +
+                "  1. Set BRAVE_PATH environment variable to your brave.exe location\n" +
+                "  2. Set -Dbrave.binary=<path> system property\n" +
+                "  3. Install Brave in a standard location\n" +
+                "Searched paths: " + possiblePaths);
     }
 }
