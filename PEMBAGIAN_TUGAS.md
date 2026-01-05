@@ -103,8 +103,8 @@
   - Contact Info Section
   - Physical Address
   - Map Testing
-  - Contact Form
-  - Form Submission
+  - Contact Form (done)
+  - Form Submission 
   - Form Validation (error handling)
   - Link Validation
 
