@@ -151,6 +151,151 @@ public class ContactPageTest {
         Thread.sleep(3000);
     }
 
+    @Test(description = "Fill contact form then click Chamilo logo to navigate back to homepage")
+    public void testFillFormThenNavigateToHomepageViaLogo() throws InterruptedException {
+        // ========== STEP 1: Navigate to contact page ==========
+        System.out.println("\n========================================");
+        System.out.println("STEP 1: Navigating to Contact Page");
+        System.out.println("========================================");
+        
+        driver.get(CONTACT_URL);
+        acceptCookiesIfPresent();
+
+        // Wait for the form to be visible
+        WebElement contactForm = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("form.wpcf7-form")));
+        Assert.assertTrue(contactForm.isDisplayed(), "Contact form should be visible");
+        System.out.println("✓ Contact page loaded successfully");
+
+        // ========== STEP 2: Fill in the contact form ==========
+        System.out.println("\n========================================");
+        System.out.println("STEP 2: Filling Contact Form");
+        System.out.println("========================================");
+
+        // Fill in the Name field
+        WebElement nameField = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[name='your-name']")));
+        scrollIntoView(nameField);
+        nameField.clear();
+        nameField.sendKeys(TEST_NAME);
+        System.out.println("✓ Filled Name field with: " + TEST_NAME);
+
+        // Fill in the Email field
+        WebElement emailField = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[name='your-email']")));
+        scrollIntoView(emailField);
+        emailField.clear();
+        emailField.sendKeys(TEST_EMAIL);
+        System.out.println("✓ Filled Email field with: " + TEST_EMAIL);
+
+        // Fill in the Subject field
+        WebElement subjectField = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[name='your-subject']")));
+        scrollIntoView(subjectField);
+        subjectField.clear();
+        subjectField.sendKeys(TEST_SUBJECT);
+        System.out.println("✓ Filled Subject field with: " + TEST_SUBJECT);
+
+        // Fill in the Message/Tell Us field
+        WebElement messageField = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("textarea[name='your-message']")));
+        scrollIntoView(messageField);
+        messageField.clear();
+        messageField.sendKeys(TEST_MESSAGE);
+        System.out.println("✓ Filled Message field");
+
+        // Check the privacy policy checkbox if present
+        WebElement privacyCheckbox = findPrivacyCheckbox();
+        if (privacyCheckbox != null) {
+            scrollIntoView(privacyCheckbox);
+            if (!privacyCheckbox.isSelected()) {
+                try {
+                    privacyCheckbox.click();
+                } catch (Exception e) {
+                    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", privacyCheckbox);
+                }
+            }
+            System.out.println("✓ Checked privacy policy checkbox");
+        }
+
+        // Verify all fields are filled
+        Assert.assertEquals(nameField.getAttribute("value"), TEST_NAME, "Name field should contain test data");
+        Assert.assertEquals(emailField.getAttribute("value"), TEST_EMAIL, "Email field should contain test data");
+        Assert.assertEquals(subjectField.getAttribute("value"), TEST_SUBJECT, "Subject field should contain test data");
+        Assert.assertEquals(messageField.getAttribute("value"), TEST_MESSAGE, "Message field should contain test data");
+
+        System.out.println("\n✓ All form fields filled successfully!");
+        
+        // Wait a moment to see the filled form
+        Thread.sleep(2000);
+
+        // ========== STEP 3: Click logo to navigate back to homepage ==========
+        System.out.println("\n========================================");
+        System.out.println("STEP 3: Clicking Logo to Go Back Home");
+        System.out.println("========================================");
+
+        // Find the Chamilo logo in the navbar
+        WebElement logo = findChamiloLogo();
+        Assert.assertNotNull(logo, "Chamilo logo should be present in the navbar");
+
+        // Get the current URL before clicking
+        String currentUrl = driver.getCurrentUrl();
+        System.out.println("Current URL (Contact Page): " + currentUrl);
+
+        // Scroll to top to make logo visible and click it
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
+        Thread.sleep(500);
+        
+        scrollIntoView(logo);
+        try {
+            logo.click();
+        } catch (Exception e) {
+            // If direct click fails, use JavaScript
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", logo);
+        }
+        System.out.println("✓ Clicked on Chamilo logo");
+
+        // Wait for navigation to complete
+        wait.until(ExpectedConditions.not(ExpectedConditions.urlToBe(currentUrl)));
+
+        // ========== STEP 4: Verify homepage ==========
+        System.out.println("\n========================================");
+        System.out.println("STEP 4: Verifying Homepage Navigation");
+        System.out.println("========================================");
+
+        String newUrl = driver.getCurrentUrl();
+        System.out.println("New URL (Homepage): " + newUrl);
+
+        // The homepage should be https://chamilo.org/en/ or https://chamilo.org/
+        boolean isHomepage = newUrl.equals("https://chamilo.org/en/") 
+                || newUrl.equals("https://chamilo.org/") 
+                || newUrl.matches("https://chamilo\\.org(/en)?/?");
+        
+        Assert.assertTrue(isHomepage, 
+                "Clicking logo should navigate to homepage. Expected homepage URL but got: " + newUrl);
+
+        // Wait to see the homepage
+        Thread.sleep(2000);
+
+        // ========== SUMMARY ==========
+        System.out.println("\n========================================");
+        System.out.println("✓ TEST COMPLETED SUCCESSFULLY!");
+        System.out.println("========================================");
+        System.out.println("Flow Summary:");
+        System.out.println("  1. ✓ Navigated to Contact Page");
+        System.out.println("  2. ✓ Filled all form fields:");
+        System.out.println("       - Name: " + TEST_NAME);
+        System.out.println("       - Email: " + TEST_EMAIL);
+        System.out.println("       - Subject: " + TEST_SUBJECT);
+        System.out.println("       - Message: [filled]");
+        System.out.println("       - Privacy: [accepted]");
+        System.out.println("  3. ✓ Clicked Chamilo logo in navbar");
+        System.out.println("  4. ✓ Successfully navigated to homepage");
+        System.out.println("       From: " + currentUrl);
+        System.out.println("       To:   " + newUrl);
+        System.out.println("========================================");
+    }
+
     @Test(description = "Verify contact form fields are present and accessible")
     public void testContactFormFieldsExist() {
         driver.get(CONTACT_URL);
@@ -210,6 +355,60 @@ public class ContactPageTest {
                 // Try next locator
             }
         }
+    }
+
+    /**
+     * Helper method to find the Chamilo logo in the navbar with multiple possible selectors
+     */
+    private WebElement findChamiloLogo() {
+        List<By> logoLocators = List.of(
+                // Common navbar logo selectors
+                By.cssSelector("header a.logo"),
+                By.cssSelector("header .logo a"),
+                By.cssSelector("header a img[alt*='Chamilo']"),
+                By.cssSelector("header a img[alt*='chamilo']"),
+                By.cssSelector("nav a.logo"),
+                By.cssSelector(".navbar-brand"),
+                By.cssSelector("a.navbar-brand"),
+                By.cssSelector("header a[href='/']"),
+                By.cssSelector("header a[href='/en/']"),
+                By.cssSelector("header a[href='https://chamilo.org/']"),
+                By.cssSelector("header a[href='https://chamilo.org/en/']"),
+                By.cssSelector(".site-logo a"),
+                By.cssSelector(".site-branding a"),
+                By.cssSelector("#logo a"),
+                By.cssSelector("a#logo"),
+                By.xpath("//header//a[.//img[contains(@alt, 'Chamilo') or contains(@alt, 'chamilo') or contains(@alt, 'Logo')]]"),
+                By.xpath("//header//a[contains(@class, 'logo')]"),
+                By.xpath("//nav//a[.//img]"),
+                By.xpath("//header//a[contains(@href, 'chamilo.org')][.//img]"),
+                By.xpath("//a[contains(@class, 'custom-logo-link')]"),
+                By.cssSelector("a.custom-logo-link"));
+
+        for (By locator : logoLocators) {
+            try {
+                WebElement logo = new WebDriverWait(driver, Duration.ofSeconds(3))
+                        .until(ExpectedConditions.presenceOfElementLocated(locator));
+                if (logo != null && logo.isDisplayed()) {
+                    System.out.println("✓ Found Chamilo logo using: " + locator);
+                    return logo;
+                }
+            } catch (Exception ignored) {
+                // Try next locator
+            }
+        }
+        
+        // Last resort: find any clickable element in header that looks like a logo
+        try {
+            WebElement headerLink = driver.findElement(By.cssSelector("header a:first-of-type"));
+            if (headerLink != null) {
+                System.out.println("✓ Found header link as fallback for logo");
+                return headerLink;
+            }
+        } catch (Exception ignored) {
+        }
+        
+        return null;
     }
 
     /**
