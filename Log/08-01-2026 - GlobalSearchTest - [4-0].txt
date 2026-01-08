@@ -1,0 +1,18 @@
+08/01/2026 - GlobalSearchTest - [4 : 0]
+
+[20:25:52.899] -> Search Input Visibility
+    Description: Verify search box opens and shows placeholder
+[20:25:52.899] PASSED: Search Input Visibility
+
+[20:26:47.738] -> Valid Search Query
+    Description: Submit valid query and verify search results page loads
+[20:26:47.738] PASSED: Valid Search Query
+
+[20:27:17.343] -> No Results Handling
+    Description: Verify empty state message for non-existent query
+[20:27:17.343] PASSED: No Results Handling
+
+[20:27:44.000] -> Special Characters Handling
+    Description: Verify page still renders after special character search
+[20:27:44.000] PASSED: Special Characters Handling
+
