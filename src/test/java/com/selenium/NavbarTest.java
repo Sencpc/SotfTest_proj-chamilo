@@ -7,6 +7,8 @@ import java.nio.file.Path;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -47,79 +49,87 @@ public class NavbarTest {
     }
 
     @Test
-    public void testNavbarNavigation() throws InterruptedException {
-        acceptCookiesIfPresent();
+    public void testNavbarNavigation() throws Exception {
+        MainApp.executeTest("Navbar Navigation Test", "Testing all navbar links and search", () -> {
+            acceptCookiesIfPresent();
 
-        // 1. Click Chamilo
-        WebElement chamiloMenu = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-409 a")));
-        chamiloMenu.click();
-        logSuccess("Clicked Chamilo menu");
+            // 1. Click Chamilo
+            WebElement chamiloMenu = wait
+                    .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-409 a")));
+            chamiloMenu.click();
+            logSuccess("Clicked Chamilo menu");
 
-        // Wait 3 seconds then go back home
-        Thread.sleep(3000);
-        driver.get(CHAMILO_URL);
+            // Wait 3 seconds then go back home
+            Thread.sleep(3000);
+            driver.get(CHAMILO_URL);
 
-        // 2. Click Demo
-        WebElement demoMenu = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2897 a")));
-        demoMenu.click();
-        logSuccess("Clicked Demo menu");
+            // 2. Click Demo
+            WebElement demoMenu = wait
+                    .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2897 a")));
+            demoMenu.click();
+            logSuccess("Clicked Demo menu");
 
-        // Go back home
-        driver.get(CHAMILO_URL);
+            // Go back home
+            driver.get(CHAMILO_URL);
 
-        // 3. Click Forum
-        WebElement forumMenu = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2898 a")));
-        forumMenu.click();
-        logSuccess("Clicked Forum menu");
+            // 3. Click Forum
+            WebElement forumMenu = wait
+                    .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2898 a")));
+            forumMenu.click();
+            logSuccess("Clicked Forum menu");
 
-        // Go back home
-        driver.get(CHAMILO_URL);
+            // Go back home
+            driver.get(CHAMILO_URL);
 
-        // 4. Click Download
-        WebElement downloadMenu = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2903 a")));
-        downloadMenu.click();
-        logSuccess("Clicked Download menu");
+            // 4. Click Download
+            WebElement downloadMenu = wait
+                    .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2903 a")));
+            downloadMenu.click();
+            logSuccess("Clicked Download menu");
 
-        // Go back home
-        driver.get(CHAMILO_URL);
+            // Go back home
+            driver.get(CHAMILO_URL);
 
-        // 5. Click Events
-        WebElement eventsMenu = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2525 a")));
-        eventsMenu.click();
-        logSuccess("Clicked Events menu");
+            // 5. Click Events
+            WebElement eventsMenu = wait
+                    .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2525 a")));
+            eventsMenu.click();
+            logSuccess("Clicked Events menu");
 
-        // Go back home
-        driver.get(CHAMILO_URL);
+            // Go back home
+            driver.get(CHAMILO_URL);
 
-        // 6. Click Contact
-        WebElement contactMenu = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-411 a")));
-        contactMenu.click();
-        logSuccess("Clicked Contact menu");
+            // 6. Click Contact
+            WebElement contactMenu = wait
+                    .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-411 a")));
+            contactMenu.click();
+            logSuccess("Clicked Contact menu");
 
-        // Go back home
-        driver.get(CHAMILO_URL);
+            // Go back home
+            driver.get(CHAMILO_URL);
 
-        // 7. Search for "Education"
-        WebElement searchButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("search_button")));
-        searchButton.click();
+            // 7. Search for "Education"
+            WebElement searchButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("search_button")));
+            searchButton.click();
 
-        WebElement searchInput = wait
-                .until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#searchform input[name='s']")));
-        searchInput.sendKeys("Education");
-        searchInput.submit();
-        logSuccess("Performed search for 'Education'");
+            WebElement searchInput = wait
+                    .until(ExpectedConditions
+                            .visibilityOfElementLocated(By.cssSelector("#searchform input[name='s']")));
+            searchInput.sendKeys("Education");
+            searchInput.submit();
+            logSuccess("Performed search for 'Education'");
 
-        // Go back home
-        driver.get(CHAMILO_URL);
+            // Go back home
+            driver.get(CHAMILO_URL);
 
-        // 9. Click Logo
-        WebElement logo = wait.until(ExpectedConditions.elementToBeClickable(By.id("logo")));
-        logo.click();
-        logSuccess("Clicked Logo");
+            // 9. Click Logo
+            WebElement logo = wait.until(ExpectedConditions.elementToBeClickable(By.id("logo")));
+            logo.click();
+            logSuccess("Clicked Logo");
+
+            // Capture final state
+            MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Final.png");
+        });
     }
 
     @AfterClass
@@ -131,7 +141,7 @@ public class NavbarTest {
     }
 
     private void acceptCookiesIfPresent() {
-        List<By> cookieLocators = List.of(
+        List<By> cookieLocators = Arrays.asList(
                 By.cssSelector("a.cc-dismiss"),
                 By.cssSelector("button#wt-cli-accept-btn"),
                 By.xpath(

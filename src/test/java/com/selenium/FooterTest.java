@@ -7,6 +7,7 @@ import java.nio.file.Path;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
@@ -55,81 +56,85 @@ public class FooterTest {
     }
 
     @Test(description = "Mengklik semua link di footer dan kembali ke home")
-    public void shouldClickAllFooterLinks() throws InterruptedException {
-        driver.get(CHAMILO_URL);
-        acceptCookiesIfPresent();
+    public void shouldClickAllFooterLinks() throws Exception {
+        MainApp.executeTest("Click All Footer Links", "Mengklik semua link di footer dan kembali ke home", () -> {
+            driver.get(CHAMILO_URL);
+            acceptCookiesIfPresent();
 
-        // Cari footer untuk menghitung jumlah link awal
-        WebElement footer = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Footer")));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", footer);
-
-        List<WebElement> footerLinks = footer.findElements(By.tagName("a"));
-        int linkCount = footerLinks.size();
-        logSuccess("Found " + linkCount + " links in footer.");
-
-        String originalWindow = driver.getWindowHandle();
-
-        for (int i = 0; i < linkCount; i++) {
-            // Kita harus mencari ulang elemen setiap loop karena halaman mungkin
-            // direfresh/navigasi balik
-            // Pastikan URL benar
-            if (!driver.getCurrentUrl().contains("chamilo.org")) {
-                driver.get(CHAMILO_URL);
-            }
-
-            // Scroll ke footer lagi
-            footer = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Footer")));
+            // Cari footer untuk menghitung jumlah link awal
+            WebElement footer = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Footer")));
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", footer);
 
-            // Ambil list lagi
-            footerLinks = footer.findElements(By.tagName("a"));
+            List<WebElement> footerLinks = footer.findElements(By.tagName("a"));
+            int linkCount = footerLinks.size();
+            logSuccess("Found " + linkCount + " links in footer.");
 
-            // Ambil elemen ke-i
-            WebElement link = footerLinks.get(i);
-            String url = link.getAttribute("href");
-            String title = link.getAttribute("title");
-            String linkText = !link.getText().isEmpty() ? link.getText() : (title != null ? title : "Icon/Image Link");
+            String originalWindow = driver.getWindowHandle();
 
-            // Klik link
-            // Gunakan JS click untuk menghindari tertutup elemen lain (misal chat widget)
-            wait.until(ExpectedConditions.elementToBeClickable(link));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", link);
-
-            logSuccess("Clicked footer link " + (i + 1) + "/" + linkCount + ": " + linkText + " (" + url + ")");
-
-            // Handle tab baru vs tab yang sama
-            Set<String> windowHandles = driver.getWindowHandles();
-            if (windowHandles.size() > 1) {
-                // Link membuka tab baru (biasanya social media)
-                for (String handle : windowHandles) {
-                    if (!handle.equals(originalWindow)) {
-                        driver.switchTo().window(handle);
-                        break;
-                    }
+            for (int i = 0; i < linkCount; i++) {
+                // Kita harus mencari ulang elemen setiap loop karena halaman mungkin
+                // direfresh/navigasi balik
+                // Pastikan URL benar
+                if (!driver.getCurrentUrl().contains("chamilo.org")) {
+                    driver.get(CHAMILO_URL);
                 }
 
-                Thread.sleep(2000); // Tunggu sebentar untuk melihat hasil
-                logSuccess("Opened in new tab: " + driver.getCurrentUrl());
+                // Scroll ke footer lagi
+                footer = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Footer")));
+                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", footer);
 
-                driver.close(); // Tutup tab baru
-                driver.switchTo().window(originalWindow); // Kembali ke tab utama
-            } else {
-                // Link membuka di tab yang sama
-                Thread.sleep(2000);
-                logSuccess("Opened in same tab: " + driver.getCurrentUrl());
+                // Ambil list lagi
+                footerLinks = footer.findElements(By.tagName("a"));
 
-                // Kembali ke home
-                driver.navigate().back();
-                wait.until(ExpectedConditions.urlContains("chamilo.org"));
+                // Ambil elemen ke-i
+                WebElement link = footerLinks.get(i);
+                String url = link.getAttribute("href");
+                String title = link.getAttribute("title");
+                String linkText = !link.getText().isEmpty() ? link.getText()
+                        : (title != null ? title : "Icon/Image Link");
+
+                // Klik link
+                // Gunakan JS click untuk menghindari tertutup elemen lain (misal chat widget)
+                wait.until(ExpectedConditions.elementToBeClickable(link));
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", link);
+
+                logSuccess("Clicked footer link " + (i + 1) + "/" + linkCount + ": " + linkText + " (" + url + ")");
+
+                // Handle tab baru vs tab yang sama
+                Set<String> windowHandles = driver.getWindowHandles();
+                if (windowHandles.size() > 1) {
+                    // Link membuka tab baru (biasanya social media)
+                    for (String handle : windowHandles) {
+                        if (!handle.equals(originalWindow)) {
+                            driver.switchTo().window(handle);
+                            break;
+                        }
+                    }
+
+                    Thread.sleep(2000); // Tunggu sebentar untuk melihat hasil
+                    logSuccess("Opened in new tab: " + driver.getCurrentUrl());
+
+                    driver.close(); // Tutup tab baru
+                    driver.switchTo().window(originalWindow); // Kembali ke tab utama
+                } else {
+                    // Link membuka di tab yang sama
+                    Thread.sleep(2000);
+                    logSuccess("Opened in same tab: " + driver.getCurrentUrl());
+
+                    // Kembali ke home
+                    driver.navigate().back();
+                    wait.until(ExpectedConditions.urlContains("chamilo.org"));
+                }
+
+                // Jeda sedikit sebelum iterasi berikutnya
+                Thread.sleep(1000);
             }
-
-            // Jeda sedikit sebelum iterasi berikutnya
-            Thread.sleep(1000);
-        }
+            MainApp.captureFullPageScreenshot(driver, "cache/Footer_Links.png");
+        });
     }
 
     private void acceptCookiesIfPresent() {
-        List<By> cookieLocators = List.of(
+        List<By> cookieLocators = Arrays.asList(
                 By.cssSelector("a.cc-dismiss"),
                 By.cssSelector("button#wt-cli-accept-btn"),
                 By.xpath(
