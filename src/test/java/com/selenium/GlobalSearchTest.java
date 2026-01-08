@@ -28,6 +28,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 public class GlobalSearchTest {
 
+    private static final String TEST_CLASS_NAME = "GlobalSearchTest";
     private static final String CHAMILO_URL = "https://chamilo.org/en/";
     private static final String DEFAULT_BRAVE_PATH = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe";
 
@@ -58,6 +59,7 @@ public class GlobalSearchTest {
             } catch (Exception ignored) {
             }
         }
+        MainApp.writeTestLog(TEST_CLASS_NAME);
     }
 
     @Test(priority = 1, description = "Search bar toggle exposes input with placeholder")
@@ -72,7 +74,7 @@ public class GlobalSearchTest {
             String placeholder = searchInput.getAttribute("placeholder");
             assertNotNull(placeholder, "Placeholder harus tersedia");
             assertTrue(placeholder.toLowerCase().contains("search"), "Placeholder harus mengandung kata search");
-        }, 1500);
+        }, 1500, TEST_CLASS_NAME);
     }
 
     @Test(priority = 2, description = "Valid query returns results dalam waktu wajar")
@@ -111,7 +113,7 @@ public class GlobalSearchTest {
 
             long elapsedMs = Duration.ofNanos(System.nanoTime() - start).toMillis();
             assertTrue(elapsedMs < 10000, "Waktu load pencarian harus di bawah 10 detik, aktual: " + elapsedMs + " ms");
-        }, 1500);
+        }, 1500, TEST_CLASS_NAME);
     }
 
     @Test(priority = 3, description = "Query tidak ditemukan menampilkan pesan kosong yang ramah")
@@ -135,7 +137,7 @@ public class GlobalSearchTest {
                             + " or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'no posts found')]")));
 
             assertTrue(emptyState.isDisplayed(), "Pesan no results harus muncul untuk query kosong");
-        }, 1500);
+        }, 1500, TEST_CLASS_NAME);
     }
 
     @Test(priority = 4, description = "Karakter khusus tidak memicu error dan halaman tetap ter-render")
@@ -159,7 +161,7 @@ public class GlobalSearchTest {
             String title = driver.getTitle();
             assertNotNull(title);
             assertFalse(title.isBlank(), "Halaman pencarian harus memiliki title setelah submit special characters");
-        }, 1500);
+        }, 1500, TEST_CLASS_NAME);
     }
 
     private WebElement openSearchBox() throws InterruptedException {

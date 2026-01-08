@@ -26,6 +26,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DownloadPageTest {
 
+    private static final String TEST_CLASS_NAME = "DownloadPageTest";
     private static final String HOME_URL = "https://chamilo.org/en/";
     private static final String DEFAULT_BRAVE_PATH = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe";
 
@@ -63,6 +64,7 @@ public class DownloadPageTest {
         if (driver != null) {
             driver.quit();
         }
+        MainApp.writeTestLog(TEST_CLASS_NAME);
     }
     
     private void navigateToDownload() throws InterruptedException {
@@ -95,7 +97,7 @@ public class DownloadPageTest {
             assertEquals(officialDoc.getAttribute("href"), "https://docs.chamilo.org/v/1.11.x/");
             assertEquals(installGuide.getAttribute("href"), "https://11.chamilo.org/documentation/installation_guide.html");
             assertEquals(changelog.getAttribute("href"), "https://11.chamilo.org/documentation/changelog.html");
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     @Test(priority = 2, description = "Blok informasi versi menampilkan detail rilis dan lisensi")
@@ -122,7 +124,7 @@ public class DownloadPageTest {
             WebElement releaseDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                     "//*[contains(text(), '2025-06-27')]")));
             assertTrue(releaseDate.isDisplayed(), "Tanggal rilis harus tampil");
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     @Test(priority = 3, description = "Opsi download ZIP dan TAR.GZ terlihat dan mengarah ke GitHub release")
@@ -147,7 +149,7 @@ public class DownloadPageTest {
             WebElement compatibilityText = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                     "//*[contains(text(), 'PHP 7.4') and contains(text(), '8.3')]")));
             assertTrue(compatibilityText.isDisplayed(), "Teks kompatibilitas PHP harus berada dekat opsi unduhan");
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     @Test(priority = 4, description = "Ikon download ditampilkan dengan ukuran masuk akal")
@@ -166,7 +168,7 @@ public class DownloadPageTest {
                     .filter(img -> img.getSize().getHeight() > 10 && img.getSize().getWidth() > 10)
                     .count();
             assertTrue(displayed >= 2, "Minimal dua ikon download harus tampil dengan ukuran wajar");
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     @Test(priority = 5, description = "Banner konferensi muncul di halaman download")
@@ -180,7 +182,7 @@ public class DownloadPageTest {
             Thread.sleep(800);
             assertTrue(bannerLink.isDisplayed(), "Banner konferensi harus terlihat");
             assertTrue(bannerLink.getAttribute("href").contains("conference.chamilo.org"));
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     @Test(priority = 6, description = "Konten utama memuat link eksternal valid")
@@ -201,7 +203,7 @@ public class DownloadPageTest {
                 assertFalse(href.isBlank(), "Href tidak boleh kosong");
                 assertTrue(href.startsWith("http"), "Href harus absolute url");
             }
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     private void scrollIntoView(WebElement element) {

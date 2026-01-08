@@ -25,6 +25,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ForumPageTest {
 
+    private static final String TEST_CLASS_NAME = "ForumPageTest";
     private static final String HOME_URL = "https://chamilo.org/en/";
     private static final String DEFAULT_BRAVE_PATH = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe";
 
@@ -63,6 +64,7 @@ public class ForumPageTest {
         if (driver != null) {
             driver.quit();
         }
+        MainApp.writeTestLog(TEST_CLASS_NAME);
     }
     
     private void navigateToForum() throws InterruptedException {
@@ -96,7 +98,7 @@ public class ForumPageTest {
             WebElement subtitle = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                     "//*[contains(text(), 'Check our community forums') or contains(text(), 'find answers to your questions')]")));
             assertTrue(subtitle.isDisplayed(), "Deskripsi intro harus terlihat");
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     @Test(priority = 2, description = "Gambar forum utama dimuat dengan baik")
@@ -115,7 +117,7 @@ public class ForumPageTest {
             Thread.sleep(800);
             assertTrue(image.getSize().getHeight() > 10 && image.getSize().getWidth() > 10,
                     "Dimensi gambar forum harus masuk akal");
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     @Test(priority = 3, description = "Section Global Forum menampilkan CTA ke GitHub Discussions")
@@ -140,7 +142,7 @@ public class ForumPageTest {
             assertTrue(cta.isDisplayed(), "CTA GitHub Discussions harus terlihat");
             assertTrue(cta.getAttribute("href").contains("github.com/chamilo/chamilo-lms/discussions"),
                     "Link CTA harus menuju GitHub Discussions");
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     @Test(priority = 4, description = "Banner konferensi muncul dan dapat diklik")
@@ -155,7 +157,7 @@ public class ForumPageTest {
             assertTrue(bannerLink.isDisplayed(), "Banner konferensi harus terlihat");
             assertTrue(bannerLink.getAttribute("href").contains("conference.chamilo.org"),
                     "Link banner harus mengarah ke conference.chamilo.org");
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     @Test(priority = 5, description = "Link eksternal utama valid")
@@ -177,7 +179,7 @@ public class ForumPageTest {
                 assertFalse(href.isBlank(), "Href tidak boleh kosong");
                 assertTrue(href.startsWith("http"), "Href eksternal harus absolute url");
             }
-        }, 1200);
+        }, 1200, TEST_CLASS_NAME);
     }
 
     private WebElement findFirstDisplayed(List<By> locators) {
