@@ -29,7 +29,7 @@ public final class MainApp {
         // utility class
     }
 
-    public void captureFullPageScreenshot(WebDriver driver, String fileName) {
+    public static void captureFullPageScreenshot(WebDriver driver, String fileName) {
         if (!(driver instanceof TakesScreenshot)) {
             System.err.println("Driver does not support screenshots");
             return;
@@ -51,7 +51,7 @@ public final class MainApp {
      * Encapsulates test execution with logging and automatic sleep.
      * Executes a test lambda, logs results, and applies thread sleep.
      * 
-     * @param testName Name of the test
+     * @param testName    Name of the test
      * @param description Description of what the test does
      * @param testCode The test logic as a lambda expression
      * @param sleepMs Sleep duration after test execution (in milliseconds)
