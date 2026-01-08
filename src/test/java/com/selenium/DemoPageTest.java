@@ -1,5 +1,7 @@
 package com.selenium;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,6 +12,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,8 +25,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class NavbarTest {
-
+public class DemoPageTest {
     private static final String CHAMILO_URL = "https://chamilo.org/en/";
     private static final String DEFAULT_BRAVE_PATH = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe";
 
@@ -44,91 +46,82 @@ public class NavbarTest {
 
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        driver.get(CHAMILO_URL);
     }
 
-    @Test
-    public void testNavbarNavigation() throws InterruptedException {
-        acceptCookiesIfPresent();
+    @AfterClass(alwaysRun = true)
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 
-        // 1. Click Chamilo
-        WebElement chamiloMenu = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-409 a")));
-        chamiloMenu.click();
-        logSuccess("Clicked Chamilo menu");
-
-        // Wait 3 seconds then go back home
-        Thread.sleep(3000);
+    @Test(priority = 1, description = "Masuk ke halaman Demo melalui Navbar")
+    public void shouldNavigateToDemoPage() throws InterruptedException {
         driver.get(CHAMILO_URL);
+        acceptCookiesIfPresent();
 
         // 2. Click Demo
         WebElement demoMenu = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2897 a")));
         demoMenu.click();
-        logSuccess("Clicked Demo menu");
 
-        // Go back home
-        driver.get(CHAMILO_URL);
+        // Wait for URL to update
+        wait.until(ExpectedConditions.urlContains("demo"));
 
-        // 3. Click Forum
-        WebElement forumMenu = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2898 a")));
-        forumMenu.click();
-        logSuccess("Clicked Forum menu");
-
-        // Go back home
-        driver.get(CHAMILO_URL);
-
-        // 4. Click Download
-        WebElement downloadMenu = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2903 a")));
-        downloadMenu.click();
-        logSuccess("Clicked Download menu");
-
-        // Go back home
-        driver.get(CHAMILO_URL);
-
-        // 5. Click Events
-        WebElement eventsMenu = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2525 a")));
-        eventsMenu.click();
-        logSuccess("Clicked Events menu");
-
-        // Go back home
-        driver.get(CHAMILO_URL);
-
-        // 6. Click Contact
-        WebElement contactMenu = wait
-                .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-411 a")));
-        contactMenu.click();
-        logSuccess("Clicked Contact menu");
-
-        // Go back home
-        driver.get(CHAMILO_URL);
-
-        // 7. Search for "Education"
-        WebElement searchButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("search_button")));
-        searchButton.click();
-
-        WebElement searchInput = wait
-                .until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#searchform input[name='s']")));
-        searchInput.sendKeys("Education");
-        searchInput.submit();
-        logSuccess("Performed search for 'Education'");
-
-        // Go back home
-        driver.get(CHAMILO_URL);
-
-        // 9. Click Logo
-        WebElement logo = wait.until(ExpectedConditions.elementToBeClickable(By.id("logo")));
-        logo.click();
-        logSuccess("Clicked Logo");
+        logSuccess("Clicked Demo menu and navigated to Demo page");
+        Thread.sleep(3000);
     }
 
-    @AfterClass
-    public void tearDown() throws InterruptedException {
-        if (driver != null) {
-            Thread.sleep(5000);
-            driver.quit();
+    @Test(priority = 2, description = "Mengklik tombol Go to Free Campus dan kembali")
+    public void shouldClickFreeCampusButton() throws InterruptedException {
+        // Pastikan kita ada di halaman Demo
+        if (!driver.getCurrentUrl().contains("demo")) {
+            driver.get(CHAMILO_URL);
+            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2897 a"))).click();
         }
+
+        String originalWindow = driver.getWindowHandle();
+
+        // Cari tombol "Go to Free Campus"
+        // Menggunakan xpath yang mencari elemen 'a' yang mengandung text "Go to Free
+        // Campus"
+        WebElement freeCampusButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath(
+                        "//a[contains(@href, 'campus.chamilo.org') and .//span[contains(text(), 'Go to Free Campus')]]")));
+
+        // Scroll ke view agar bisa diklik
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});",
+                freeCampusButton);
+        wait.until(ExpectedConditions.elementToBeClickable(freeCampusButton));
+
+        freeCampusButton.click();
+        logSuccess("Clicked 'Go to Free Campus' button");
+
+        // Handle new tab
+        java.util.Set<String> windowHandles = driver.getWindowHandles();
+        if (windowHandles.size() > 1) {
+            for (String handle : windowHandles) {
+                if (!handle.equals(originalWindow)) {
+                    driver.switchTo().window(handle);
+                    break;
+                }
+            }
+
+            // Tunggu sebentar di halaman baru
+            Thread.sleep(3000);
+            logSuccess("Switched to new tab: " + driver.getCurrentUrl());
+
+            driver.close(); // Tutup tab baru
+            driver.switchTo().window(originalWindow); // Kembali ke tab awal
+            logSuccess("Closed new tab and returned to Demo page");
+        } else {
+            // Fallback jika tidak membuka tab baru (jarang terjadi jika target="_blank")
+            Thread.sleep(3000);
+            driver.navigate().back();
+            logSuccess("Returned to Demo page via Back");
+        }
+
+        // Verifikasi kembali ke halaman demo
+        wait.until(ExpectedConditions.urlContains("demo"));
     }
 
     private void acceptCookiesIfPresent() {
@@ -159,7 +152,7 @@ public class NavbarTest {
 
         try {
             Files.createDirectories(Path.of("cache"));
-            try (FileWriter fw = new FileWriter("cache/NavbarTest_log.txt", true)) {
+            try (FileWriter fw = new FileWriter("cache/DemoPageTest_log.txt", true)) {
                 fw.write(logMessage);
             }
         } catch (IOException e) {

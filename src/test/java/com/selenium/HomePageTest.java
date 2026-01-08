@@ -328,6 +328,7 @@ public class HomePageTest {
                 WebElement button = new WebDriverWait(driver, Duration.ofSeconds(3))
                         .until(ExpectedConditions.elementToBeClickable(locator));
                 button.click();
+                logSuccess("Cookies accepted");
                 return;
             } catch (Exception ignored) {
                 // different region may use another component; keep trying others
