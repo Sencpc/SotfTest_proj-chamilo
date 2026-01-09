@@ -84,7 +84,7 @@ public class HomePageTest {
                 MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Slider_Arrow_" + (i + 1) + ".png");
             }
             MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Slider.png");
-        });
+        }, "HomePageTest");
     }
 
     @Test(priority = 2, description = "Mengklik tombol Download, Try It, dan Donate Now di dalam slider")
@@ -139,7 +139,7 @@ public class HomePageTest {
                         }
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_SliderButtons.png");
-                });
+                }, "HomePageTest");
     }
 
     @Test(priority = 3, description = "Memastikan blok 'Need help?' menampilkan tautan bantuan utama Chamilo")
@@ -163,7 +163,7 @@ public class HomePageTest {
                     logSuccess("Services link is visible");
 
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_NeedHelp.png");
-                });
+                }, "HomePageTest");
     }
 
     @Test(priority = 4, description = "Mengklik tautan FAQ, Forum, dan Services providers di bagian Need help?")
@@ -196,7 +196,7 @@ public class HomePageTest {
                         driver.get(CHAMILO_URL);
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_NeedHelpLinks.png");
-                });
+                }, "HomePageTest");
     }
 
     @Test(priority = 5, description = "Mengklik tombol Training, ChamiloTalks, Events, dan Tutorials di bagian Chamilo Universe")
@@ -229,7 +229,7 @@ public class HomePageTest {
                         driver.get(CHAMILO_URL);
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Universe.png");
-                });
+                }, "HomePageTest");
     }
 
     @Test(priority = 6, description = "Memastikan blok ajakan kontribusi tampil dan dapat diklik")
@@ -262,7 +262,7 @@ public class HomePageTest {
                     driver.get(CHAMILO_URL);
 
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Contribution.png");
-                });
+                }, "HomePageTest");
     }
 
     @Test(priority = 7, description = "Memastikan link di section Acknowledgments dapat diklik dan kembali ke home")
@@ -320,7 +320,7 @@ public class HomePageTest {
                         wait.until(ExpectedConditions.urlContains("chamilo.org"));
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Ack.png");
-                });
+                }, "HomePageTest");
     }
 
     private void acceptCookiesIfPresent() {

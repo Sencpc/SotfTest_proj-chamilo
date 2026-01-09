@@ -1,0 +1,2059 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Verifikasi judul halaman 'Training' ditampilkan dengan benar",
+    "uid" : "7144a331c67cf213",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943724107,
+      "stop" : 1767943771099,
+      "duration" : 46992
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi judul halaman terlihat di browser tab",
+    "uid" : "54598304154afed5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771101,
+      "stop" : 1767943771128,
+      "duration" : 27
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi section heading CCHAPA terlihat",
+    "uid" : "e4488353271392e7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771132,
+      "stop" : 1767943771144,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi deskripsi tentang CCHAPA professionals ditampilkan",
+    "uid" : "52c859a38f238fe",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771146,
+      "stop" : 1767943771158,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi complex exam untuk CCHAPA terlihat",
+    "uid" : "a157293edc7efe86",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771160,
+      "stop" : 1767943771172,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi penjelasan tentang names, score, date of certification",
+    "uid" : "724506054e6b8149",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771175,
+      "stop" : 1767943771186,
+      "duration" : 11
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi unique ID officially recognized dijelaskan",
+    "uid" : "2ec11565bcc68e09",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771189,
+      "stop" : 1767943771201,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi ranking 'from highest to lowest score' terlihat",
+    "uid" : "6557baf74bcd008f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771203,
+      "stop" : 1767943771217,
+      "duration" : 14
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi passing score '74%' dijelaskan dengan benar",
+    "uid" : "f0a16f4daa83cf94",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771220,
+      "stop" : 1767943771231,
+      "duration" : 11
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi link 'Chamilo Portal Assistant' terlihat dan dapat diklik",
+    "uid" : "718869030fcd1baa",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771234,
+      "stop" : 1767943771269,
+      "duration" : 35
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi section heading CHACOBU terlihat",
+    "uid" : "b5fb08dcf08b6743",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771271,
+      "stop" : 1767943771282,
+      "duration" : 11
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi deskripsi tentang CHACOBU professionals ditampilkan",
+    "uid" : "784bb1e3d531e04a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771283,
+      "stop" : 1767943771295,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi complex exam untuk CHACOBU terlihat",
+    "uid" : "10aa2efaf1973b8b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771298,
+      "stop" : 1767943771309,
+      "duration" : 11
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi penjelasan tentang CHACOBU certification details",
+    "uid" : "190d47037e421cd5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771311,
+      "stop" : 1767943771322,
+      "duration" : 11
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi ranking CHACOBU terlihat",
+    "uid" : "f713097b64b2bf3d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771324,
+      "stop" : 1767943771336,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi link 'Chamilo Course Builder List' terlihat dan dapat diklik",
+    "uid" : "345ee0ef27e55a65",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771338,
+      "stop" : 1767943771371,
+      "duration" : 33
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi pesan tentang next levels of certification terlihat",
+    "uid" : "75d98a2fd11cac50",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771374,
+      "stop" : 1767943771385,
+      "duration" : 11
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi call-to-action 'Want to get Chamilo-certified?' ditampilkan",
+    "uid" : "c418c4a501de0b91",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771388,
+      "stop" : 1767943771400,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi email link 'michela@chamilo.org' dapat diklik",
+    "uid" : "72871127f8f9aa5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943771403,
+      "stop" : 1767943781719,
+      "duration" : 10316
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi link Portal Assistant berfungsi dengan benar",
+    "uid" : "ee4b0b10d0a614ed",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943781722,
+      "stop" : 1767943781733,
+      "duration" : 11
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi link Course Builder berfungsi dengan benar",
+    "uid" : "aa08b52c7ae88cb6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943781736,
+      "stop" : 1767943781747,
+      "duration" : 11
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi tidak ada link yang rusak pada halaman",
+    "uid" : "222cc93504c8ff06",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943781749,
+      "stop" : 1767943781862,
+      "duration" : 113
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi halaman content jelas untuk memahami sertifikasi",
+    "uid" : "9f75e3883dc87f86",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943781864,
+      "stop" : 1767943781890,
+      "duration" : 26
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi tidak ada teks yang hilang atau masalah tata letak",
+    "uid" : "35ebba196ad78a6b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943781892,
+      "stop" : 1767943781949,
+      "duration" : 57
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi semua bagian informasi terorganisir dengan logis",
+    "uid" : "e9f8a4361f455d96",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943781952,
+      "stop" : 1767943781964,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi typography dan formatting konsisten",
+    "uid" : "33c4824b8e98ef5e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943781966,
+      "stop" : 1767943781978,
+      "duration" : 12
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi teks copyright 'Chamilo © 2024' ditampilkan",
+    "uid" : "ea576f5f32e080ee",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943781980,
+      "stop" : 1767943782507,
+      "duration" : 527
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi link 'Aviso Legal' ada dan dapat diklik",
+    "uid" : "46c9998db4571a67",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943782510,
+      "stop" : 1767943782539,
+      "duration" : 29
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi ikon media sosial Facebook terlihat dan berfungsi",
+    "uid" : "1cdb0bc4e3e68042",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943782541,
+      "stop" : 1767943782557,
+      "duration" : 16
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi ikon media sosial Twitter terlihat dan berfungsi",
+    "uid" : "6d474b3666e275d8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943782558,
+      "stop" : 1767943782577,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi ikon media sosial YouTube terlihat dan berfungsi",
+    "uid" : "67e5a5f4d36bbfab",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943782579,
+      "stop" : 1767943782596,
+      "duration" : 17
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi semua link media sosial membuka profil yang benar",
+    "uid" : "422056546b111d1b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767943782598,
+      "stop" : 1767943782609,
+      "duration" : 11
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Akses halaman Events dari navbar, lalu scroll perlahan sampai paling bawah",
+    "uid" : "5065e5cf2b64e368",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1767950067974,
+      "stop" : 1767950227177,
+      "duration" : 159203
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi halaman judul 'Contact' ditampilkan dengan benar",
+    "uid" : "b441287f9dde774d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951769411,
+      "stop" : 1767951795816,
+      "duration" : 26405
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi halaman judul terlihat di browser tab",
+    "uid" : "bacaff7c0d962487",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951795924,
+      "stop" : 1767951795977,
+      "duration" : 53
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi contact form terlihat dan dengan benar displayed",
+    "uid" : "d96a752bfdb06562",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951795982,
+      "stop" : 1767951796017,
+      "duration" : 35
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi Name field ada dan berfungsi",
+    "uid" : "b1d2518a3815dc0f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951796021,
+      "stop" : 1767951796073,
+      "duration" : 52
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi Email field ada dan berfungsi",
+    "uid" : "763bfe238bdce33b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951796078,
+      "stop" : 1767951796118,
+      "duration" : 40
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi Subject field ada dan berfungsi",
+    "uid" : "a0fe08c1860f898f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951796122,
+      "stop" : 1767951796165,
+      "duration" : 43
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi Message/Tell Us field ada dan berfungsi",
+    "uid" : "88e613eaeb91b4c0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951796169,
+      "stop" : 1767951796209,
+      "duration" : 40
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi form field labels clear dan visible",
+    "uid" : "14b2e3d052b66864",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951796214,
+      "stop" : 1767951796252,
+      "duration" : 38
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi form accepts text input in semua fields",
+    "uid" : "e50d3d0dc134619e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951796257,
+      "stop" : 1767951796990,
+      "duration" : 733
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi privacy policy acceptance checkbox ada",
+    "uid" : "4a31c2bffed870aa",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951796994,
+      "stop" : 1767951797025,
+      "duration" : 31
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi checkbox text 'I have read dan I accept the privacy policy' ditampilkan",
+    "uid" : "f3e0ad99a163d23",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951797028,
+      "stop" : 1767951797064,
+      "duration" : 36
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi 'privacy policy' link within checkbox text dapat diklik",
+    "uid" : "d4b6ddb2166028ae",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951797069,
+      "stop" : 1767951797209,
+      "duration" : 140
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi checkbox can be checked dan unchecked",
+    "uid" : "79ee61af13e5982b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951797214,
+      "stop" : 1767951798457,
+      "duration" : 1243
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi data privacy information terlihat below the checkbox",
+    "uid" : "d950ae6bce6ffe0c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798463,
+      "stop" : 1767951798480,
+      "duration" : 17
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi 'Asociación Chamilo' organization ditampilkan",
+    "uid" : "ae33d9e17f1de681",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798487,
+      "stop" : 1767951798506,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi address information ditampilkan",
+    "uid" : "35f60cf1b28b7b4f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798511,
+      "stop" : 1767951798531,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi 'Objective' section displays information",
+    "uid" : "19b195225b510c69",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798536,
+      "stop" : 1767951798561,
+      "duration" : 25
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi 'Legitimation' section displays 'User consent'",
+    "uid" : "ecc47015a4c80b3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798565,
+      "stop" : 1767951798585,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi 'Rights' section menampilkan informasi tentang data rights",
+    "uid" : "f8d2a6c8f1a4fa99",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798590,
+      "stop" : 1767951798611,
+      "duration" : 21
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi 'SEND' button terlihat",
+    "uid" : "a5232c4ae99e3975",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798615,
+      "stop" : 1767951798687,
+      "duration" : 72
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi 'SEND' button dapat diklik",
+    "uid" : "b04a6d362517b389",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798692,
+      "stop" : 1767951798742,
+      "duration" : 50
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi SEND button styling",
+    "uid" : "e8ed05894f540de6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798746,
+      "stop" : 1767951798795,
+      "duration" : 49
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi contact/mail image dimuat dengan benar",
+    "uid" : "114f8e128cee003",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798800,
+      "stop" : 1767951798813,
+      "duration" : 13
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi images dimuat tanpa error (no broken images)",
+    "uid" : "396587cc63152d86",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798818,
+      "stop" : 1767951798895,
+      "duration" : 77
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi form submission secure (HTTPS)",
+    "uid" : "c58574cdfad051b1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798901,
+      "stop" : 1767951798914,
+      "duration" : 13
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi form has action attribute untuk submission",
+    "uid" : "f38f1124d21fac62",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798920,
+      "stop" : 1767951798946,
+      "duration" : 26
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi form has method POST",
+    "uid" : "342a07de757d10cb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951798950,
+      "stop" : 1767951798970,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi halaman judul 'Providers' ditampilkan dengan benar",
+    "uid" : "6d8cd0afc71627e6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951867629,
+      "stop" : 1767951882994,
+      "duration" : 15365
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi URL halaman providers benar",
+    "uid" : "3aba9e197b3838b5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883108,
+      "stop" : 1767951883117,
+      "duration" : 9
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi heading 'Providers' terlihat pada halaman",
+    "uid" : "6b468dec8c0a966b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883123,
+      "stop" : 1767951883172,
+      "duration" : 49
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi deskripsi tentang official providers ditampilkan",
+    "uid" : "9a33024a10537cb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883176,
+      "stop" : 1767951883213,
+      "duration" : 37
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi teks 'If you need professional help' ditampilkan",
+    "uid" : "5c8480c85377d92a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883217,
+      "stop" : 1767951883250,
+      "duration" : 33
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi section 'PREMIUM' terlihat",
+    "uid" : "85ea9ab5021d936a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883254,
+      "stop" : 1767951883286,
+      "duration" : 32
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi BeezNest Belgium provider card ditampilkan",
+    "uid" : "284ba5e302664435",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883290,
+      "stop" : 1767951883324,
+      "duration" : 34
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi Bâtisseurs Numériques provider card ditampilkan",
+    "uid" : "94966155da385e67",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883328,
+      "stop" : 1767951883360,
+      "duration" : 32
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi Contidos Dixitais provider card ditampilkan",
+    "uid" : "1f4453604092364d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883364,
+      "stop" : 1767951883395,
+      "duration" : 31
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi Nosolored provider card ditampilkan",
+    "uid" : "cc48b1148d287e5a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883400,
+      "stop" : 1767951883433,
+      "duration" : 33
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi BeezNest Latino provider card ditampilkan",
+    "uid" : "df7a95eb1c0a3f3e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883437,
+      "stop" : 1767951883466,
+      "duration" : 29
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi logo provider images dimuat dengan benar",
+    "uid" : "593d90ec89aacf4b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883471,
+      "stop" : 1767951883574,
+      "duration" : 103
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi kontak phone numbers ada pada halaman",
+    "uid" : "297bb79844e9233f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883578,
+      "stop" : 1767951883619,
+      "duration" : 41
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi email addresses ada pada halaman",
+    "uid" : "7ab0ae3df9c56529",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883626,
+      "stop" : 1767951883652,
+      "duration" : 26
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi link BeezNest website ada dan dapat diklik",
+    "uid" : "e0e223ee6e7dc4f7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883658,
+      "stop" : 1767951883717,
+      "duration" : 59
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi link Bâtisseurs Numériques website ada dan dapat diklik",
+    "uid" : "795641a8257be35c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883722,
+      "stop" : 1767951883769,
+      "duration" : 47
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi link Contidos Dixitais website ada dan dapat diklik",
+    "uid" : "19a0eeb5c8b14d19",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883774,
+      "stop" : 1767951883824,
+      "duration" : 50
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi link Nosolored website ada dan dapat diklik",
+    "uid" : "7445cc2470a094a8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883829,
+      "stop" : 1767951883890,
+      "duration" : 61
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi lokasi Belgium ditampilkan",
+    "uid" : "6a0ed0874c16192e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883894,
+      "stop" : 1767951883931,
+      "duration" : 37
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi lokasi France ditampilkan",
+    "uid" : "605bcf0ed006b5da",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883937,
+      "stop" : 1767951883971,
+      "duration" : 34
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi lokasi Spain ditampilkan",
+    "uid" : "6717005668690509",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951883975,
+      "stop" : 1767951884012,
+      "duration" : 37
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi lokasi Latin America ditampilkan",
+    "uid" : "12d792ca336d779",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951884016,
+      "stop" : 1767951884051,
+      "duration" : 35
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi layanan 'Development' ditampilkan",
+    "uid" : "3fa790dfd65eb3cb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951884057,
+      "stop" : 1767951884092,
+      "duration" : 35
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi layanan 'SaaS' ditampilkan",
+    "uid" : "945bc426216ea06d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951884096,
+      "stop" : 1767951884133,
+      "duration" : 37
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi layanan 'Content' ditampilkan",
+    "uid" : "ba3e8846fe71e3c6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951884136,
+      "stop" : 1767951884158,
+      "duration" : 22
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi 'Provider from' year ditampilkan",
+    "uid" : "edc89e93e1b4f8f0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951884168,
+      "stop" : 1767951884214,
+      "duration" : 46
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi certification process ditampilkan",
+    "uid" : "37bde5a156c55d5e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951884218,
+      "stop" : 1767951884784,
+      "duration" : 566
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi copyright text 'Chamilo © 2024' ditampilkan",
+    "uid" : "926a458d4664cd14",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951884789,
+      "stop" : 1767951885345,
+      "duration" : 556
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi link 'Aviso Legal' ada di footer",
+    "uid" : "f54237e3b0f310d6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951885350,
+      "stop" : 1767951885902,
+      "duration" : 552
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi social media icons (Facebook, Twitter, YouTube) ada di footer",
+    "uid" : "786773d27b2f12f5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951885907,
+      "stop" : 1767951886463,
+      "duration" : 556
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi informasi untuk request quote ke semua providers ditampilkan",
+    "uid" : "93d5484d6f442955",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767951886469,
+      "stop" : 1767951886508,
+      "duration" : 39
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi judul seksi 'What Chamilo?' terlihat",
+    "uid" : "545d9c5c6678be31",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954017625,
+      "stop" : 1767954018193,
+      "duration" : 568
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi 'The Association' judul ditampilkan dengan benar",
+    "uid" : "ca380847b5a9f24a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954018339,
+      "stop" : 1767954019482,
+      "duration" : 1143
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi tab 'History' dapat diklik dan kontennya muncul",
+    "uid" : "55dabebe1a4b93b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954019492,
+      "stop" : 1767954020943,
+      "duration" : 1451
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi tab 'Mission' dapat diklik dan kontennya muncul",
+    "uid" : "6ca2d778ab7c01d2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954020952,
+      "stop" : 1767954021848,
+      "duration" : 896
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi navigasi antara tab The Association, History, Mission",
+    "uid" : "c46e49823948c0f8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954021858,
+      "stop" : 1767954024787,
+      "duration" : 2929
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi konten default The Association tab",
+    "uid" : "5c8f75bcc5eb373a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954024796,
+      "stop" : 1767954026046,
+      "duration" : 1250
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi scroll dari tab section ke Board of Directors",
+    "uid" : "e9adf27c5d66765f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954026054,
+      "stop" : 1767954027942,
+      "duration" : 1888
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi judul seksi 'Board of directors' terlihat",
+    "uid" : "e3e24eba6283936a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954027950,
+      "stop" : 1767954028490,
+      "duration" : 540
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi teks election informasi ditampilkan dengan benar",
+    "uid" : "d88a5a177a9d748",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954028496,
+      "stop" : 1767954028515,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi profil Yannick Warnier lengkap",
+    "uid" : "7adca1e852de7e03",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954028523,
+      "stop" : 1767954029138,
+      "duration" : 615
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi profil Laura Guirao Rodríguez lengkap",
+    "uid" : "b2ff6957ea111011",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954029146,
+      "stop" : 1767954029766,
+      "duration" : 620
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi profil Noa Orizales Iglesias lengkap",
+    "uid" : "19e77d9c28dc7156",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954029775,
+      "stop" : 1767954030413,
+      "duration" : 638
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi scroll dari Board of Directors ke Community Leaders",
+    "uid" : "afd4180eb77fec6c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954030423,
+      "stop" : 1767954032307,
+      "duration" : 1884
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi judul seksi 'Our community leaders' terlihat",
+    "uid" : "b565f15956c1b725",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954032316,
+      "stop" : 1767954032846,
+      "duration" : 530
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi 'Otros cargos de responsabilidad' subjudul",
+    "uid" : "cbfb0187c9b10b83",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954032855,
+      "stop" : 1767954032874,
+      "duration" : 19
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi profil Michela (Chamila) lengkap dengan sosmed",
+    "uid" : "73274346852e1043",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954032880,
+      "stop" : 1767954033525,
+      "duration" : 645
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi profil Ángel lengkap",
+    "uid" : "143d6d9f41252602",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954033532,
+      "stop" : 1767954034186,
+      "duration" : 654
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi profil Damien Renou lengkap",
+    "uid" : "21d18fbd711cf0f9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954034197,
+      "stop" : 1767954034877,
+      "duration" : 680
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi semua link website perusahaan berfungsi",
+    "uid" : "71fe57e6246a481f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954034884,
+      "stop" : 1767954035098,
+      "duration" : 214
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi semua link profil LinkedIn membuka dengan benar",
+    "uid" : "c6fbfd5eac659731",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954035104,
+      "stop" : 1767954035144,
+      "duration" : 40
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi semua link email diformat dengan benar (mailto:)",
+    "uid" : "d73ee6b4ed4d7164",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954035152,
+      "stop" : 1767954035210,
+      "duration" : 58
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi Michela's website link (michelamosquera.com)",
+    "uid" : "12991f7c48d1f0d4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954035217,
+      "stop" : 1767954035232,
+      "duration" : 15
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi official Chamilo LMS campus link",
+    "uid" : "a3ffd836d4d1414d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954035238,
+      "stop" : 1767954035258,
+      "duration" : 20
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi semua foto profil dimuat tanpa error",
+    "uid" : "da9906dac31c6fd4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954035265,
+      "stop" : 1767954035431,
+      "duration" : 166
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi semua gambar memiliki proper alt text",
+    "uid" : "a15b75ad6468b5ca",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954035439,
+      "stop" : 1767954035527,
+      "duration" : 88
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi tidak ada gambar yang rusak (broken images)",
+    "uid" : "fc9a3cdbf6f3d34f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767954035536,
+      "stop" : 1767954035696,
+      "duration" : 160
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "testNavbarNavigation",
+    "uid" : "382e151529ba4927",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767965625396,
+      "stop" : 1767965681168,
+      "duration" : 55772
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Masuk ke halaman Demo melalui Navbar",
+    "uid" : "f509b60e16f94187",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767965749465,
+      "stop" : 1767965770036,
+      "duration" : 20571
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Mengklik tombol Go to Free Campus dan kembali",
+    "uid" : "296584964be6e25b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767965770079,
+      "stop" : 1767965778000,
+      "duration" : 7921
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Memeriksa tata bahasa pada semua elemen heading di halaman Demo",
+    "uid" : "ada399c9c01f12f3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767965778004,
+      "stop" : 1767965779154,
+      "duration" : 1150
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Mengklik semua link di footer dan kembali ke home",
+    "uid" : "bf4d66aae929aad6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767965850174,
+      "stop" : 1767965909851,
+      "duration" : 59677
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Memastikan slider berfungsi dan tombol next dapat diklik",
+    "uid" : "123f17b83f632e46",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767966122476,
+      "stop" : 1767966146622,
+      "duration" : 24146
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Mengklik tombol Download, Try It, dan Donate Now di dalam slider",
+    "uid" : "48d5580764fb64d7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767966146657,
+      "stop" : 1767966212695,
+      "duration" : 66038
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Memastikan blok 'Need help?' menampilkan tautan bantuan utama Chamilo",
+    "uid" : "8447fa9d731e9b6e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767966212699,
+      "stop" : 1767966228113,
+      "duration" : 15414
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Mengklik tautan FAQ, Forum, dan Services providers di bagian Need help?",
+    "uid" : "827b54ea6523d83e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767966228116,
+      "stop" : 1767966294402,
+      "duration" : 66286
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Mengklik tombol Training, ChamiloTalks, Events, dan Tutorials di bagian Chamilo Universe",
+    "uid" : "3e2c4f908a206dcf",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767966294405,
+      "stop" : 1767966381535,
+      "duration" : 87130
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Memastikan blok ajakan kontribusi tampil dan dapat diklik",
+    "uid" : "e04e4bffc59b075b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767966381538,
+      "stop" : 1767966403228,
+      "duration" : 21690
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Memastikan link di section Acknowledgments dapat diklik dan kembali ke home",
+    "uid" : "56ab37134ae2b6f4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767966403231,
+      "stop" : 1767966428484,
+      "duration" : 25253
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Membuka homepage Chamilo dan memastikan tombol TRAINING mengarah ke halaman training",
+    "uid" : "4782f212b719ff2c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767966655865,
+      "stop" : 1767966674378,
+      "duration" : 18513
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Scroll ke bagian 'Do you like Chamilo?', klik tombol CONTRIBUTE, lalu kembali ke home via logo",
+    "uid" : "df1878e231f8ee4e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767966890886,
+      "stop" : 1767966918209,
+      "duration" : 27323
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "openEventsViaTopBarMenu",
+    "uid" : "1ba53247a4b80bcb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767966964209,
+      "stop" : 1767968670874,
+      "duration" : 1706665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Search bar toggle exposes input with placeholder",
+    "uid" : "e5d30f0e85ead1fa",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767967937096,
+      "stop" : 1767967992002,
+      "duration" : 54906
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Valid query returns results dalam waktu wajar",
+    "uid" : "c8c52b3af3763adf",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767967992067,
+      "stop" : 1767968021196,
+      "duration" : 29129
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Query tidak ditemukan menampilkan pesan kosong yang ramah",
+    "uid" : "9e938857533a0bfa",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968021204,
+      "stop" : 1767968048053,
+      "duration" : 26849
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Karakter khusus tidak memicu error dan halaman tetap ter-render",
+    "uid" : "a3aa67e9b60e744b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968048060,
+      "stop" : 1767968074268,
+      "duration" : 26208
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Exact match search returns correct item",
+    "uid" : "a485d46f58498b01",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968074274,
+      "stop" : 1767968101266,
+      "duration" : 26992
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Partial match search returns relevant results",
+    "uid" : "31216cb4d100f6c0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968101273,
+      "stop" : 1767968128710,
+      "duration" : 27437
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Case insensitive search returns same results",
+    "uid" : "1f830d7d3d3ad42d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968128717,
+      "stop" : 1767968181566,
+      "duration" : 52849
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Empty search field does not submit",
+    "uid" : "8e918a8330b9a5f5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968181573,
+      "stop" : 1767968206262,
+      "duration" : 24689
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Search results show content and can be clicked",
+    "uid" : "94e829d5d01536ab",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968206270,
+      "stop" : 1767968233586,
+      "duration" : 27316
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Search results are categorized or labeled",
+    "uid" : "92eb605b7bd3c925",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968233594,
+      "stop" : 1767968262388,
+      "duration" : 28794
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Search preserves results order after redirect",
+    "uid" : "586febc65b18205d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968262395,
+      "stop" : 1767968289870,
+      "duration" : 27475
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Multiple search attempts work correctly",
+    "uid" : "40cc251d735c9b1b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968289875,
+      "stop" : 1767968368554,
+      "duration" : 78679
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi halaman judul Download ditampilkan dengan benar",
+    "uid" : "f888cb31674d4908",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968695963,
+      "stop" : 1767968701501,
+      "duration" : 5538
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Dokumentasi resmi memiliki link dengan href yang benar",
+    "uid" : "48a7d799bb4be92c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968701658,
+      "stop" : 1767968705448,
+      "duration" : 3790
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Blok informasi versi menampilkan detail rilis dan lisensi",
+    "uid" : "7299b51bf4d282b7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968705456,
+      "stop" : 1767968708443,
+      "duration" : 2987
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Opsi download ZIP dan TAR.GZ terlihat dan mengarah ke GitHub release",
+    "uid" : "3ff7510e7c5e2840",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968708450,
+      "stop" : 1767968711348,
+      "duration" : 2898
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Ikon download ditampilkan dengan ukuran masuk akal",
+    "uid" : "470610d304f262d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968711355,
+      "stop" : 1767968712628,
+      "duration" : 1273
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Banner konferensi muncul di halaman download",
+    "uid" : "6273d37a313489db",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968712637,
+      "stop" : 1767968714707,
+      "duration" : 2070
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Konten utama memuat link eksternal valid",
+    "uid" : "4183397c73750e89",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968714712,
+      "stop" : 1767968718377,
+      "duration" : 3665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi akurasi konten dan informasi versi",
+    "uid" : "7e7df96716e33ba",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968718383,
+      "stop" : 1767968719678,
+      "duration" : 1295
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Verifikasi halaman judul Forum ditampilkan dengan benar",
+    "uid" : "dc06640de8b365da",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968833781,
+      "stop" : 1767968840362,
+      "duration" : 6581
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Halaman forum menampilkan judul utama dan intro",
+    "uid" : "f345ff5a2b8b3512",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968840432,
+      "stop" : 1767968843360,
+      "duration" : 2928
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Gambar forum utama dimuat dengan baik",
+    "uid" : "ab305a281c6bafd9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968843367,
+      "stop" : 1767968845450,
+      "duration" : 2083
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Section Global Forum menampilkan CTA ke GitHub Discussions",
+    "uid" : "6134abb919afa6d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968845460,
+      "stop" : 1767968848424,
+      "duration" : 2964
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Banner konferensi muncul dan dapat diklik",
+    "uid" : "a08c15d27475bbdd",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968848431,
+      "stop" : 1767968850513,
+      "duration" : 2082
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Link eksternal utama valid",
+    "uid" : "a54d88cb75277d0e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1767968850524,
+      "stop" : 1767968853425,
+      "duration" : 2901
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

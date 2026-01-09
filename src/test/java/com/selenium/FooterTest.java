@@ -120,7 +120,7 @@ public class FooterTest {
                 Thread.sleep(1000);
             }
             MainApp.captureFullPageScreenshot(driver, "cache/Footer_Links.png");
-        });
+        }, "FooterTest");
     }
 
     private void acceptCookiesIfPresent() {

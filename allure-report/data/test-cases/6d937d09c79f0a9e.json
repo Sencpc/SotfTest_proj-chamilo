@@ -1,0 +1,92 @@
+{
+  "uid" : "6d937d09c79f0a9e",
+  "name" : "Gambar forum utama dimuat dengan baik",
+  "fullName" : "com.selenium.ForumPageTest.shouldRenderForumImage",
+  "historyId" : "57c812c577973f30624b06a6ea4ab99d",
+  "time" : {
+    "start" : 1767877850659,
+    "stop" : 1767877852728,
+    "duration" : 2069
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767877790322,
+      "stop" : 1767877843544,
+      "duration" : 53222
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767877860617,
+      "stop" : 1767877860768,
+      "duration" : 151
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldRenderForumImage"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "30892@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6d937d09c79f0a9e.json",
+  "parameterValues" : [ ]
+}

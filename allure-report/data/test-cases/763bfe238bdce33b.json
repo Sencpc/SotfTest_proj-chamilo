@@ -1,0 +1,102 @@
+{
+  "uid" : "763bfe238bdce33b",
+  "name" : "Verifikasi Email field ada dan berfungsi",
+  "fullName" : "com.selenium.ContactPageTest.shouldDisplayEmailField",
+  "historyId" : "6eaca50436ae76634982dde261f1100",
+  "time" : {
+    "start" : 1767951796078,
+    "stop" : 1767951796118,
+    "duration" : 40
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767951763389,
+      "stop" : 1767951769335,
+      "duration" : 5946
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767951798975,
+      "stop" : 1767951800149,
+      "duration" : 1174
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayEmailField"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "host",
+    "value" : "bas"
+  }, {
+    "name" : "thread",
+    "value" : "21388@bas.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "781583d98ed550c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767942831635,
+        "stop" : 1767942831661,
+        "duration" : 26
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "763bfe238bdce33b.json",
+  "parameterValues" : [ ]
+}

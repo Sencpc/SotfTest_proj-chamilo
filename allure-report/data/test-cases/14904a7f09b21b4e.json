@@ -1,0 +1,92 @@
+{
+  "uid" : "14904a7f09b21b4e",
+  "name" : "Karakter khusus tidak memicu error dan halaman tetap ter-render",
+  "fullName" : "com.selenium.GlobalSearchTest.shouldHandleSpecialCharacters",
+  "historyId" : "2a87d4a4793a4450381761f7757cf025",
+  "time" : {
+    "start" : 1767868584215,
+    "stop" : 1767868647993,
+    "duration" : 63778
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startDriver",
+    "time" : {
+      "start" : 1767868581208,
+      "stop" : 1767868584213,
+      "duration" : 3005
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1767868647995,
+      "stop" : 1767868648166,
+      "duration" : 171
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldHandleSpecialCharacters"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-8844f30a-f514-4974-9818-a02f31dd5b09"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25044@SencPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "14904a7f09b21b4e.json",
+  "parameterValues" : [ ]
+}

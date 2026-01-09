@@ -1,0 +1,102 @@
+{
+  "uid" : "df7a95eb1c0a3f3e",
+  "name" : "Verifikasi BeezNest Latino provider card ditampilkan",
+  "fullName" : "com.selenium.ProvidersPageTest.shouldDisplayBeezNestLatinoCard",
+  "historyId" : "25e3b2fa9038d930ce592a85a3d15488",
+  "time" : {
+    "start" : 1767951883437,
+    "stop" : 1767951883466,
+    "duration" : 29
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767951861376,
+      "stop" : 1767951867556,
+      "duration" : 6180
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767951886514,
+      "stop" : 1767951888269,
+      "duration" : 1755
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayBeezNestLatinoCard"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "host",
+    "value" : "bas"
+  }, {
+    "name" : "thread",
+    "value" : "26992@bas.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d5cbb559aa312b90",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767943718105,
+        "stop" : 1767943718129,
+        "duration" : 24
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "df7a95eb1c0a3f3e.json",
+  "parameterValues" : [ ]
+}

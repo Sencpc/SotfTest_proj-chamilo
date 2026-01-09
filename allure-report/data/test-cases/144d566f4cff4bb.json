@@ -1,0 +1,92 @@
+{
+  "uid" : "144d566f4cff4bb",
+  "name" : "Scroll ke bagian 'Do you like Chamilo?', klik tombol CONTRIBUTE, lalu kembali ke home via logo",
+  "fullName" : "com.selenium.ContributePageTest.shouldNavigateToContributeAndBackHomeViaLogo",
+  "historyId" : "bd2e65553131cd98038da87a74a30169",
+  "time" : {
+    "start" : 1767900593258,
+    "stop" : 1767900620477,
+    "duration" : 27219
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpBase",
+    "time" : {
+      "start" : 1767900592160,
+      "stop" : 1767900593176,
+      "duration" : 1016
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownBase",
+    "time" : {
+      "start" : 1767900620523,
+      "stop" : 1767900840394,
+      "duration" : 219871
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ContributePageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ContributePageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldNavigateToContributeAndBackHomeViaLogo"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-1497d57a-abcc-4770-9c16-4013a7155696"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ContributePageTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-AOFLLK79"
+  }, {
+    "name" : "thread",
+    "value" : "66280@LAPTOP-AOFLLK79.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "144d566f4cff4bb.json",
+  "parameterValues" : [ ]
+}

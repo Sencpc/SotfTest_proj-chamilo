@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //a[normalize-space()='Events' or normalize-space()='EVENTS'] (tried for 10 second(s) with 500 milliseconds interval)",
+      "children" : [ {
+        "name" : "Akses halaman Events dari navbar, lalu scroll perlahan sampai paling bawah",
+        "uid" : "5065e5cf2b64e368",
+        "parentUid" : "3bcbb04a236da04ce533699f5c0fe73a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1767950067974,
+          "stop" : 1767950227177,
+          "duration" : 159203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3bcbb04a236da04ce533699f5c0fe73a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

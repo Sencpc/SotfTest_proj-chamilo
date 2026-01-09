@@ -1,0 +1,60 @@
+{
+  "uid" : "c1f06cc824e949eb",
+  "name" : "Konten utama memuat link eksternal valid",
+  "fullName" : "com.selenium.DownloadPageTest.shouldValidateExternalLinks",
+  "historyId" : "2c448a0a142d200be3eec59df87acdf7",
+  "time" : {
+    "start" : 1767868834442,
+    "stop" : 1767868873389,
+    "duration" : 38947
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldValidateExternalLinks"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-8844f30a-f514-4974-9818-a02f31dd5b09"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25044@SencPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c1f06cc824e949eb.json",
+  "parameterValues" : [ ]
+}

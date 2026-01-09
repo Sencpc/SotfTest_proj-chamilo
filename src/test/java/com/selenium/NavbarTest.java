@@ -131,7 +131,7 @@ public class NavbarTest {
             logSuccess("Clicked Logo");
 
             MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Final.png");
-        });
+        }, "NavbarTest");
     }
 
     @AfterClass

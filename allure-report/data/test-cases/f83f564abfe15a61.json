@@ -1,0 +1,92 @@
+{
+  "uid" : "f83f564abfe15a61",
+  "name" : "Blok informasi versi menampilkan detail rilis dan lisensi",
+  "fullName" : "com.selenium.DownloadPageTest.shouldDisplayVersionInfo",
+  "historyId" : "4967a0ff9731a5224d475e9c2c507994",
+  "time" : {
+    "start" : 1767878666929,
+    "stop" : 1767878669841,
+    "duration" : 2912
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767878605278,
+      "stop" : 1767878658944,
+      "duration" : 53666
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767878679675,
+      "stop" : 1767878679783,
+      "duration" : 108
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayVersionInfo"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "4996@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f83f564abfe15a61.json",
+  "parameterValues" : [ ]
+}

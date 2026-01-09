@@ -1,0 +1,92 @@
+{
+  "uid" : "558842cd28c63ff8",
+  "name" : "Masuk ke halaman Demo melalui Navbar",
+  "fullName" : "com.selenium.DemoPageTest.shouldNavigateToDemoPage",
+  "historyId" : "893c0795f49f57ea104efaad222fa0c6",
+  "time" : {
+    "start" : 1767942834761,
+    "stop" : 1767942885392,
+    "duration" : 50631
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767942832602,
+      "stop" : 1767942834760,
+      "duration" : 2158
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767942892296,
+      "stop" : 1767942892510,
+      "duration" : 214
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.DemoPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.DemoPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldNavigateToDemoPage"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.DemoPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "558842cd28c63ff8.json",
+  "parameterValues" : [ ]
+}
