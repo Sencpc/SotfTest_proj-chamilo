@@ -76,6 +76,10 @@
           <groupId>io.qameta.allure</groupId>
           <artifactId>allure-maven</artifactId>
           <version>2.11.2</version>
+          <configuration>
+            <resultsDirectory>${basedir}/allure-results</resultsDirectory>
+            <reportDirectory>${basedir}/allure-report</reportDirectory>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
