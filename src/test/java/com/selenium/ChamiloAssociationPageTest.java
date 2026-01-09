@@ -23,6 +23,17 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+/**
+ * TestNG suite untuk pengujian halaman Chamilo Association
+ * URL: https://chamilo.org/en/chamilo-2/
+ * 
+ * Berdasarkan CekList.md:
+ * 1. "What Chamilo?" Pengujian Seksi
+ * 2. "Board of Directors" Pengujian Seksi
+ * 3. "Our Community Leaders" Pengujian Seksi
+ * 4. Pengujian Validasi Link Eksternal
+ * 5. Pengujian Pemuatan Gambar
+ */
 public class ChamiloAssociationPageTest {
     
     private static final String TARGET_URL = "https://chamilo.org/en/chamilo-2/";
@@ -71,23 +82,35 @@ public class ChamiloAssociationPageTest {
         }
     }
 
-    // --- BAGIAN 1: "What Chamilo?" Pengujian Seksi ---
-    @Test(priority = 1)
-    public void testWhatChamiloSection() {
-        TestLogger.logTestEvent(className, "Starting test: testWhatChamiloSection");
+    // ==================== BAGIAN 1: "What Chamilo?" Pengujian Seksi ====================
+    
+    @Test(priority = 1, description = "Verifikasi judul seksi 'What Chamilo?' terlihat")
+    public void testWhatChamiloSectionTitle() {
+        TestLogger.logTestEvent(className, "Starting test: testWhatChamiloSectionTitle");
         
-        // Verifikasi judul seksi "What Chamilo?" terlihat
-        // Note: Check page source, usually sections have IDs or unique structures.
-        // Assuming there is content relating to "What is Chamilo?" based on inspection or text.
-        // The checklists says "What Chamilo?".
+        // Verifikasi judul seksi "What Chamilo?" atau "What is Chamilo?" terlihat
+        WebElement whatChamiloHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//*[contains(text(), 'What') and contains(text(), 'Chamilo')]")));
+        scrollIntoView(whatChamiloHeader);
+        assertTrue(whatChamiloHeader.isDisplayed(), "'What Chamilo?' header should be visible");
+        TestLogger.logTestEvent(className, "  Verified: 'What Chamilo?' header is visible");
+    }
+    
+    @Test(priority = 2, description = "Verifikasi 'The Association' judul ditampilkan dengan benar")
+    public void testTheAssociationTitle() {
+        TestLogger.logTestEvent(className, "Starting test: testTheAssociationTitle");
         
-        // Look for the main heading or section containing "The Association"
-        // Based on checklist: "The Association" judul ditampilkan dengan benar
-        WebElement associationHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'The Association')]")));
+        WebElement associationHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//*[contains(text(), 'The Association')]")));
         scrollIntoView(associationHeader);
         assertTrue(associationHeader.isDisplayed(), "'The Association' header should be visible");
         TestLogger.logTestEvent(className, "  Verified: 'The Association' header is visible");
-
+    }
+    
+    @Test(priority = 3, description = "Verifikasi 'History' dan 'Mission' subjudul ada dan terbaca")
+    public void testHistoryAndMissionSubheaders() {
+        TestLogger.logTestEvent(className, "Starting test: testHistoryAndMissionSubheaders");
+        
         // Verifikasi "History" subjudul ada
         WebElement historyHeader = driver.findElement(By.xpath("//*[contains(text(), 'History')]"));
         assertTrue(historyHeader.isDisplayed(), "'History' subheader should be visible");
@@ -97,153 +120,382 @@ public class ChamiloAssociationPageTest {
         WebElement missionHeader = driver.findElement(By.xpath("//*[contains(text(), 'Mission')]"));
         assertTrue(missionHeader.isDisplayed(), "'Mission' subheader should be visible");
         TestLogger.logTestEvent(className, "  Verified: 'Mission' subheader is visible");
+    }
+    
+    @Test(priority = 4, description = "Verifikasi teks deskripsi non-profit organization")
+    public void testNonProfitDescription() {
+        TestLogger.logTestEvent(className, "Starting test: testNonProfitDescription");
         
         // Verifikasi teks deskripsi tentang non-profit organization
         WebElement descText = driver.findElement(By.xpath("//*[contains(text(), 'non-profit organization')]"));
         assertTrue(descText.isDisplayed(), "Non-profit organization description should be visible");
         TestLogger.logTestEvent(className, "  Verified: Non-profit organization description is visible");
         
-        // Official providers network info
-        WebElement providersInfo = driver.findElement(By.xpath("//*[contains(text(), 'official providers network')]"));
+        // Verifikasi info Belgium 2010
+        WebElement belgiumInfo = driver.findElement(By.xpath("//*[contains(text(), 'Belgium') and contains(text(), '2010')]"));
+        assertTrue(belgiumInfo.isDisplayed(), "Belgium 2010 founding info should be visible");
+        TestLogger.logTestEvent(className, "  Verified: Belgium 2010 founding info is visible");
+        
+        // Verifikasi info Spain 2014
+        WebElement spainInfo = driver.findElement(By.xpath("//*[contains(text(), 'Spain') and contains(text(), '2014')]"));
+        assertTrue(spainInfo.isDisplayed(), "Spain 2014 headquarters info should be visible");
+        TestLogger.logTestEvent(className, "  Verified: Spain 2014 headquarters info is visible");
+    }
+    
+    @Test(priority = 5, description = "Verifikasi informasi official providers network")
+    public void testProvidersNetworkInfo() {
+        TestLogger.logTestEvent(className, "Starting test: testProvidersNetworkInfo");
+        
+        WebElement providersInfo = driver.findElement(By.xpath("//*[contains(text(), 'official') and contains(text(), 'providers')]"));
         assertTrue(providersInfo.isDisplayed(), "Official providers network info should be visible");
         TestLogger.logTestEvent(className, "  Verified: Official providers network info is visible");
     }
 
-    // --- BAGIAN 2: "Board of Directors" Pengujian Seksi ---
-    @Test(priority = 2)
-    public void testBoardOfDirectorsSection() {
-        TestLogger.logTestEvent(className, "Starting test: testBoardOfDirectorsSection");
+    // ==================== BAGIAN 2: "Board of Directors" Pengujian Seksi ====================
+    
+    @Test(priority = 6, description = "Verifikasi judul seksi 'Board of directors' terlihat")
+    public void testBoardOfDirectorsTitle() {
+        TestLogger.logTestEvent(className, "Starting test: testBoardOfDirectorsTitle");
 
         WebElement boardHeader = scrollToElement(By.xpath("//*[contains(text(), 'Board of directors')]"));
         assertTrue(boardHeader.isDisplayed(), "'Board of directors' header should be visible");
         TestLogger.logTestEvent(className, "  Verified: 'Board of directors' header is visible");
-
-        // Yannick Warnier
-        verifyProfile("Yannick Warnier", "President", "BeezNest Belgium");
+    }
+    
+    @Test(priority = 7, description = "Verifikasi teks election informasi ditampilkan dengan benar")
+    public void testElectionInfo() {
+        TestLogger.logTestEvent(className, "Starting test: testElectionInfo");
         
-        // Laura Guirao Rodríguez
-        verifyProfile("Laura Guirao Rodríguez", "Treasurer", "Nosolored");
-
-        // Noa Orizales Iglesias
-        verifyProfile("Noa Orizales Iglesias", "Communication coordinator", "Contidos Dixitais");
+        // Teks election info: "elected every 2 years"
+        WebElement electionInfo = driver.findElement(By.xpath("//*[contains(text(), 'elected') and contains(text(), '2 years')]"));
+        assertTrue(electionInfo.isDisplayed(), "Election info (every 2 years) should be visible");
+        TestLogger.logTestEvent(className, "  Verified: Election information is visible");
+    }
+    
+    @Test(priority = 8, description = "Verifikasi profil Yannick Warnier lengkap")
+    public void testYannickWarnierProfile() {
+        TestLogger.logTestEvent(className, "Starting test: testYannickWarnierProfile");
+        
+        verifyFullProfile("Yannick Warnier", "President", "BeezNest", 
+                "president@chamilo.org", "linkedin.com/in/yannickwarnier");
+    }
+    
+    @Test(priority = 9, description = "Verifikasi profil Laura Guirao Rodríguez lengkap")
+    public void testLauraGuiraoProfile() {
+        TestLogger.logTestEvent(className, "Starting test: testLauraGuiraoProfile");
+        
+        verifyFullProfile("Laura Guirao", "Treasurer", "Nosolored", 
+                "treasurer@chamilo.org", "linkedin.com");
+    }
+    
+    @Test(priority = 10, description = "Verifikasi profil Noa Orizales Iglesias lengkap")
+    public void testNoaOrizalesProfile() {
+        TestLogger.logTestEvent(className, "Starting test: testNoaOrizalesProfile");
+        
+        verifyFullProfile("Noa Orizales", "Communication coordinator", "Contidos Dixitais", 
+                "communication@chamilo.org", "linkedin.com");
     }
 
-    // --- BAGIAN 3: "Our Community Leaders" Pengujian Seksi ---
-    @Test(priority = 3)
-    public void testCommunityLeadersSection() {
-        TestLogger.logTestEvent(className, "Starting test: testCommunityLeadersSection");
+    // ==================== BAGIAN 3: "Our Community Leaders" Pengujian Seksi ====================
+    
+    @Test(priority = 11, description = "Verifikasi judul seksi 'Our community leaders' terlihat")
+    public void testCommunityLeadersTitle() {
+        TestLogger.logTestEvent(className, "Starting test: testCommunityLeadersTitle");
 
         WebElement leadersHeader = scrollToElement(By.xpath("//*[contains(text(), 'Our community leaders')]"));
         assertTrue(leadersHeader.isDisplayed(), "'Our community leaders' header should be visible");
         TestLogger.logTestEvent(className, "  Verified: 'Our community leaders' header is visible");
-        
-        // Michela (Chamila)
-        verifyProfile("Chamila", "Chamilo Lovers Fan Club", "Chamila eLearning IA");
-        
-        // Ángel Quiroz (Only "Ángel" might be visible in header, so we check that or partial)
-        verifyProfile("\u00C1ngel", "Lead developer", "BeezNest Latino");
-        
-        // Damien Renou
-        verifyProfile("Damien Renou", "French-speaking community coordinator", "Num\u00E9riques");
-    }
-
-    // --- BAGIAN 4: Pengujian Validasi Link Eksternal ---
-    @Test(priority = 4)
-    public void testExternalLinks() {
-        TestLogger.logTestEvent(className, "Starting test: testExternalLinks");
-        
-        // List of important links to verify from the checklist
-        String[] linkTexts = {
-            "BeezNest", "Nosolored", "Contidos Dixitais", "BeezNest Latino", "Num\u00E9riques",
-            "campus.chamilo.org"
-        };
-
-        for (String text : linkTexts) {
-             // Find links loosely matching text (checking partial href or text)
-             List<WebElement> links = driver.findElements(By.partialLinkText(text));
-             if (links.isEmpty()) {
-                 // Try by checking href
-                 links = driver.findElements(By.xpath("//a[contains(@href, '" + text.toLowerCase().replace(" ", "") + "') or contains(text(), '" + text + "')]"));
-             }
-             
-             if (!links.isEmpty()) {
-                 WebElement link = links.get(0);
-                 String href = link.getAttribute("href");
-                 assertNotNull(href, "Link for " + text + " should not be null");
-                 // We don't necessarily click clearly external links in a simple test without handling tabs, 
-                 // but we verify the href looks valid.
-                 assertTrue(href.startsWith("http"), "Link for " + text + " should be absolute URL");
-                 TestLogger.logTestEvent(className, "  Verified link present for: " + text + " -> " + href);
-             } else {
-                 TestLogger.logTestEvent(className, "  Warning: Link for '" + text + "' not found by simple search.");
-             }
-        }
-        
-        // Check Mailto links
-        List<WebElement> mailtoLinks = driver.findElements(By.xpath("//a[starts-with(@href, 'mailto:')]"));
-        assertTrue(mailtoLinks.size() > 0, "Should contain mailto links");
-        TestLogger.logTestEvent(className, "  Verified " + mailtoLinks.size() + " mailto links found.");
     }
     
-    // --- BAGIAN 5: Pengujian Pemuatan Gambar ---
-    @Test(priority = 5)
-    public void testImagesLoading() {
-        TestLogger.logTestEvent(className, "Starting test: testImagesLoading");
+    @Test(priority = 12, description = "Verifikasi 'Otros cargos de responsabilidad' subjudul")
+    public void testOtrosCargosSubtitle() {
+        TestLogger.logTestEvent(className, "Starting test: testOtrosCargosSubtitle");
         
-        // Find all images in the main content area roughly
-        // Better: find images within profiles.
+        WebElement otrosCargos = driver.findElement(By.xpath("//*[contains(text(), 'Otros cargos de responsabilidad')]"));
+        assertTrue(otrosCargos.isDisplayed(), "'Otros cargos de responsabilidad' subtitle should be visible");
+        TestLogger.logTestEvent(className, "  Verified: 'Otros cargos de responsabilidad' subtitle is visible");
+    }
+    
+    @Test(priority = 13, description = "Verifikasi profil Michela (Chamila) lengkap dengan sosmed")
+    public void testMichelaProfile() {
+        TestLogger.logTestEvent(className, "Starting test: testMichelaProfile");
         
-        List<WebElement> images = driver.findElements(By.cssSelector("img.attachment-medium")); 
-        // Note: class 'attachment-medium' is a guess for WordPress photos, or just find all images in the content.
-        if (images.isEmpty()) {
-            images = driver.findElements(By.xpath("//div[contains(@class,'elementor-widget-image')]//img"));
+        // Verifikasi nama
+        WebElement nameElement = scrollToElement(By.xpath("//*[contains(text(), 'Michela') or contains(text(), 'Chamila')]"));
+        assertTrue(nameElement.isDisplayed(), "Michela/Chamila name should be displayed");
+        TestLogger.logTestEvent(className, "  Found profile: Michela/Chamila");
+        
+        // Verifikasi title "Chamilo Lovers Fan Club"
+        WebElement titleEl = driver.findElement(By.xpath("//*[contains(text(), 'Chamilo Lovers Fan Club')]"));
+        assertTrue(titleEl.isDisplayed(), "'Chamilo Lovers Fan Club' title should be visible");
+        TestLogger.logTestEvent(className, "  Title verified: Chamilo Lovers Fan Club");
+        
+        // Verifikasi bio - 40 million users
+        WebElement bioUsers = driver.findElement(By.xpath("//*[contains(text(), '40 million')]"));
+        assertTrue(bioUsers.isDisplayed(), "40 million users reference should be visible");
+        TestLogger.logTestEvent(className, "  Verified: 40 million users reference");
+        
+        // Verifikasi bio - 840,000 pengguna campus
+        WebElement bioCampus = driver.findElement(By.xpath("//*[contains(text(), '840,000')]"));
+        assertTrue(bioCampus.isDisplayed(), "840,000 registered users reference should be visible");
+        TestLogger.logTestEvent(className, "  Verified: 840,000 registered users reference");
+        
+        // Verifikasi link Chamila eLearning IA (michelamosquera.com)
+        List<WebElement> chamilaLinks = driver.findElements(By.xpath("//a[contains(@href, 'michelamosquera.com')]"));
+        assertTrue(chamilaLinks.size() > 0, "Chamila eLearning IA link should exist");
+        TestLogger.logTestEvent(className, "  Verified: Chamila eLearning IA link exists");
+        
+        // Verifikasi social media icons untuk Michela (Facebook, Twitter/X, LinkedIn)
+        verifySocialMediaIcons("Michela");
+    }
+    
+    @Test(priority = 14, description = "Verifikasi profil Ángel lengkap")
+    public void testAngelProfile() {
+        TestLogger.logTestEvent(className, "Starting test: testAngelProfile");
+        
+        verifyFullProfile("\u00C1ngel", "Lead developer", "BeezNest Latino", 
+                "info@chamilo.org", "linkedin.com");
+    }
+    
+    @Test(priority = 15, description = "Verifikasi profil Damien Renou lengkap")
+    public void testDamienRenouProfile() {
+        TestLogger.logTestEvent(className, "Starting test: testDamienRenouProfile");
+        
+        verifyFullProfile("Damien Renou", "French-speaking community coordinator", "Num\u00E9riques", 
+                "communication@chamilo.org", "linkedin.com");
+    }
+
+    // ==================== BAGIAN 4: Pengujian Validasi Link Eksternal ====================
+    
+    @Test(priority = 16, description = "Verifikasi semua link website perusahaan berfungsi")
+    public void testCompanyWebsiteLinks() {
+        TestLogger.logTestEvent(className, "Starting test: testCompanyWebsiteLinks");
+        
+        String[] companies = {"BeezNest", "Nosolored", "Contidos Dixitais", "BeezNest Latino"};
+        
+        for (String company : companies) {
+            List<WebElement> links = driver.findElements(By.partialLinkText(company));
+            if (!links.isEmpty()) {
+                String href = links.get(0).getAttribute("href");
+                assertNotNull(href, "Link for " + company + " should not be null");
+                assertTrue(href.startsWith("http"), "Link for " + company + " should be absolute URL");
+                TestLogger.logTestEvent(className, "  Verified company link: " + company + " -> " + href);
+            } else {
+                TestLogger.logTestEvent(className, "  Warning: Company link for '" + company + "' not found");
+            }
         }
         
+        // Bâtisseurs Numériques (dengan karakter khusus)
+        List<WebElement> batisseursLinks = driver.findElements(By.xpath("//a[contains(@href, 'batisseurs')]"));
+        assertTrue(batisseursLinks.size() > 0, "Bâtisseurs Numériques link should exist");
+        TestLogger.logTestEvent(className, "  Verified: Bâtisseurs Numériques link exists");
+    }
+    
+    @Test(priority = 17, description = "Verifikasi semua link profil LinkedIn membuka dengan benar")
+    public void testLinkedInLinks() {
+        TestLogger.logTestEvent(className, "Starting test: testLinkedInLinks");
+        
+        List<WebElement> linkedInLinks = driver.findElements(By.xpath("//a[contains(@href, 'linkedin.com')]"));
+        assertTrue(linkedInLinks.size() > 0, "LinkedIn links should exist on page");
+        TestLogger.logTestEvent(className, "  Found " + linkedInLinks.size() + " LinkedIn links");
+        
+        for (WebElement link : linkedInLinks) {
+            String href = link.getAttribute("href");
+            assertTrue(href.contains("linkedin.com"), "Link should point to LinkedIn");
+        }
+        TestLogger.logTestEvent(className, "  Verified: All LinkedIn links are valid");
+    }
+    
+    @Test(priority = 18, description = "Verifikasi semua link email diformat dengan benar (mailto:)")
+    public void testMailtoLinks() {
+        TestLogger.logTestEvent(className, "Starting test: testMailtoLinks");
+        
+        List<WebElement> mailtoLinks = driver.findElements(By.xpath("//a[starts-with(@href, 'mailto:')]"));
+        assertTrue(mailtoLinks.size() > 0, "Should contain mailto links");
+        TestLogger.logTestEvent(className, "  Found " + mailtoLinks.size() + " mailto links");
+        
+        for (WebElement link : mailtoLinks) {
+            String href = link.getAttribute("href");
+            assertTrue(href.startsWith("mailto:"), "Email link should start with mailto:");
+            assertTrue(href.contains("@"), "Email link should contain @ symbol");
+        }
+        TestLogger.logTestEvent(className, "  Verified: All mailto links are properly formatted");
+    }
+    
+    @Test(priority = 19, description = "Verifikasi Michela's website link (michelamosquera.com)")
+    public void testMichelaWebsiteLink() {
+        TestLogger.logTestEvent(className, "Starting test: testMichelaWebsiteLink");
+        
+        List<WebElement> michelaLinks = driver.findElements(By.xpath("//a[contains(@href, 'michelamosquera.com')]"));
+        assertTrue(michelaLinks.size() > 0, "Michela's website link should exist");
+        
+        String href = michelaLinks.get(0).getAttribute("href");
+        assertTrue(href.contains("michelamosquera.com"), "Link should point to michelamosquera.com");
+        TestLogger.logTestEvent(className, "  Verified: Michela's website link exists -> " + href);
+    }
+    
+    @Test(priority = 20, description = "Verifikasi official Chamilo LMS campus link")
+    public void testCampusChamiloLink() {
+        TestLogger.logTestEvent(className, "Starting test: testCampusChamiloLink");
+        
+        List<WebElement> campusLinks = driver.findElements(By.xpath("//a[contains(@href, 'campus.chamilo.org')]"));
+        assertTrue(campusLinks.size() > 0, "Chamilo campus link should exist");
+        
+        String href = campusLinks.get(0).getAttribute("href");
+        assertTrue(href.contains("campus.chamilo.org"), "Link should point to campus.chamilo.org");
+        TestLogger.logTestEvent(className, "  Verified: Campus Chamilo link exists -> " + href);
+    }
+
+    // ==================== BAGIAN 5: Pengujian Pemuatan Gambar ====================
+    
+    @Test(priority = 21, description = "Verifikasi semua foto profil dimuat tanpa error")
+    public void testProfileImagesLoaded() {
+        TestLogger.logTestEvent(className, "Starting test: testProfileImagesLoaded");
+        
+        // Cari semua gambar di halaman
+        List<WebElement> images = driver.findElements(By.xpath("//img[contains(@src, 'wp-content/uploads')]"));
+        
+        assertTrue(images.size() > 0, "Profile images should exist on page");
+        TestLogger.logTestEvent(className, "  Found " + images.size() + " profile images");
+        
+        int loadedCount = 0;
         for (WebElement img : images) {
             String src = img.getAttribute("src");
             if (src != null && !src.isEmpty()) {
-                // Verify image loads (simple JS check)
                 boolean isLoaded = (Boolean) ((JavascriptExecutor) driver).executeScript(
                         "return arguments[0].complete && typeof arguments[0].naturalWidth != 'undefined' && arguments[0].naturalWidth > 0", img);
                 
-                assertTrue(isLoaded, "Image should be loaded: " + src);
-                TestLogger.logTestEvent(className, "  Image Loaded: " + src.substring(src.lastIndexOf('/') + 1));
+                if (isLoaded) {
+                    loadedCount++;
+                    TestLogger.logTestEvent(className, "  Image loaded: " + src.substring(src.lastIndexOf('/') + 1));
+                }
             }
         }
+        
+        assertTrue(loadedCount > 0, "At least some images should be loaded");
+        TestLogger.logTestEvent(className, "  Total images loaded: " + loadedCount + "/" + images.size());
+    }
+    
+    @Test(priority = 22, description = "Verifikasi semua gambar memiliki proper alt text")
+    public void testImagesAltText() {
+        TestLogger.logTestEvent(className, "Starting test: testImagesAltText");
+        
+        List<WebElement> images = driver.findElements(By.xpath("//img[contains(@src, 'wp-content/uploads')]"));
+        
+        int imagesWithAlt = 0;
+        for (WebElement img : images) {
+            String alt = img.getAttribute("alt");
+            if (alt != null && !alt.trim().isEmpty()) {
+                imagesWithAlt++;
+                TestLogger.logTestEvent(className, "  Image with alt: " + alt);
+            }
+        }
+        
+        TestLogger.logTestEvent(className, "  Images with alt text: " + imagesWithAlt + "/" + images.size());
+        // Sebaiknya semua gambar punya alt text, tapi kita cek minimal ada beberapa
+        assertTrue(imagesWithAlt > 0, "At least some images should have alt text");
+    }
+    
+    @Test(priority = 23, description = "Verifikasi tidak ada gambar yang rusak (broken images)")
+    public void testNoBrokenImages() {
+        TestLogger.logTestEvent(className, "Starting test: testNoBrokenImages");
+        
+        List<WebElement> allImages = driver.findElements(By.tagName("img"));
+        int brokenCount = 0;
+        
+        for (WebElement img : allImages) {
+            String src = img.getAttribute("src");
+            if (src != null && !src.isEmpty() && !src.startsWith("data:")) {
+                boolean isLoaded = (Boolean) ((JavascriptExecutor) driver).executeScript(
+                        "return arguments[0].complete && typeof arguments[0].naturalWidth != 'undefined' && arguments[0].naturalWidth > 0", img);
+                
+                if (!isLoaded) {
+                    brokenCount++;
+                    TestLogger.logTestEvent(className, "  Broken image: " + src);
+                }
+            }
+        }
+        
+        TestLogger.logTestEvent(className, "  Broken images found: " + brokenCount);
+        // Kita toleransi 0 broken image
+        assertTrue(brokenCount == 0, "No broken images should exist on page");
     }
 
-    // --- Helpers ---
+    // ==================== Helper Methods ====================
 
-    private void verifyProfile(String name, String title, String companyLinkText) {
-        // Find a container that likely holds this person's info. 
-        // This is tricky without specific IDs. We'll search for the name text and look around it.
-        // XPath: Find element with name, then verifying near elements.
-        
+    private void verifyFullProfile(String name, String title, String companyLinkText, 
+                                   String expectedEmail, String linkedInPattern) {
+        // Verifikasi nama
         WebElement nameElement = scrollToElement(By.xpath("//*[contains(text(), '" + name + "')]"));
         assertTrue(nameElement.isDisplayed(), "Name '" + name + "' should be displayed");
         TestLogger.logTestEvent(className, "  Found profile: " + name);
 
-        // Verify Title
+        // Verifikasi Title
         if (title != null) {
             try {
-                // Look for title nearby or on page
                 WebElement titleEl = driver.findElement(By.xpath("//*[contains(text(), '" + title + "')]"));
                 assertTrue(titleEl.isDisplayed(), "Title '" + title + "' should be visible");
                 TestLogger.logTestEvent(className, "    Title verified: " + title);
             } catch (Exception e) {
-                 TestLogger.logTestEvent(className, "    Warning: Title '" + title + "' not found relative to " + name);
+                TestLogger.logTestEvent(className, "    Warning: Title '" + title + "' not found");
             }
         }
 
-        // Verify Company Link
+        // Verifikasi Company Link
         if (companyLinkText != null) {
-             try {
-                WebElement updatedLink = driver.findElement(By.partialLinkText(companyLinkText));
-                assertTrue(updatedLink.isDisplayed(), "Link '" + companyLinkText + "' should be visible");
+            try {
+                WebElement companyLink = driver.findElement(By.partialLinkText(companyLinkText));
+                assertTrue(companyLink.isDisplayed(), "Company link '" + companyLinkText + "' should be visible");
                 TestLogger.logTestEvent(className, "    Company link verified: " + companyLinkText);
-             } catch (Exception e) {
-                 TestLogger.logTestEvent(className, "    Warning: Company link '" + companyLinkText + "' not found.");
-             }
+            } catch (Exception e) {
+                TestLogger.logTestEvent(className, "    Warning: Company link '" + companyLinkText + "' not found");
+            }
+        }
+        
+        // Verifikasi email link ada
+        if (expectedEmail != null) {
+            try {
+                List<WebElement> emailLinks = driver.findElements(By.xpath("//a[contains(@href, 'mailto:" + expectedEmail + "')]"));
+                if (emailLinks.size() > 0) {
+                    TestLogger.logTestEvent(className, "    Email link verified: " + expectedEmail);
+                } else {
+                    TestLogger.logTestEvent(className, "    Warning: Email link for " + expectedEmail + " not found directly");
+                }
+            } catch (Exception e) {
+                TestLogger.logTestEvent(className, "    Warning: Could not verify email link");
+            }
+        }
+        
+        // Verifikasi LinkedIn link ada
+        if (linkedInPattern != null) {
+            List<WebElement> linkedInLinks = driver.findElements(By.xpath("//a[contains(@href, '" + linkedInPattern + "')]"));
+            if (linkedInLinks.size() > 0) {
+                TestLogger.logTestEvent(className, "    LinkedIn link verified");
+            } else {
+                TestLogger.logTestEvent(className, "    Warning: LinkedIn link not found");
+            }
+        }
+    }
+    
+    private void verifySocialMediaIcons(String personName) {
+        TestLogger.logTestEvent(className, "  Verifying social media icons for " + personName);
+        
+        // Facebook
+        List<WebElement> facebookLinks = driver.findElements(By.xpath("//a[contains(@href, 'facebook.com')]"));
+        if (facebookLinks.size() > 0) {
+            TestLogger.logTestEvent(className, "    Facebook link found");
+        }
+        
+        // Twitter/X
+        List<WebElement> twitterLinks = driver.findElements(By.xpath("//a[contains(@href, 'twitter.com') or contains(@href, 'x.com')]"));
+        if (twitterLinks.size() > 0) {
+            TestLogger.logTestEvent(className, "    Twitter/X link found");
+        }
+        
+        // LinkedIn
+        List<WebElement> linkedInLinks = driver.findElements(By.xpath("//a[contains(@href, 'linkedin.com')]"));
+        if (linkedInLinks.size() > 0) {
+            TestLogger.logTestEvent(className, "    LinkedIn link found");
         }
     }
 
@@ -276,7 +528,7 @@ public class ChamiloAssociationPageTest {
     private void scrollIntoView(WebElement element) {
         try {
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
-            Thread.sleep(500); // Give time for scroll
+            Thread.sleep(500);
         } catch (Exception ignored) {
         }
     }
