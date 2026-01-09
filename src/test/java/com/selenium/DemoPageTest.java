@@ -60,12 +60,10 @@ public class DemoPageTest {
             driver.get(CHAMILO_URL);
             acceptCookiesIfPresent();
 
-            // 2. Click Demo
             WebElement demoMenu = wait
                     .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2897 a")));
             demoMenu.click();
 
-            // Wait for URL to update
             wait.until(ExpectedConditions.urlContains("demo"));
 
             logSuccess("Clicked Demo menu and navigated to Demo page");
@@ -78,7 +76,6 @@ public class DemoPageTest {
     @Test(priority = 2, description = "Mengklik tombol Go to Free Campus dan kembali")
     public void shouldClickFreeCampusButton() throws Exception {
         MainApp.executeTest("Click Free Campus Button", "Mengklik tombol Go to Free Campus dan kembali", () -> {
-            // Pastikan kita ada di halaman Demo
             if (!driver.getCurrentUrl().contains("demo")) {
                 driver.get(CHAMILO_URL);
                 wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2897 a"))).click();
@@ -86,14 +83,10 @@ public class DemoPageTest {
 
             String originalWindow = driver.getWindowHandle();
 
-            // Cari tombol "Go to Free Campus"
-            // Menggunakan xpath yang mencari elemen 'a' yang mengandung text "Go to Free
-            // Campus"
             WebElement freeCampusButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
                     By.xpath(
                             "//a[contains(@href, 'campus.chamilo.org') and .//span[contains(text(), 'Go to Free Campus')]]")));
 
-            // Scroll ke view agar bisa diklik
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});",
                     freeCampusButton);
             wait.until(ExpectedConditions.elementToBeClickable(freeCampusButton));
@@ -101,7 +94,6 @@ public class DemoPageTest {
             freeCampusButton.click();
             logSuccess("Clicked 'Go to Free Campus' button");
 
-            // Handle new tab
             java.util.Set<String> windowHandles = driver.getWindowHandles();
             if (windowHandles.size() > 1) {
                 for (String handle : windowHandles) {
@@ -111,21 +103,22 @@ public class DemoPageTest {
                     }
                 }
 
-                // Tunggu sebentar di halaman baru
                 Thread.sleep(3000);
                 logSuccess("Switched to new tab: " + driver.getCurrentUrl());
 
-                driver.close(); // Tutup tab baru
-                driver.switchTo().window(originalWindow); // Kembali ke tab awal
+                MainApp.captureFullPageScreenshot(driver, "cache/DemoPage_FreeCampus_NewTab.png");
+
+                driver.close();
+                driver.switchTo().window(originalWindow);
                 logSuccess("Closed new tab and returned to Demo page");
             } else {
-                // Fallback jika tidak membuka tab baru (jarang terjadi jika target="_blank")
                 Thread.sleep(3000);
+                MainApp.captureFullPageScreenshot(driver, "cache/DemoPage_FreeCampus_SameTab.png");
+
                 driver.navigate().back();
                 logSuccess("Returned to Demo page via Back");
             }
 
-            // Verifikasi kembali ke halaman demo
             wait.until(ExpectedConditions.urlContains("demo"));
             MainApp.captureFullPageScreenshot(driver, "cache/DemoPage_FreeCampusReturn.png");
         }, "DemoPageTest");
@@ -135,28 +128,23 @@ public class DemoPageTest {
     public void shouldCheckHeadingsGrammar() throws Exception {
         MainApp.executeTest("Check Headings Grammar", "Memeriksa tata bahasa pada semua elemen heading di halaman Demo",
                 () -> {
-                    // Pastikan kita ada di halaman Demo
                     if (!driver.getCurrentUrl().contains("demo")) {
                         driver.get(CHAMILO_URL);
                         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2897 a")))
                                 .click();
                     }
 
-                    // List kata-kata informal yang dilarang
                     java.util.Map<String, String> informalWords = new java.util.HashMap<>();
                     informalWords.put("wanna", "want to");
                     informalWords.put("gonna", "going to");
                     informalWords.put("gotta", "have got to");
 
-                    // Cari semua elemen heading h1-h6
                     List<WebElement> headings = driver.findElements(By.cssSelector("h1, h2, h3, h4, h5, h6"));
                     boolean foundGrammarIssue = false;
 
                     logSuccess("Scanning " + headings.size() + " headings for grammar police check...");
 
                     for (WebElement heading : headings) {
-                        // Cek visibilitas agar yang tersembunyi tidak di-scan (opsional, tapi lebih
-                        // akurat visual)
                         if (!heading.isDisplayed())
                             continue;
 
@@ -166,19 +154,13 @@ public class DemoPageTest {
                             String badWord = entry.getKey();
                             String correction = entry.getValue();
 
-                            // Cek word boundary agar tidak mendeteksi 'wanna' di dalam 'wannabe' jika tidak
-                            // diinginkan,
-                            // tapi untuk slang biasanya cukup contains
                             if (text.contains(badWord)) {
-                                // Scroll to element to show it
                                 ((JavascriptExecutor) driver)
                                         .executeScript("arguments[0].scrollIntoView({block: 'center'});", heading);
 
                                 String alertMessage = String.format(
                                         "GRAMMAR POLICE ALERT! Found slang '%s' in heading \"%s\". The Queen demands '%s'!",
                                         badWord.toUpperCase(), heading.getText(), correction.toUpperCase());
-                                // Use System.err or MainApp log if available static, or local
-                                // logSuccess/logError
                                 System.err.println(alertMessage);
                                 foundGrammarIssue = true;
                             }
@@ -210,7 +192,6 @@ public class DemoPageTest {
                 logSuccess("Cookies accepted");
                 return;
             } catch (Exception ignored) {
-                // different region may use another component; keep trying others
             }
         }
     }

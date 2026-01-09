@@ -61,7 +61,6 @@ public class FooterTest {
             driver.get(CHAMILO_URL);
             acceptCookiesIfPresent();
 
-            // Cari footer untuk menghitung jumlah link awal
             WebElement footer = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Footer")));
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", footer);
 
@@ -72,38 +71,28 @@ public class FooterTest {
             String originalWindow = driver.getWindowHandle();
 
             for (int i = 0; i < linkCount; i++) {
-                // Kita harus mencari ulang elemen setiap loop karena halaman mungkin
-                // direfresh/navigasi balik
-                // Pastikan URL benar
                 if (!driver.getCurrentUrl().contains("chamilo.org")) {
                     driver.get(CHAMILO_URL);
                 }
 
-                // Scroll ke footer lagi
                 footer = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Footer")));
                 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", footer);
 
-                // Ambil list lagi
                 footerLinks = footer.findElements(By.tagName("a"));
 
-                // Ambil elemen ke-i
                 WebElement link = footerLinks.get(i);
                 String url = link.getAttribute("href");
                 String title = link.getAttribute("title");
                 String linkText = !link.getText().isEmpty() ? link.getText()
                         : (title != null ? title : "Icon/Image Link");
 
-                // Klik link
-                // Gunakan JS click untuk menghindari tertutup elemen lain (misal chat widget)
                 wait.until(ExpectedConditions.elementToBeClickable(link));
                 ((JavascriptExecutor) driver).executeScript("arguments[0].click();", link);
 
                 logSuccess("Clicked footer link " + (i + 1) + "/" + linkCount + ": " + linkText + " (" + url + ")");
 
-                // Handle tab baru vs tab yang sama
                 Set<String> windowHandles = driver.getWindowHandles();
                 if (windowHandles.size() > 1) {
-                    // Link membuka tab baru (biasanya social media)
                     for (String handle : windowHandles) {
                         if (!handle.equals(originalWindow)) {
                             driver.switchTo().window(handle);
@@ -111,22 +100,23 @@ public class FooterTest {
                         }
                     }
 
-                    Thread.sleep(2000); // Tunggu sebentar untuk melihat hasil
+                    Thread.sleep(3000);
                     logSuccess("Opened in new tab: " + driver.getCurrentUrl());
 
-                    driver.close(); // Tutup tab baru
-                    driver.switchTo().window(originalWindow); // Kembali ke tab utama
+                    MainApp.captureFullPageScreenshot(driver, "cache/FooterLink_" + (i + 1) + "_Opened.png");
+
+                    driver.close();
+                    driver.switchTo().window(originalWindow);
                 } else {
-                    // Link membuka di tab yang sama
-                    Thread.sleep(2000);
+                    Thread.sleep(3000);
                     logSuccess("Opened in same tab: " + driver.getCurrentUrl());
 
-                    // Kembali ke home
+                    MainApp.captureFullPageScreenshot(driver, "cache/FooterLink_" + (i + 1) + "_Opened.png");
+
                     driver.navigate().back();
                     wait.until(ExpectedConditions.urlContains("chamilo.org"));
                 }
 
-                // Jeda sedikit sebelum iterasi berikutnya
                 Thread.sleep(1000);
             }
             MainApp.captureFullPageScreenshot(driver, "cache/Footer_Links.png");
@@ -150,7 +140,6 @@ public class FooterTest {
                 logSuccess("Cookies accepted");
                 return;
             } catch (Exception ignored) {
-                // different region may use another component; keep trying others
             }
         }
     }
