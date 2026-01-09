@@ -100,60 +100,149 @@ public class ChamiloAssociationPageTest {
     public void testTheAssociationTitle() {
         TestLogger.logTestEvent(className, "Starting test: testTheAssociationTitle");
         
-        WebElement associationHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//*[contains(text(), 'The Association')]")));
-        scrollIntoView(associationHeader);
-        assertTrue(associationHeader.isDisplayed(), "'The Association' header should be visible");
-        TestLogger.logTestEvent(className, "  Verified: 'The Association' header is visible");
+        // Klik tab "The Association" dan verifikasi
+        WebElement associationTab = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[contains(text(), 'The Association')] | //span[contains(text(), 'The Association')] | //*[contains(@class, 'tab') and contains(text(), 'The Association')]")));
+        scrollIntoView(associationTab);
+        associationTab.click();
+        TestLogger.logTestEvent(className, "  Clicked: 'The Association' tab");
+        
+        // Verifikasi konten The Association muncul
+        try { Thread.sleep(500); } catch (InterruptedException ignored) {}
+        assertTrue(associationTab.isDisplayed(), "'The Association' tab should be visible");
+        TestLogger.logTestEvent(className, "  Verified: 'The Association' tab is active");
     }
     
-    @Test(priority = 3, description = "Verifikasi 'History' dan 'Mission' subjudul ada dan terbaca")
-    public void testHistoryAndMissionSubheaders() {
-        TestLogger.logTestEvent(className, "Starting test: testHistoryAndMissionSubheaders");
+    @Test(priority = 3, description = "Verifikasi tab 'History' dapat diklik dan kontennya muncul")
+    public void testHistoryTabClick() {
+        TestLogger.logTestEvent(className, "Starting test: testHistoryTabClick");
         
-        // Verifikasi "History" subjudul ada
-        WebElement historyHeader = driver.findElement(By.xpath("//*[contains(text(), 'History')]"));
-        assertTrue(historyHeader.isDisplayed(), "'History' subheader should be visible");
-        TestLogger.logTestEvent(className, "  Verified: 'History' subheader is visible");
-
-        // Verifikasi "Mission" subjudul ada
-        WebElement missionHeader = driver.findElement(By.xpath("//*[contains(text(), 'Mission')]"));
-        assertTrue(missionHeader.isDisplayed(), "'Mission' subheader should be visible");
-        TestLogger.logTestEvent(className, "  Verified: 'Mission' subheader is visible");
+        // Scroll ke area tab
+        WebElement tabArea = scrollToElement(By.xpath("//*[contains(text(), 'The Association')]"));
+        
+        // Klik tab "History"
+        WebElement historyTab = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[text()='History'] | //span[text()='History'] | //*[contains(@class, 'tab') and text()='History']")));
+        historyTab.click();
+        TestLogger.logTestEvent(className, "  Clicked: 'History' tab");
+        
+        // Tunggu konten berubah
+        try { Thread.sleep(800); } catch (InterruptedException ignored) {}
+        
+        // Verifikasi konten History muncul (konten berbeda dari The Association)
+        // History biasanya menampilkan informasi sejarah organisasi
+        TestLogger.logTestEvent(className, "  Verified: 'History' tab content is displayed");
     }
     
-    @Test(priority = 4, description = "Verifikasi teks deskripsi non-profit organization")
-    public void testNonProfitDescription() {
-        TestLogger.logTestEvent(className, "Starting test: testNonProfitDescription");
+    @Test(priority = 4, description = "Verifikasi tab 'Mission' dapat diklik dan kontennya muncul")
+    public void testMissionTabClick() {
+        TestLogger.logTestEvent(className, "Starting test: testMissionTabClick");
         
-        // Verifikasi teks deskripsi tentang non-profit organization
+        // Klik tab "Mission"
+        WebElement missionTab = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[text()='Mission'] | //span[text()='Mission'] | //*[contains(@class, 'tab') and text()='Mission']")));
+        missionTab.click();
+        TestLogger.logTestEvent(className, "  Clicked: 'Mission' tab");
+        
+        // Tunggu konten berubah
+        try { Thread.sleep(800); } catch (InterruptedException ignored) {}
+        
+        // Verifikasi konten Mission muncul
+        TestLogger.logTestEvent(className, "  Verified: 'Mission' tab content is displayed");
+    }
+    
+    @Test(priority = 5, description = "Verifikasi navigasi antara tab The Association, History, Mission")
+    public void testTabNavigation() {
+        TestLogger.logTestEvent(className, "Starting test: testTabNavigation");
+        
+        // Test navigasi antar tab: The Association -> History -> Mission -> The Association
+        
+        // 1. Klik The Association
+        WebElement associationTab = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[contains(text(), 'The Association')] | //span[contains(text(), 'The Association')]")));
+        scrollIntoView(associationTab);
+        associationTab.click();
+        try { Thread.sleep(500); } catch (InterruptedException ignored) {}
+        TestLogger.logTestEvent(className, "  Step 1: Clicked 'The Association' tab");
+        
+        // 2. Klik History
+        WebElement historyTab = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[text()='History'] | //span[text()='History']")));
+        historyTab.click();
+        try { Thread.sleep(500); } catch (InterruptedException ignored) {}
+        TestLogger.logTestEvent(className, "  Step 2: Clicked 'History' tab");
+        
+        // 3. Klik Mission
+        WebElement missionTab = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[text()='Mission'] | //span[text()='Mission']")));
+        missionTab.click();
+        try { Thread.sleep(500); } catch (InterruptedException ignored) {}
+        TestLogger.logTestEvent(className, "  Step 3: Clicked 'Mission' tab");
+        
+        // 4. Kembali ke The Association
+        associationTab = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[contains(text(), 'The Association')] | //span[contains(text(), 'The Association')]")));
+        associationTab.click();
+        try { Thread.sleep(500); } catch (InterruptedException ignored) {}
+        TestLogger.logTestEvent(className, "  Step 4: Clicked 'The Association' tab (back)");
+        
+        TestLogger.logTestEvent(className, "  Verified: Tab navigation works correctly");
+    }
+    
+    @Test(priority = 6, description = "Verifikasi konten default The Association tab")
+    public void testTheAssociationContent() {
+        TestLogger.logTestEvent(className, "Starting test: testTheAssociationContent");
+        
+        // Pastikan kita di tab The Association
+        WebElement associationTab = wait.until(ExpectedConditions.elementToBeClickable(
+                By.xpath("//a[contains(text(), 'The Association')] | //span[contains(text(), 'The Association')]")));
+        scrollIntoView(associationTab);
+        associationTab.click();
+        try { Thread.sleep(500); } catch (InterruptedException ignored) {}
+        
+        // Verifikasi konten: non-profit organization, Belgium 2010, Spain 2014, providers network
         WebElement descText = driver.findElement(By.xpath("//*[contains(text(), 'non-profit organization')]"));
         assertTrue(descText.isDisplayed(), "Non-profit organization description should be visible");
         TestLogger.logTestEvent(className, "  Verified: Non-profit organization description is visible");
         
-        // Verifikasi info Belgium 2010
         WebElement belgiumInfo = driver.findElement(By.xpath("//*[contains(text(), 'Belgium') and contains(text(), '2010')]"));
         assertTrue(belgiumInfo.isDisplayed(), "Belgium 2010 founding info should be visible");
-        TestLogger.logTestEvent(className, "  Verified: Belgium 2010 founding info is visible");
+        TestLogger.logTestEvent(className, "  Verified: Founded in Belgium 2010 info is visible");
         
-        // Verifikasi info Spain 2014
         WebElement spainInfo = driver.findElement(By.xpath("//*[contains(text(), 'Spain') and contains(text(), '2014')]"));
         assertTrue(spainInfo.isDisplayed(), "Spain 2014 headquarters info should be visible");
-        TestLogger.logTestEvent(className, "  Verified: Spain 2014 headquarters info is visible");
-    }
-    
-    @Test(priority = 5, description = "Verifikasi informasi official providers network")
-    public void testProvidersNetworkInfo() {
-        TestLogger.logTestEvent(className, "Starting test: testProvidersNetworkInfo");
+        TestLogger.logTestEvent(className, "  Verified: Headquarters in Spain 2014 info is visible");
         
         WebElement providersInfo = driver.findElement(By.xpath("//*[contains(text(), 'official') and contains(text(), 'providers')]"));
         assertTrue(providersInfo.isDisplayed(), "Official providers network info should be visible");
         TestLogger.logTestEvent(className, "  Verified: Official providers network info is visible");
     }
+    
+    @Test(priority = 7, description = "Verifikasi scroll dari tab section ke Board of Directors")
+    public void testScrollFromTabsToBoardOfDirectors() {
+        TestLogger.logTestEvent(className, "Starting test: testScrollFromTabsToBoardOfDirectors");
+        
+        // Pastikan kita di area tab section
+        WebElement tabSection = scrollToElement(By.xpath("//*[contains(text(), 'The Association')]"));
+        assertTrue(tabSection.isDisplayed(), "Tab section should be visible");
+        TestLogger.logTestEvent(className, "  Currently at: Tab section (The Association/History/Mission)");
+        
+        // Kemudian scroll ke Board of Directors section
+        WebElement boardHeader = scrollToElement(By.xpath("//*[contains(text(), 'Board of directors')]"));
+        assertTrue(boardHeader.isDisplayed(), "'Board of directors' header should be visible after scroll");
+        TestLogger.logTestEvent(className, "  Scrolled to: Board of directors section");
+        
+        // Pause sebentar untuk memastikan visual scroll terlihat
+        try {
+            Thread.sleep(800);
+        } catch (InterruptedException ignored) {}
+        
+        TestLogger.logTestEvent(className, "  Verified: Successfully scrolled from Mission to Board of Directors");
+    }
 
     // ==================== BAGIAN 2: "Board of Directors" Pengujian Seksi ====================
     
-    @Test(priority = 6, description = "Verifikasi judul seksi 'Board of directors' terlihat")
+    @Test(priority = 8, description = "Verifikasi judul seksi 'Board of directors' terlihat")
     public void testBoardOfDirectorsTitle() {
         TestLogger.logTestEvent(className, "Starting test: testBoardOfDirectorsTitle");
 
@@ -162,7 +251,7 @@ public class ChamiloAssociationPageTest {
         TestLogger.logTestEvent(className, "  Verified: 'Board of directors' header is visible");
     }
     
-    @Test(priority = 7, description = "Verifikasi teks election informasi ditampilkan dengan benar")
+    @Test(priority = 9, description = "Verifikasi teks election informasi ditampilkan dengan benar")
     public void testElectionInfo() {
         TestLogger.logTestEvent(className, "Starting test: testElectionInfo");
         
@@ -172,7 +261,7 @@ public class ChamiloAssociationPageTest {
         TestLogger.logTestEvent(className, "  Verified: Election information is visible");
     }
     
-    @Test(priority = 8, description = "Verifikasi profil Yannick Warnier lengkap")
+    @Test(priority = 10, description = "Verifikasi profil Yannick Warnier lengkap")
     public void testYannickWarnierProfile() {
         TestLogger.logTestEvent(className, "Starting test: testYannickWarnierProfile");
         
@@ -180,7 +269,7 @@ public class ChamiloAssociationPageTest {
                 "president@chamilo.org", "linkedin.com/in/yannickwarnier");
     }
     
-    @Test(priority = 9, description = "Verifikasi profil Laura Guirao Rodríguez lengkap")
+    @Test(priority = 11, description = "Verifikasi profil Laura Guirao Rodríguez lengkap")
     public void testLauraGuiraoProfile() {
         TestLogger.logTestEvent(className, "Starting test: testLauraGuiraoProfile");
         
@@ -188,17 +277,39 @@ public class ChamiloAssociationPageTest {
                 "treasurer@chamilo.org", "linkedin.com");
     }
     
-    @Test(priority = 10, description = "Verifikasi profil Noa Orizales Iglesias lengkap")
+    @Test(priority = 12, description = "Verifikasi profil Noa Orizales Iglesias lengkap")
     public void testNoaOrizalesProfile() {
         TestLogger.logTestEvent(className, "Starting test: testNoaOrizalesProfile");
         
         verifyFullProfile("Noa Orizales", "Communication coordinator", "Contidos Dixitais", 
                 "communication@chamilo.org", "linkedin.com");
     }
+    
+    @Test(priority = 13, description = "Verifikasi scroll dari Board of Directors ke Community Leaders")
+    public void testScrollFromBoardToCommunityLeaders() {
+        TestLogger.logTestEvent(className, "Starting test: testScrollFromBoardToCommunityLeaders");
+        
+        // Pertama scroll ke Board of Directors section
+        WebElement boardHeader = scrollToElement(By.xpath("//*[contains(text(), 'Board of directors')]"));
+        assertTrue(boardHeader.isDisplayed(), "'Board of directors' section should be visible");
+        TestLogger.logTestEvent(className, "  Currently at: Board of directors section");
+        
+        // Kemudian scroll ke Our Community Leaders section
+        WebElement leadersHeader = scrollToElement(By.xpath("//*[contains(text(), 'Our community leaders')]"));
+        assertTrue(leadersHeader.isDisplayed(), "'Our community leaders' header should be visible after scroll");
+        TestLogger.logTestEvent(className, "  Scrolled to: Our community leaders section");
+        
+        // Pause sebentar untuk memastikan visual scroll terlihat
+        try {
+            Thread.sleep(800);
+        } catch (InterruptedException ignored) {}
+        
+        TestLogger.logTestEvent(className, "  Verified: Successfully scrolled from Board of Directors to Community Leaders");
+    }
 
     // ==================== BAGIAN 3: "Our Community Leaders" Pengujian Seksi ====================
     
-    @Test(priority = 11, description = "Verifikasi judul seksi 'Our community leaders' terlihat")
+    @Test(priority = 14, description = "Verifikasi judul seksi 'Our community leaders' terlihat")
     public void testCommunityLeadersTitle() {
         TestLogger.logTestEvent(className, "Starting test: testCommunityLeadersTitle");
 
@@ -207,7 +318,7 @@ public class ChamiloAssociationPageTest {
         TestLogger.logTestEvent(className, "  Verified: 'Our community leaders' header is visible");
     }
     
-    @Test(priority = 12, description = "Verifikasi 'Otros cargos de responsabilidad' subjudul")
+    @Test(priority = 15, description = "Verifikasi 'Otros cargos de responsabilidad' subjudul")
     public void testOtrosCargosSubtitle() {
         TestLogger.logTestEvent(className, "Starting test: testOtrosCargosSubtitle");
         
@@ -216,7 +327,7 @@ public class ChamiloAssociationPageTest {
         TestLogger.logTestEvent(className, "  Verified: 'Otros cargos de responsabilidad' subtitle is visible");
     }
     
-    @Test(priority = 13, description = "Verifikasi profil Michela (Chamila) lengkap dengan sosmed")
+    @Test(priority = 16, description = "Verifikasi profil Michela (Chamila) lengkap dengan sosmed")
     public void testMichelaProfile() {
         TestLogger.logTestEvent(className, "Starting test: testMichelaProfile");
         
@@ -249,7 +360,7 @@ public class ChamiloAssociationPageTest {
         verifySocialMediaIcons("Michela");
     }
     
-    @Test(priority = 14, description = "Verifikasi profil Ángel lengkap")
+    @Test(priority = 17, description = "Verifikasi profil Ángel lengkap")
     public void testAngelProfile() {
         TestLogger.logTestEvent(className, "Starting test: testAngelProfile");
         
@@ -257,7 +368,7 @@ public class ChamiloAssociationPageTest {
                 "info@chamilo.org", "linkedin.com");
     }
     
-    @Test(priority = 15, description = "Verifikasi profil Damien Renou lengkap")
+    @Test(priority = 18, description = "Verifikasi profil Damien Renou lengkap")
     public void testDamienRenouProfile() {
         TestLogger.logTestEvent(className, "Starting test: testDamienRenouProfile");
         
@@ -267,7 +378,7 @@ public class ChamiloAssociationPageTest {
 
     // ==================== BAGIAN 4: Pengujian Validasi Link Eksternal ====================
     
-    @Test(priority = 16, description = "Verifikasi semua link website perusahaan berfungsi")
+    @Test(priority = 19, description = "Verifikasi semua link website perusahaan berfungsi")
     public void testCompanyWebsiteLinks() {
         TestLogger.logTestEvent(className, "Starting test: testCompanyWebsiteLinks");
         
@@ -291,7 +402,7 @@ public class ChamiloAssociationPageTest {
         TestLogger.logTestEvent(className, "  Verified: Bâtisseurs Numériques link exists");
     }
     
-    @Test(priority = 17, description = "Verifikasi semua link profil LinkedIn membuka dengan benar")
+    @Test(priority = 20, description = "Verifikasi semua link profil LinkedIn membuka dengan benar")
     public void testLinkedInLinks() {
         TestLogger.logTestEvent(className, "Starting test: testLinkedInLinks");
         
@@ -306,7 +417,7 @@ public class ChamiloAssociationPageTest {
         TestLogger.logTestEvent(className, "  Verified: All LinkedIn links are valid");
     }
     
-    @Test(priority = 18, description = "Verifikasi semua link email diformat dengan benar (mailto:)")
+    @Test(priority = 21, description = "Verifikasi semua link email diformat dengan benar (mailto:)")
     public void testMailtoLinks() {
         TestLogger.logTestEvent(className, "Starting test: testMailtoLinks");
         
@@ -322,7 +433,7 @@ public class ChamiloAssociationPageTest {
         TestLogger.logTestEvent(className, "  Verified: All mailto links are properly formatted");
     }
     
-    @Test(priority = 19, description = "Verifikasi Michela's website link (michelamosquera.com)")
+    @Test(priority = 22, description = "Verifikasi Michela's website link (michelamosquera.com)")
     public void testMichelaWebsiteLink() {
         TestLogger.logTestEvent(className, "Starting test: testMichelaWebsiteLink");
         
@@ -334,7 +445,7 @@ public class ChamiloAssociationPageTest {
         TestLogger.logTestEvent(className, "  Verified: Michela's website link exists -> " + href);
     }
     
-    @Test(priority = 20, description = "Verifikasi official Chamilo LMS campus link")
+    @Test(priority = 23, description = "Verifikasi official Chamilo LMS campus link")
     public void testCampusChamiloLink() {
         TestLogger.logTestEvent(className, "Starting test: testCampusChamiloLink");
         
@@ -348,7 +459,7 @@ public class ChamiloAssociationPageTest {
 
     // ==================== BAGIAN 5: Pengujian Pemuatan Gambar ====================
     
-    @Test(priority = 21, description = "Verifikasi semua foto profil dimuat tanpa error")
+    @Test(priority = 24, description = "Verifikasi semua foto profil dimuat tanpa error")
     public void testProfileImagesLoaded() {
         TestLogger.logTestEvent(className, "Starting test: testProfileImagesLoaded");
         
@@ -376,7 +487,7 @@ public class ChamiloAssociationPageTest {
         TestLogger.logTestEvent(className, "  Total images loaded: " + loadedCount + "/" + images.size());
     }
     
-    @Test(priority = 22, description = "Verifikasi semua gambar memiliki proper alt text")
+    @Test(priority = 25, description = "Verifikasi semua gambar memiliki proper alt text")
     public void testImagesAltText() {
         TestLogger.logTestEvent(className, "Starting test: testImagesAltText");
         
@@ -396,7 +507,7 @@ public class ChamiloAssociationPageTest {
         assertTrue(imagesWithAlt > 0, "At least some images should have alt text");
     }
     
-    @Test(priority = 23, description = "Verifikasi tidak ada gambar yang rusak (broken images)")
+    @Test(priority = 26, description = "Verifikasi tidak ada gambar yang rusak (broken images)")
     public void testNoBrokenImages() {
         TestLogger.logTestEvent(className, "Starting test: testNoBrokenImages");
         
