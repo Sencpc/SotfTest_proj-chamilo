@@ -1,0 +1,94 @@
+{
+  "uid" : "ee4b0b10d0a614ed",
+  "name" : "Verifikasi link Portal Assistant berfungsi dengan benar",
+  "fullName" : "com.selenium.TrainingPageTest.shouldHaveFunctionalPortalAssistantLink",
+  "historyId" : "97daa50d7fbd69d883d64d9f785a8e24",
+  "time" : {
+    "start" : 1767943781722,
+    "stop" : 1767943781733,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767943720988,
+      "stop" : 1767943724106,
+      "duration" : 3118
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767943782610,
+      "stop" : 1767943782807,
+      "duration" : 197
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.TrainingPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.TrainingPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldHaveFunctionalPortalAssistantLink"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.TrainingPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ee4b0b10d0a614ed.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,92 @@
+{
+  "uid" : "8877cfb6626b361",
+  "name" : "Banner konferensi muncul dan dapat diklik",
+  "fullName" : "com.selenium.ForumPageTest.shouldDisplayConferenceBanner",
+  "historyId" : "f67cee9ab8efb4251a56fe214b736c1a",
+  "time" : {
+    "start" : 1767870770547,
+    "stop" : 1767870784219,
+    "duration" : 13672
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767870689501,
+      "stop" : 1767870691643,
+      "duration" : 2142
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767870798492,
+      "stop" : 1767870798646,
+      "duration" : 154
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayConferenceBanner"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-07565400-0404-4d47-925a-03e5de92493f"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "31888@SencPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8877cfb6626b361.json",
+  "parameterValues" : [ ]
+}

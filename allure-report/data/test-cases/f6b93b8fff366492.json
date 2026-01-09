@@ -1,0 +1,92 @@
+{
+  "uid" : "f6b93b8fff366492",
+  "name" : "openEventsViaTopBarMenu",
+  "fullName" : "com.selenium.EventPageTest.openEventsViaTopBarMenu",
+  "historyId" : "9dac129bf21ae66cf32e8eee1c9702f1",
+  "time" : {
+    "start" : 1767950678132,
+    "stop" : 1767950755141,
+    "duration" : 77009
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpBase",
+    "time" : {
+      "start" : 1767950676970,
+      "stop" : 1767950678032,
+      "duration" : 1062
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownBase",
+    "time" : {
+      "start" : 1767950755180,
+      "stop" : 1767950853555,
+      "duration" : 98375
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.EventPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.EventPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "openEventsViaTopBarMenu"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-0d053002-d59f-4cd5-939b-80d82727f0c2"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.EventPageTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-AOFLLK79"
+  }, {
+    "name" : "thread",
+    "value" : "33256@LAPTOP-AOFLLK79.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f6b93b8fff366492.json",
+  "parameterValues" : [ ]
+}

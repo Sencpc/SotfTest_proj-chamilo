@@ -1,0 +1,60 @@
+{
+  "uid" : "c3735dd5712941a",
+  "name" : "Search bar toggle exposes input with placeholder",
+  "fullName" : "com.selenium.GlobalSearchTest.shouldShowSearchInputAndPlaceholder",
+  "historyId" : "1f4f2538c0b8487fa5e4997c4d6634e1",
+  "time" : {
+    "start" : 1767857592229,
+    "stop" : 1767857642733,
+    "duration" : 50504
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldShowSearchInputAndPlaceholder"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-6f743d08-0dfa-4ca9-bceb-b4c0e68a9d62"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "16664@SencPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c3735dd5712941a.json",
+  "parameterValues" : [ ]
+}

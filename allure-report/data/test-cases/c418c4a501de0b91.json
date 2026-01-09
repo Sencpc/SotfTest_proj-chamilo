@@ -1,0 +1,94 @@
+{
+  "uid" : "c418c4a501de0b91",
+  "name" : "Verifikasi call-to-action 'Want to get Chamilo-certified?' ditampilkan",
+  "fullName" : "com.selenium.TrainingPageTest.shouldDisplayGetCertifiedCallToAction",
+  "historyId" : "9980fd759aabf1d2ede9e8d6d2fcfd20",
+  "time" : {
+    "start" : 1767943771388,
+    "stop" : 1767943771400,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767943720988,
+      "stop" : 1767943724106,
+      "duration" : 3118
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767943782610,
+      "stop" : 1767943782807,
+      "duration" : 197
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.TrainingPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.TrainingPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayGetCertifiedCallToAction"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.TrainingPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c418c4a501de0b91.json",
+  "parameterValues" : [ ]
+}
