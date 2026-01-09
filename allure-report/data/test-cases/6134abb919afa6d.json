@@ -1,0 +1,190 @@
+{
+  "uid" : "6134abb919afa6d",
+  "name" : "Section Global Forum menampilkan CTA ke GitHub Discussions",
+  "fullName" : "com.selenium.ForumPageTest.shouldExposeGlobalForumCTA",
+  "historyId" : "b110ba50bb73191e2fdf6b409ad8b5ef",
+  "time" : {
+    "start" : 1767968845460,
+    "stop" : 1767968848424,
+    "duration" : 2964
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767968779868,
+      "stop" : 1767968833708,
+      "duration" : 53840
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767968853432,
+      "stop" : 1767968853645,
+      "duration" : 213
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldExposeGlobalForumCTA"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "32888@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5b157025a5314112",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767943110178,
+        "stop" : 1767943113115,
+        "duration" : 2937
+      }
+    }, {
+      "uid" : "a2c69699cae9501e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767879891362,
+        "stop" : 1767879894277,
+        "duration" : 2915
+      }
+    }, {
+      "uid" : "2e4479b27c696a34",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767878742525,
+        "stop" : 1767878745419,
+        "duration" : 2894
+      }
+    }, {
+      "uid" : "2682ffc11f95e6e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767877852731,
+        "stop" : 1767877855660,
+        "duration" : 2929
+      }
+    }, {
+      "uid" : "e4c2aab230fa2bd8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767877342101,
+        "stop" : 1767877345041,
+        "duration" : 2940
+      }
+    }, {
+      "uid" : "8fbaaddaea3534b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767874895986,
+        "stop" : 1767874898921,
+        "duration" : 2935
+      }
+    }, {
+      "uid" : "994db9f32c0120ee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767870756094,
+        "stop" : 1767870770543,
+        "duration" : 14449
+      }
+    }, {
+      "uid" : "abe7af5730867da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767865333435,
+        "stop" : 1767865349831,
+        "duration" : 16396
+      }
+    }, {
+      "uid" : "be0d2b37d78aa5b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767864789623,
+        "stop" : 1767864806222,
+        "duration" : 16599
+      }
+    }, {
+      "uid" : "245a596646dda994",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767864248112,
+        "stop" : 1767864264592,
+        "duration" : 16480
+      }
+    }, {
+      "uid" : "4229d1ede2cb8321",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767863623539,
+        "stop" : 1767863640403,
+        "duration" : 16864
+      }
+    }, {
+      "uid" : "7ccd0017cdca191b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767857901798,
+        "stop" : 1767857913459,
+        "duration" : 11661
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6134abb919afa6d.json",
+  "parameterValues" : [ ]
+}

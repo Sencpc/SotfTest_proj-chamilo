@@ -1,0 +1,190 @@
+{
+  "uid" : "a08c15d27475bbdd",
+  "name" : "Banner konferensi muncul dan dapat diklik",
+  "fullName" : "com.selenium.ForumPageTest.shouldDisplayConferenceBanner",
+  "historyId" : "f67cee9ab8efb4251a56fe214b736c1a",
+  "time" : {
+    "start" : 1767968848431,
+    "stop" : 1767968850513,
+    "duration" : 2082
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767968779868,
+      "stop" : 1767968833708,
+      "duration" : 53840
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767968853432,
+      "stop" : 1767968853645,
+      "duration" : 213
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayConferenceBanner"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "32888@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a898d806cb2548bb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767943113119,
+        "stop" : 1767943115194,
+        "duration" : 2075
+      }
+    }, {
+      "uid" : "2c27bdab8007b97a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767879894279,
+        "stop" : 1767879896329,
+        "duration" : 2050
+      }
+    }, {
+      "uid" : "c0f3107aa16fd383",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767878745421,
+        "stop" : 1767878747468,
+        "duration" : 2047
+      }
+    }, {
+      "uid" : "cb2c8cb3de1889dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767877855664,
+        "stop" : 1767877857732,
+        "duration" : 2068
+      }
+    }, {
+      "uid" : "9b01046539f2e972",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767877345045,
+        "stop" : 1767877347128,
+        "duration" : 2083
+      }
+    }, {
+      "uid" : "a4889b3250787689",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767874898924,
+        "stop" : 1767874900992,
+        "duration" : 2068
+      }
+    }, {
+      "uid" : "8877cfb6626b361",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767870770547,
+        "stop" : 1767870784219,
+        "duration" : 13672
+      }
+    }, {
+      "uid" : "65fdbc814496280e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767865349835,
+        "stop" : 1767865365302,
+        "duration" : 15467
+      }
+    }, {
+      "uid" : "82ead0ef49326076",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767864806225,
+        "stop" : 1767864822063,
+        "duration" : 15838
+      }
+    }, {
+      "uid" : "231a06864aad0e5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767864264596,
+        "stop" : 1767864280329,
+        "duration" : 15733
+      }
+    }, {
+      "uid" : "11f1ae630bc384a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767863640407,
+        "stop" : 1767863655862,
+        "duration" : 15455
+      }
+    }, {
+      "uid" : "8bdc04a45c6ae32e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767857913462,
+        "stop" : 1767857924942,
+        "duration" : 11480
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a08c15d27475bbdd.json",
+  "parameterValues" : [ ]
+}

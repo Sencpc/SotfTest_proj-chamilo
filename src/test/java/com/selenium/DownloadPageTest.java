@@ -1,0 +1,321 @@
+package com.selenium;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.assertTrue;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class DownloadPageTest {
+
+    private static final String TEST_CLASS_NAME = "DownloadPageTest";
+    private static final String HOME_URL = "https://chamilo.org/en/";
+    private static final String DEFAULT_BRAVE_PATH = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe";
+
+    private WebDriver driver;
+    private WebDriverWait wait;
+    private boolean downloadPageLoaded = false;
+
+    @BeforeClass
+    public void setUp() {
+        WebDriverManager.chromedriver().setup();
+
+        ChromeOptions options = new ChromeOptions();
+        options.setBinary(resolveBraveBinary());
+        options.addArguments(
+                "--disable-notifications",
+                "--start-maximized",
+                "--disable-infobars",
+                "--disable-extensions");
+
+        driver = new ChromeDriver(options);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        
+        driver.get(HOME_URL);
+        try {
+            Thread.sleep(500);
+            acceptCookiesIfPresent();
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+    }
+
+    @AfterClass(alwaysRun = true)
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+        MainApp.writeTestLog(TEST_CLASS_NAME);
+    }
+    
+    private void navigateToDownload() throws InterruptedException {
+        if (!downloadPageLoaded) {
+            WebElement downloadLink = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+                    "//a[contains(@href, '/download')] | //nav//a[contains(text(), 'Download')]")));
+            scrollIntoView(downloadLink);
+            Thread.sleep(500);
+            downloadLink.click();
+            Thread.sleep(1500);
+            downloadPageLoaded = true;
+        }
+    }
+
+    private void logSuccess(String message) {
+        System.out.println("[DownloadPageTest] " + message);
+        TestLogger.logTestEvent(TEST_CLASS_NAME, message);
+    }
+
+    @Test(priority = 0, description = "Verifikasi halaman judul Download ditampilkan dengan benar")
+    public void shouldDisplayPageTitle() throws InterruptedException {
+        MainApp.executeTest("Download Page Title", "Verify download page title displays correctly", () -> {
+            navigateToDownload();
+
+            String pageTitle = driver.getTitle();
+            assertTrue(pageTitle.toLowerCase().contains("download") || pageTitle.toLowerCase().contains("chamilo"),
+                    "Judul halaman harus memuat kata 'download' atau 'chamilo'");
+            logSuccess("✓ Halaman judul 'Download' ditampilkan dengan benar di browser tab");
+
+            WebElement heading = wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("h1")));
+            assertTrue(heading.getText().toLowerCase().contains("download") || heading.getText().toLowerCase().contains("chamilo"),
+                    "Heading h1 harus memuat kata 'download' atau 'chamilo'");
+            logSuccess("✓ Heading h1 'Download' ditampilkan dengan benar");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
+    @Test(priority = 1, description = "Dokumentasi resmi memiliki link dengan href yang benar")
+    public void shouldExposeDocumentationLinks() throws InterruptedException {
+        MainApp.executeTest("Documentation Links", "Verify official documentation links have correct URLs", () -> {
+            navigateToDownload();
+
+            WebElement officialDoc = wait.until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText("Official documentation")));
+            scrollIntoView(officialDoc);
+            Thread.sleep(800);
+            WebElement installGuide = wait.until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText("Installation guide")));
+            scrollIntoView(installGuide);
+            Thread.sleep(800);
+            WebElement changelog = wait.until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText("Chamilo changelog")));
+            scrollIntoView(changelog);
+            Thread.sleep(800);
+
+            assertEquals(officialDoc.getAttribute("href"), "https://docs.chamilo.org/v/1.11.x/");
+            logSuccess("✓ Link 'Official documentation' mengarah ke https://docs.chamilo.org/v/1.11.x/");
+            assertEquals(installGuide.getAttribute("href"), "https://11.chamilo.org/documentation/installation_guide.html");
+            logSuccess("✓ Link 'Installation guide' mengarah ke https://11.chamilo.org/documentation/installation_guide.html");
+            assertEquals(changelog.getAttribute("href"), "https://11.chamilo.org/documentation/changelog.html");
+            logSuccess("✓ Link 'Chamilo changelog' mengarah ke https://11.chamilo.org/documentation/changelog.html");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
+    @Test(priority = 2, description = "Blok informasi versi menampilkan detail rilis dan lisensi")
+    public void shouldDisplayVersionInfo() throws InterruptedException {
+        MainApp.executeTest("Version Info Display", "Verify version block shows release details and license", () -> {
+            navigateToDownload();
+
+            WebElement versionHeading = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), 'Chamilo LMS 1.11.32')]")));
+            scrollIntoView(versionHeading);
+            Thread.sleep(800);
+            assertTrue(versionHeading.isDisplayed(), "Versi 1.11.32 harus ditampilkan");
+            logSuccess("✓ Versi Chamilo LMS 1.11.32 ditampilkan");
+
+            WebElement license = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), 'GNU/GPLv3')]")));
+            scrollIntoView(license);
+            Thread.sleep(800);
+            assertTrue(license.isDisplayed(), "Lisensi GNU/GPLv3+ harus ditampilkan");
+            logSuccess("✓ Lisensi GNU/GPLv3+ ditampilkan");
+
+            WebElement phpSupport = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), 'PHP 7.4') and contains(text(), '8.3')]")));
+            assertTrue(phpSupport.isDisplayed(), "Info kompatibilitas PHP harus terlihat");
+            logSuccess("✓ Kompatibilitas PHP 7.4 dan 8.3 ditampilkan");
+
+            WebElement releaseDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), '2025-06-27')]")));
+            assertTrue(releaseDate.isDisplayed(), "Tanggal rilis harus tampil");
+            logSuccess("✓ Tanggal rilis 2025-06-27 ditampilkan");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
+    @Test(priority = 3, description = "Opsi download ZIP dan TAR.GZ terlihat dan mengarah ke GitHub release")
+    public void shouldExposeDownloadOptions() throws InterruptedException {
+        MainApp.executeTest("Download Options", "Verify ZIP and TAR.GZ download links point to GitHub releases", () -> {
+            navigateToDownload();
+
+            WebElement zipLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//a[contains(@href, 'chamilo-1.11.32.zip')]")));
+            scrollIntoView(zipLink);
+            Thread.sleep(800);
+            WebElement tarLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//a[contains(@href, 'chamilo-1.11.32.tar.gz')]")));
+            scrollIntoView(tarLink);
+            Thread.sleep(800);
+
+            assertEquals(zipLink.getAttribute("href"),
+                "https://github.com/chamilo/chamilo-lms/releases/download/v1.11.32/chamilo-1.11.32.zip");
+            logSuccess("✓ Link ZIP download mengarah ke GitHub release v1.11.32");
+            assertEquals(tarLink.getAttribute("href"),
+                "https://github.com/chamilo/chamilo-lms/releases/download/v1.11.32/chamilo-1.11.32.tar.gz");
+            logSuccess("✓ Link TAR.GZ download mengarah ke GitHub release v1.11.32");
+
+            WebElement compatibilityText = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), 'PHP 7.4') and contains(text(), '8.3')]")));
+            assertTrue(compatibilityText.isDisplayed(), "Teks kompatibilitas PHP harus berada dekat opsi unduhan");
+            logSuccess("✓ Teks kompatibilitas PHP ditampilkan dekat opsi unduhan");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
+    @Test(priority = 4, description = "Ikon download ditampilkan dengan ukuran masuk akal")
+    public void shouldRenderDownloadIcons() throws InterruptedException {
+        MainApp.executeTest("Download Icons", "Verify download page shows icons with reasonable dimensions", () -> {
+            navigateToDownload();
+
+            List<WebElement> icons = driver.findElements(By.xpath(
+                    "//img[contains(@src,'download') or contains(@src,'zip') or contains(@src,'tar') or contains(@src,'icon')]"));
+            if (icons.isEmpty()) {
+                icons = driver.findElements(By.cssSelector(".avia-image-container img, article img, img"));
+            }
+            assertFalse(icons.isEmpty(), "Setidaknya satu ikon download harus ditemukan");
+
+            long displayed = icons.stream().filter(WebElement::isDisplayed)
+                    .filter(img -> img.getSize().getHeight() > 10 && img.getSize().getWidth() > 10)
+                    .count();
+            assertTrue(displayed >= 2, "Minimal dua ikon download harus tampil dengan ukuran wajar");
+            logSuccess("✓ Minimal dua ikon download ditampilkan dengan ukuran yang wajar");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
+    @Test(priority = 5, description = "Banner konferensi muncul di halaman download")
+    public void shouldDisplayConferenceBanner() throws InterruptedException {
+        MainApp.executeTest("Conference Banner", "Verify conference banner displays on download page", () -> {
+            navigateToDownload();
+
+            WebElement bannerLink = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+                    "//a[contains(@href, 'conference.chamilo.org')]")));
+            scrollIntoView(bannerLink);
+            Thread.sleep(800);
+            assertTrue(bannerLink.isDisplayed(), "Banner konferensi harus terlihat");
+            logSuccess("✓ Banner konferensi ditampilkan");
+            assertTrue(bannerLink.getAttribute("href").contains("conference.chamilo.org"));
+            logSuccess("✓ Banner mengarahkan ke conference.chamilo.org dengan benar");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
+    @Test(priority = 6, description = "Konten utama memuat link eksternal valid")
+    public void shouldValidateExternalLinks() throws InterruptedException {
+        MainApp.executeTest("External Links Validation", "Verify all external links have valid absolute URLs", () -> {
+            navigateToDownload();
+
+            List<WebElement> links = driver.findElements(By.xpath(
+                    "//a[contains(@href, 'github.com/chamilo/chamilo-lms/releases')]"));
+            links.addAll(driver.findElements(By.xpath("//a[contains(@href, 'docs.chamilo.org')]")));
+
+            assertFalse(links.isEmpty(), "Harus ada link eksternal pada halaman download");
+            logSuccess("✓ Link eksternal ditemukan pada halaman");
+            for (WebElement link : links) {
+                scrollIntoView(link);
+                Thread.sleep(800);
+                String href = link.getAttribute("href");
+                assertNotNull(href, "Href tidak boleh null");
+                assertFalse(href.isBlank(), "Href tidak boleh kosong");
+                assertTrue(href.startsWith("http"), "Href harus absolute url");
+            }
+            logSuccess("✓ Semua link eksternal menggunakan absolute URL");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
+    @Test(priority = 7, description = "Verifikasi akurasi konten dan informasi versi")
+    public void shouldVerifyContentAccuracy() throws InterruptedException {
+        MainApp.executeTest("Content Accuracy", "Verify version number, PHP requirements, and license information are accurate and up-to-date", () -> {
+            navigateToDownload();
+
+            // Verify version number is correct and present
+            WebElement versionElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), 'Chamilo LMS 1.11.32')]")));
+            assertTrue(versionElement.isDisplayed(), "Versi 1.11.32 harus ditampilkan dengan akurat");
+            logSuccess("✓ Nomor versi 1.11.32 ditampilkan dengan akurat");
+
+            // Verify license information
+            WebElement licenseElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), 'GNU/GPLv3')]")));
+            assertTrue(licenseElement.getText().contains("GNU/GPLv3"), "Informasi lisensi harus akurat");
+            logSuccess("✓ Informasi lisensi GNU/GPLv3 akurat dan ditampilkan");
+
+            // Verify PHP requirements clearly stated
+            WebElement phpRequirement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), 'PHP') and (contains(text(), '7.4') or contains(text(), '8.3'))]")));
+            assertTrue(phpRequirement.isDisplayed(), "Requirement PHP harus jelas tercantum");
+            logSuccess("✓ Requirement PHP 7.4 dan 8.3 ditampilkan dengan jelas");
+
+            // Verify release date is formatted correctly
+            WebElement releaseDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), '2025-06-27')]")));
+            assertTrue(releaseDate.isDisplayed(), "Tanggal rilis harus diformat dengan benar (YYYY-MM-DD)");
+            logSuccess("✓ Tanggal rilis 2025-06-27 diformat dengan benar (YYYY-MM-DD)");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
+    private void scrollIntoView(WebElement element) {
+        try {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
+        } catch (Exception ignored) {
+        }
+    }
+
+    private void acceptCookiesIfPresent() {
+        List<By> cookieLocators = List.of(
+                By.cssSelector("a.cc-dismiss"),
+                By.cssSelector("button#wt-cli-accept-btn"),
+                By.xpath("//button[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'accept')]"),
+                By.xpath("//a[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'i agree')]")
+        );
+
+        for (By locator : cookieLocators) {
+            try {
+                WebElement button = new WebDriverWait(driver, Duration.ofSeconds(3))
+                        .until(ExpectedConditions.elementToBeClickable(locator));
+                button.click();
+                return;
+            } catch (Exception ignored) {
+            }
+        }
+    }
+
+    private String resolveBraveBinary() {
+        String customBinary = System.getProperty("braveBinary");
+        if (customBinary != null && !customBinary.isBlank()) {
+            return customBinary;
+        }
+
+        if (Files.exists(Path.of(DEFAULT_BRAVE_PATH))) {
+            return DEFAULT_BRAVE_PATH;
+        }
+
+        String userHome = System.getProperty("user.home");
+        Path altPath = Path.of(userHome, "AppData/Local/BraveSoftware/Brave-Browser/Application/brave.exe");
+        if (Files.exists(altPath)) {
+            return altPath.toString();
+        }
+
+        throw new IllegalStateException("Lokasi Brave tidak ditemukan. Set properti sistem 'braveBinary'.");
+    }
+}

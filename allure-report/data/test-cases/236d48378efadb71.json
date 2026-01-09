@@ -1,0 +1,92 @@
+{
+  "uid" : "236d48378efadb71",
+  "name" : "testNavbarNavigation",
+  "fullName" : "com.selenium.NavbarTest.testNavbarNavigation",
+  "historyId" : "ed0a5c8bb45d318553b0156d7cc17f67",
+  "time" : {
+    "start" : 1767945493098,
+    "stop" : 1767945527530,
+    "duration" : 34432
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767945477244,
+      "stop" : 1767945493052,
+      "duration" : 15808
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767945527617,
+      "stop" : 1767945532878,
+      "duration" : 5261
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.NavbarTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.NavbarTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testNavbarNavigation"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-8c9664cb-aa07-4017-81f8-9d5dbff85fbf"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.NavbarTest"
+  }, {
+    "name" : "host",
+    "value" : "MSI"
+  }, {
+    "name" : "thread",
+    "value" : "17588@MSI.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "236d48378efadb71.json",
+  "parameterValues" : [ ]
+}

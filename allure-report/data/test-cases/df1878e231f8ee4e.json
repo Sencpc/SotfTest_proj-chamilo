@@ -1,0 +1,135 @@
+{
+  "uid" : "df1878e231f8ee4e",
+  "name" : "Scroll ke bagian 'Do you like Chamilo?', klik tombol CONTRIBUTE, lalu kembali ke home via logo",
+  "fullName" : "com.selenium.ContributePageTest.shouldNavigateToContributeAndBackHomeViaLogo",
+  "historyId" : "bd2e65553131cd98038da87a74a30169",
+  "time" : {
+    "start" : 1767966890886,
+    "stop" : 1767966918209,
+    "duration" : 27323
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpBase",
+    "time" : {
+      "start" : 1767966889830,
+      "stop" : 1767966890825,
+      "duration" : 995
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownBase",
+    "time" : {
+      "start" : 1767966918297,
+      "stop" : 1767966946115,
+      "duration" : 27818
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ContributePageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ContributePageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldNavigateToContributeAndBackHomeViaLogo"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ContributePageTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-AOFLLK79"
+  }, {
+    "name" : "thread",
+    "value" : "8504@LAPTOP-AOFLLK79.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4fad78a635b102f",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'do you like chamilo')] (tried for 1 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1767966826558,
+        "stop" : 1767966882680,
+        "duration" : 56122
+      }
+    }, {
+      "uid" : "d41f4a85878bd2cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767901323083,
+        "stop" : 1767901348543,
+        "duration" : 25460
+      }
+    }, {
+      "uid" : "f07aca5db89dbe76",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767900811338,
+        "stop" : 1767900835032,
+        "duration" : 23694
+      }
+    }, {
+      "uid" : "144d566f4cff4bb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767900593258,
+        "stop" : 1767900620477,
+        "duration" : 27219
+      }
+    }, {
+      "uid" : "3006c79e1378b349",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767899207921,
+        "stop" : 1767899231695,
+        "duration" : 23774
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "df1878e231f8ee4e.json",
+  "parameterValues" : [ ]
+}
