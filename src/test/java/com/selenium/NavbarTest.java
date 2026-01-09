@@ -53,62 +53,65 @@ public class NavbarTest {
         MainApp.executeTest("Navbar Navigation Test", "Testing all navbar links and search", () -> {
             acceptCookiesIfPresent();
 
-            // 1. Click Chamilo
             WebElement chamiloMenu = wait
                     .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-409 a")));
             chamiloMenu.click();
             logSuccess("Clicked Chamilo menu");
 
-            // Wait 3 seconds then go back home
             Thread.sleep(3000);
+            MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Chamilo.png");
             driver.get(CHAMILO_URL);
 
-            // 2. Click Demo
             WebElement demoMenu = wait
                     .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2897 a")));
             demoMenu.click();
             logSuccess("Clicked Demo menu");
 
-            // Go back home
+            Thread.sleep(3000);
+            MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Demo.png");
+
             driver.get(CHAMILO_URL);
 
-            // 3. Click Forum
             WebElement forumMenu = wait
                     .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2898 a")));
             forumMenu.click();
             logSuccess("Clicked Forum menu");
 
-            // Go back home
+            Thread.sleep(3000);
+            MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Forum.png");
+
             driver.get(CHAMILO_URL);
 
-            // 4. Click Download
             WebElement downloadMenu = wait
                     .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2903 a")));
             downloadMenu.click();
             logSuccess("Clicked Download menu");
 
-            // Go back home
+            Thread.sleep(3000);
+            MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Download.png");
+
             driver.get(CHAMILO_URL);
 
-            // 5. Click Events
             WebElement eventsMenu = wait
                     .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2525 a")));
             eventsMenu.click();
             logSuccess("Clicked Events menu");
 
-            // Go back home
+            Thread.sleep(3000);
+            MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Events.png");
+
             driver.get(CHAMILO_URL);
 
-            // 6. Click Contact
             WebElement contactMenu = wait
                     .until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-411 a")));
             contactMenu.click();
             logSuccess("Clicked Contact menu");
 
-            // Go back home
+            Thread.sleep(3000);
+            MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Contact.png");
+
             driver.get(CHAMILO_URL);
 
-            // 7. Search for "Education"
             WebElement searchButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("search_button")));
             searchButton.click();
 
@@ -119,15 +122,14 @@ public class NavbarTest {
             searchInput.submit();
             logSuccess("Performed search for 'Education'");
 
-            // Go back home
+            Thread.sleep(3000);
+
             driver.get(CHAMILO_URL);
 
-            // 9. Click Logo
             WebElement logo = wait.until(ExpectedConditions.elementToBeClickable(By.id("logo")));
             logo.click();
             logSuccess("Clicked Logo");
 
-            // Capture final state
             MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Final.png");
         });
     }
@@ -157,7 +159,6 @@ public class NavbarTest {
                 logSuccess("Cookies accepted");
                 return;
             } catch (Exception ignored) {
-                // different region may use another component; keep trying others
             }
         }
     }

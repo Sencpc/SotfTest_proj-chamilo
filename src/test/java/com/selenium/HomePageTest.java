@@ -62,31 +62,26 @@ public class HomePageTest {
         }
     }
 
-    // 1. Slider
     @Test(priority = 1, description = "Memastikan slider berfungsi dan tombol next dapat diklik")
     public void shouldInteractWithSlider() throws Exception {
         MainApp.executeTest("Interact with Slider", "Memastikan slider berfungsi dan tombol next dapat diklik", () -> {
             driver.get(CHAMILO_URL);
             acceptCookiesIfPresent();
 
-            // Wait for slider to be visible
             WebElement slider = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("rev_slider_1_1")));
             assertTrue(slider.isDisplayed(), "Slider harus terlihat");
             logSuccess("Slider is displayed");
 
-            // Hover over slider to make arrows visible (sometimes required for revolution
-            // slider)
             new org.openqa.selenium.interactions.Actions(driver).moveToElement(slider).perform();
 
-            // Locate and click next arrow
-            // The class 'tp-rightarrow' is usually the one for next slide
             WebElement nextArrow = wait
                     .until(ExpectedConditions.elementToBeClickable(By.cssSelector(".tp-rightarrow")));
 
             for (int i = 0; i < 3; i++) {
                 nextArrow.click();
                 logSuccess("Clicked next slide arrow (" + (i + 1) + "/3)");
-                Thread.sleep(1000); // Wait for transition
+                Thread.sleep(2000);
+                MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Slider_Arrow_" + (i + 1) + ".png");
             }
             MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Slider.png");
         });
@@ -102,20 +97,16 @@ public class HomePageTest {
                         driver.get(CHAMILO_URL);
                         acceptCookiesIfPresent();
 
-                        // Wait for slider to load
                         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("rev_slider_1_1")));
 
                         WebElement buttonToClick = null;
 
-                        // Try to find the button by cycling through slides (max 10 attempts)
                         for (int i = 0; i < 10; i++) {
                             try {
-                                // Find all candidates containing the text
                                 List<WebElement> candidates = driver.findElements(By.xpath(
                                         "//div[contains(@class,'tp-caption')]//a[contains(., '" + btnText + "')]"));
 
                                 for (WebElement candidate : candidates) {
-                                    // Check if displayed and has a valid size (not a hidden clone)
                                     if (candidate.isDisplayed() && candidate.getSize().getWidth() > 0) {
                                         buttonToClick = candidate;
                                         break;
@@ -127,21 +118,21 @@ public class HomePageTest {
                             if (buttonToClick != null)
                                 break;
 
-                            // Click next arrow using JS to avoid hover issues
                             try {
                                 WebElement nextArrow = driver.findElement(By.cssSelector(".tp-rightarrow"));
                                 ((JavascriptExecutor) driver).executeScript("arguments[0].click();", nextArrow);
-                                Thread.sleep(2500); // Wait for slide transition
+                                Thread.sleep(1000);
                             } catch (Exception e) {
                                 break;
                             }
                         }
 
                         if (buttonToClick != null) {
-                            // Use JS click for reliability on slider layers
                             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", buttonToClick);
                             logSuccess("Clicked slider button: " + btnText);
-                            Thread.sleep(3000);
+                            Thread.sleep(2000);
+                            MainApp.captureFullPageScreenshot(driver,
+                                    "cache/HomePage_Slider_Button_" + btnText + ".png");
                             driver.get(CHAMILO_URL);
                         } else {
                             logSuccess("Button " + btnText + " not found in slider");
@@ -151,7 +142,6 @@ public class HomePageTest {
                 });
     }
 
-    // 2. Need Help?
     @Test(priority = 3, description = "Memastikan blok 'Need help?' menampilkan tautan bantuan utama Chamilo")
     public void shouldExposeNeedHelpResources() throws Exception {
         MainApp.executeTest("Expose Need Help Resources",
@@ -186,14 +176,11 @@ public class HomePageTest {
                         driver.get(CHAMILO_URL);
                         acceptCookiesIfPresent();
 
-                        // Scroll to "Need help?" section
                         WebElement needHelpHeading = wait.until(
                                 ExpectedConditions.visibilityOfElementLocated(By.xpath(
                                         "//h2[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'need help')]")));
                         scrollIntoView(needHelpHeading);
 
-                        // Find and click the link
-                        // We use XPath to find the anchor tag containing the h4 with the specific text
                         WebElement link = wait.until(ExpectedConditions.elementToBeClickable(
                                 By.xpath("//h4[contains(text(), '" + linkText + "')]/ancestor::a")));
 
@@ -202,17 +189,16 @@ public class HomePageTest {
 
                         logSuccess("Clicked 'Need help?' link: " + linkText);
 
-                        // Wait 3 seconds
-                        Thread.sleep(3000);
+                        Thread.sleep(2000);
 
-                        // Go back home
+                        MainApp.captureFullPageScreenshot(driver, "cache/HomePage_NeedHelp_Link_" + linkText + ".png");
+
                         driver.get(CHAMILO_URL);
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_NeedHelpLinks.png");
                 });
     }
 
-    // 3. Chamilo Universe
     @Test(priority = 5, description = "Mengklik tombol Training, ChamiloTalks, Events, dan Tutorials di bagian Chamilo Universe")
     public void shouldNavigateChamiloUniverseLinks() throws Exception {
         MainApp.executeTest("Navigate Chamilo Universe Links",
@@ -223,14 +209,11 @@ public class HomePageTest {
                         driver.get(CHAMILO_URL);
                         acceptCookiesIfPresent();
 
-                        // Scroll to "Chamilo universe" section
                         WebElement universeHeading = wait.until(
                                 ExpectedConditions.visibilityOfElementLocated(By.xpath(
                                         "//h2[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'chamilo universe')]")));
                         scrollIntoView(universeHeading);
 
-                        // Find and click the button
-                        // The buttons are <a> tags with a <span> containing the text
                         WebElement button = wait.until(ExpectedConditions.elementToBeClickable(
                                 By.xpath("//span[contains(text(), '" + btnText + "')]/ancestor::a")));
 
@@ -239,17 +222,16 @@ public class HomePageTest {
 
                         logSuccess("Clicked 'Chamilo Universe' button: " + btnText);
 
-                        // Wait 3 seconds
-                        Thread.sleep(3000);
+                        Thread.sleep(2000);
 
-                        // Go back home
+                        MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Universe_Button_" + btnText + ".png");
+
                         driver.get(CHAMILO_URL);
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Universe.png");
                 });
     }
 
-    // 4. Do you Like Chamilo
     @Test(priority = 6, description = "Memastikan blok ajakan kontribusi tampil dan dapat diklik")
     public void shouldPromoteContributionCTA() throws Exception {
         MainApp.executeTest("Promote Contribution CTA", "Memastikan blok ajakan kontribusi tampil dan dapat diklik",
@@ -274,14 +256,15 @@ public class HomePageTest {
                     contributeButton.click();
                     logSuccess("Clicked Contribute button");
 
-                    Thread.sleep(3000);
+                    Thread.sleep(2000);
+                    MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Contribution_Clicked.png");
+
                     driver.get(CHAMILO_URL);
 
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Contribution.png");
                 });
     }
 
-    // 5. Acknowledgments
     @Test(priority = 7, description = "Memastikan link di section Acknowledgments dapat diklik dan kembali ke home")
     public void shouldInteractWithAcknowledgmentsLinks() throws Exception {
         MainApp.executeTest("Interact with Acknowledgments Links",
@@ -289,13 +272,11 @@ public class HomePageTest {
                     driver.get(CHAMILO_URL);
                     acceptCookiesIfPresent();
 
-                    // Cari section Acknowledgments
                     WebElement ackSection = wait.until(ExpectedConditions.visibilityOfElementLocated(
                             By.xpath("//h2[contains(text(), 'Acknowledgments')]")));
                     scrollIntoView(ackSection);
                     logSuccess("Acknowledgments section found");
 
-                    // Cari semua link di dalam section wrapper yang sama
                     List<WebElement> links = driver.findElements(By.xpath(
                             "//h2[contains(text(), 'Acknowledgments')]/ancestor::div[contains(@class, 'section_wrapper')]//a"));
 
@@ -305,7 +286,6 @@ public class HomePageTest {
                     String originalWindow = driver.getWindowHandle();
 
                     for (int i = 0; i < links.size(); i++) {
-                        // Refresh list element untuk menghindari StaleElementReferenceException
                         links = driver.findElements(By.xpath(
                                 "//h2[contains(text(), 'Acknowledgments')]/ancestor::div[contains(@class, 'section_wrapper')]//a"));
                         WebElement link = links.get(i);
@@ -314,31 +294,29 @@ public class HomePageTest {
                         scrollIntoView(link);
                         wait.until(ExpectedConditions.elementToBeClickable(link));
 
-                        // Klik link (gunakan JS untuk kestabilan)
                         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", link);
 
-                        // Cek apakah membuka tab baru
                         Set<String> windowHandles = driver.getWindowHandles();
                         if (windowHandles.size() > 1) {
-                            // Switch ke tab baru
                             for (String handle : windowHandles) {
                                 if (!handle.equals(originalWindow)) {
                                     driver.switchTo().window(handle);
                                     break;
                                 }
                             }
-                            logSuccess("Clicked link and switched to tab: " + url);
-                            Thread.sleep(2000); // Tunggu sebentar untuk visualisasi
-                            driver.close(); // Tutup tab
-                            driver.switchTo().window(originalWindow); // Kembali ke tab utama
+                            Thread.sleep(2000);
+                            MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Ack_NewTab_" + (i + 1) + ".png");
+
+                            driver.close();
+                            driver.switchTo().window(originalWindow);
                         } else {
-                            // Jika tidak membuka tab baru (fallback)
                             logSuccess("Clicked link (same tab): " + url);
                             Thread.sleep(2000);
+                            MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Ack_SameTab_" + (i + 1) + ".png");
+
                             driver.navigate().back();
                         }
 
-                        // Pastikan kembali ke halaman Chamilo
                         wait.until(ExpectedConditions.urlContains("chamilo.org"));
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Ack.png");
@@ -362,7 +340,6 @@ public class HomePageTest {
                 logSuccess("Cookies accepted");
                 return;
             } catch (Exception ignored) {
-                // different region may use another component; keep trying others
             }
         }
     }
@@ -381,7 +358,6 @@ public class HomePageTest {
         try {
             ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
         } catch (Exception ignored) {
-            // jika scroll gagal, biarkan Selenium mencoba klik langsung
         }
     }
 
