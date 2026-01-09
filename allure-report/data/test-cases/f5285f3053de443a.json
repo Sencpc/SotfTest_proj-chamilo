@@ -1,0 +1,92 @@
+{
+  "uid" : "f5285f3053de443a",
+  "name" : "Halaman forum menampilkan judul utama dan intro",
+  "fullName" : "com.selenium.ForumPageTest.shouldShowTitleAndIntro",
+  "historyId" : "6cad8e0b3865f8d9780a22174a8df05e",
+  "time" : {
+    "start" : 1767878733357,
+    "stop" : 1767878740474,
+    "duration" : 7117
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767878679783,
+      "stop" : 1767878733355,
+      "duration" : 53572
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767878750317,
+      "stop" : 1767878750417,
+      "duration" : 100
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldShowTitleAndIntro"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "4996@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f5285f3053de443a.json",
+  "parameterValues" : [ ]
+}

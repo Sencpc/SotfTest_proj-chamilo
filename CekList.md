@@ -774,6 +774,35 @@
 - Verifikasi semua benefit information terorganisir dengan logis
 - Verifikasi pricing terlihat dengan jelas untuk setiap tier
 
+## BAGIAN C: Pengujian Fitur Search (Global Search Function)
+
+### Search Input & Basic Functionality
+
+- ✅ Verifikasi search box terbuka dengan placeholder "Search"
+- ✅ Verifikasi search query valid menampilkan results page
+- ✅ Verifikasi query tidak ditemukan menampilkan pesan "No results found"
+- ✅ Verifikasi karakter khusus (@#$%^&\*) tidak memicu error
+
+### Search Accuracy Tests
+
+- ✅ Verifikasi exact match - query "Chamilo" menampilkan hasil exact match
+- ✅ Verifikasi partial match - query "Learn" menampilkan "Learning" dan related terms
+- ✅ Verifikasi case insensitive - "chamilo" = "CHAMILO" = "Chamilo" (results sama)
+- ✅ Verifikasi empty search field tidak submit form
+
+### Search Results Functionality
+
+- ✅ Verifikasi hasil pencarian ditampilkan dalam list
+- ✅ Verifikasi setiap hasil pencarian dapat diklik (memiliki link valid)
+- ✅ Verifikasi hasil pencarian menunjukkan kategori/label/metadata
+- ✅ Verifikasi hasil pencarian ter-redirect dengan URL parameter yang valid
+
+### Search Experience
+
+- ✅ Verifikasi dapat melakukan multiple searches berturut-turut tanpa error
+- ✅ Verifikasi search load time < 10 detik
+- ✅ Verifikasi page tetap ter-render dengan baik setelah search
+
 ## Catatan
 
 - Fokus HANYA pada versi bahasa Inggris (/en/)
@@ -781,3 +810,4 @@
 - Gunakan browser Brave sesuai konfigurasi test setup
 - Ambil screenshot untuk tes yang gagal sebagai dokumentasi
 - Dokumentasikan semua bug yang ditemukan dengan langkah reproduksi yang detail
+- GlobalSearchTest.java berisi 12 test cases komprehensif (lihat PEMBAGIAN_TUGAS.md untuk details)

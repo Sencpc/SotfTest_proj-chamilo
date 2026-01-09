@@ -1,0 +1,94 @@
+{
+  "uid" : "f8d43b31eb3bc704",
+  "name" : "Verifikasi halaman judul Download ditampilkan dengan benar",
+  "fullName" : "com.selenium.DownloadPageTest.shouldDisplayPageTitle",
+  "historyId" : "b013d9bb7830ae9d7707ba9cf734b677",
+  "time" : {
+    "start" : 1767968695963,
+    "stop" : 1767968701501,
+    "duration" : 5538
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767968642706,
+      "stop" : 1767968695924,
+      "duration" : 53218
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767968719684,
+      "stop" : 1767968719808,
+      "duration" : 124
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayPageTitle"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "5268@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f8d43b31eb3bc704.json",
+  "parameterValues" : [ ]
+}

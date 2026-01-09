@@ -1,0 +1,102 @@
+{
+  "uid" : "f073262007ea3b48",
+  "name" : "Verifikasi checkbox text 'I have read dan I accept the privacy policy' ditampilkan",
+  "fullName" : "com.selenium.ContactPageTest.shouldDisplayPrivacyCheckboxText",
+  "historyId" : "bc7453c36ab15fc09bdb03c678f39e94",
+  "time" : {
+    "start" : 1767951797028,
+    "stop" : 1767951797064,
+    "duration" : 36
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767951763389,
+      "stop" : 1767951769335,
+      "duration" : 5946
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767951798975,
+      "stop" : 1767951800149,
+      "duration" : 1174
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayPrivacyCheckboxText"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "host",
+    "value" : "bas"
+  }, {
+    "name" : "thread",
+    "value" : "21388@bas.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "31e89908f1c44911",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767942832056,
+        "stop" : 1767942832066,
+        "duration" : 10
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f073262007ea3b48.json",
+  "parameterValues" : [ ]
+}

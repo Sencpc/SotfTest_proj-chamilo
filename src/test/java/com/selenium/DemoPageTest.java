@@ -1,7 +1,5 @@
 package com.selenium;
 
-import static org.testng.Assert.assertTrue;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -74,7 +72,7 @@ public class DemoPageTest {
             Thread.sleep(3000);
 
             MainApp.captureFullPageScreenshot(driver, "cache/DemoPage_Navigated.png");
-        });
+        }, "DemoPageTest");
     }
 
     @Test(priority = 2, description = "Mengklik tombol Go to Free Campus dan kembali")
@@ -130,7 +128,7 @@ public class DemoPageTest {
             // Verifikasi kembali ke halaman demo
             wait.until(ExpectedConditions.urlContains("demo"));
             MainApp.captureFullPageScreenshot(driver, "cache/DemoPage_FreeCampusReturn.png");
-        });
+        }, "DemoPageTest");
     }
 
     @Test(priority = 3, description = "Memeriksa tata bahasa pada semua elemen heading di halaman Demo")
@@ -192,7 +190,7 @@ public class DemoPageTest {
                     }
 
                     MainApp.captureFullPageScreenshot(driver, "cache/DemoPage_GrammarCheck.png");
-                });
+                }, "DemoPageTest");
     }
 
     private void acceptCookiesIfPresent() {

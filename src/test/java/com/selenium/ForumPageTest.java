@@ -79,6 +79,23 @@ public class ForumPageTest {
         }
     }
 
+    @Test(priority = 0, description = "Verifikasi halaman judul Forum ditampilkan dengan benar")
+    public void shouldDisplayPageTitle() throws InterruptedException {
+        MainApp.executeTest("Forum Page Title", "Verify forum page title displays correctly", () -> {
+            navigateToForum();
+
+            String pageTitle = driver.getTitle();
+            assertTrue(pageTitle.toLowerCase().contains("forum") || pageTitle.toLowerCase().contains("chamilo"),
+                    "Judul halaman harus memuat kata 'forum' atau 'chamilo'");
+            logSuccess("✓ Halaman judul 'Forum' ditampilkan dengan benar di browser tab");
+
+            WebElement heading = wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("h1")));
+            assertTrue(heading.getText().toLowerCase().contains("forum"),
+                    "Heading h1 harus memuat kata 'forum'");
+            logSuccess("✓ Halaman judul terlihat di halaman (h1 tag)");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
     @Test(priority = 1, description = "Halaman forum menampilkan judul utama dan intro")
     public void shouldShowTitleAndIntro() throws InterruptedException {
         MainApp.executeTest("Forum Title and Intro", "Verify forum page shows title and introduction text", () -> {
@@ -88,16 +105,19 @@ public class ForumPageTest {
             scrollIntoView(title);
             Thread.sleep(800);
             assertTrue(title.getText().toLowerCase().contains("forum"), "Judul halaman harus memuat kata Forum");
+            logSuccess("✓ Judul halaman menampilkan kata 'Forum'");
 
             WebElement intro = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                     "//h2[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'need a hand')]")));
             scrollIntoView(intro);
             Thread.sleep(800);
             assertTrue(intro.isDisplayed(), "Subjudul Need a hand with Chamilo? harus terlihat");
+            logSuccess("✓ Subjudul 'Need a hand with Chamilo?' terlihat");
 
             WebElement subtitle = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                     "//*[contains(text(), 'Check our community forums') or contains(text(), 'find answers to your questions')]")));
             assertTrue(subtitle.isDisplayed(), "Deskripsi intro harus terlihat");
+            logSuccess("✓ Deskripsi intro tentang community forums ditampilkan dengan benar");
         }, 1200, TEST_CLASS_NAME);
     }
 
@@ -113,10 +133,12 @@ public class ForumPageTest {
 
             WebElement image = findFirstDisplayed(imageLocators);
             assertNotNull(image, "Gambar forum harus ditemukan");
+            logSuccess("✓ Forum image (foro_global) ditemukan");
             scrollIntoView(image);
             Thread.sleep(800);
             assertTrue(image.getSize().getHeight() > 10 && image.getSize().getWidth() > 10,
                     "Dimensi gambar forum harus masuk akal");
+            logSuccess("✓ Gambar forum dimuat dengan ukuran yang masuk akal");
         }, 1200, TEST_CLASS_NAME);
     }
 
@@ -130,18 +152,22 @@ public class ForumPageTest {
             scrollIntoView(heading);
             Thread.sleep(800);
             assertTrue(heading.isDisplayed(), "Judul Global Forum harus terlihat");
+            logSuccess("✓ Judul seksi 'Global Forum' terlihat");
 
             WebElement description = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                     "//*[contains(text(), 'Our forum accepts messages') or contains(text(), 'Join the global discussion')]")));
             assertTrue(description.isDisplayed(), "Deskripsi Global Forum harus terlihat");
+            logSuccess("✓ Deskripsi tentang forum yang menerima pesan dalam semua bahasa ditampilkan");
 
             WebElement cta = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
                     "//a[contains(@href, 'github.com/chamilo/chamilo-lms/discussions')]")));
             scrollIntoView(cta);
             Thread.sleep(800);
             assertTrue(cta.isDisplayed(), "CTA GitHub Discussions harus terlihat");
+            logSuccess("✓ CTA 'Join the global discussion' button terlihat");
             assertTrue(cta.getAttribute("href").contains("github.com/chamilo/chamilo-lms/discussions"),
                     "Link CTA harus menuju GitHub Discussions");
+            logSuccess("✓ CTA link mengarahkan ke GitHub Discussions yang benar");
         }, 1200, TEST_CLASS_NAME);
     }
 
@@ -155,8 +181,10 @@ public class ForumPageTest {
             scrollIntoView(bannerLink);
             Thread.sleep(800);
             assertTrue(bannerLink.isDisplayed(), "Banner konferensi harus terlihat");
+            logSuccess("✓ Banner konferensi ditampilkan");
             assertTrue(bannerLink.getAttribute("href").contains("conference.chamilo.org"),
                     "Link banner harus mengarah ke conference.chamilo.org");
+            logSuccess("✓ Banner mengarahkan ke conference.chamilo.org dengan benar");
         }, 1200, TEST_CLASS_NAME);
     }
 
@@ -176,8 +204,11 @@ public class ForumPageTest {
                 Thread.sleep(800);
                 String href = link.getAttribute("href");
                 assertNotNull(href, "Link eksternal harus memiliki href");
+                logSuccess("✓ Link eksternal memiliki atribut href");
                 assertFalse(href.isBlank(), "Href tidak boleh kosong");
+                logSuccess("✓ Href tidak kosong");
                 assertTrue(href.startsWith("http"), "Href eksternal harus absolute url");
+                logSuccess("✓ Link eksternal menggunakan absolute URL");
             }
         }, 1200, TEST_CLASS_NAME);
     }
@@ -221,6 +252,11 @@ public class ForumPageTest {
             } catch (Exception ignored) {
             }
         }
+    }
+
+    private void logSuccess(String message) {
+        System.out.println("[ForumPageTest] " + message);
+        TestLogger.logTestEvent(TEST_CLASS_NAME, message);
     }
 
     private String resolveBraveBinary() {

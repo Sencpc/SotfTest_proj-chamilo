@@ -89,7 +89,7 @@ public class HomePageTest {
                 Thread.sleep(1000); // Wait for transition
             }
             MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Slider.png");
-        });
+        }, "HomePageTest");
     }
 
     @Test(priority = 2, description = "Mengklik tombol Download, Try It, dan Donate Now di dalam slider")
@@ -148,7 +148,7 @@ public class HomePageTest {
                         }
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_SliderButtons.png");
-                });
+                }, "HomePageTest");
     }
 
     // 2. Need Help?
@@ -173,7 +173,7 @@ public class HomePageTest {
                     logSuccess("Services link is visible");
 
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_NeedHelp.png");
-                });
+                }, "HomePageTest");
     }
 
     @Test(priority = 4, description = "Mengklik tautan FAQ, Forum, dan Services providers di bagian Need help?")
@@ -209,7 +209,7 @@ public class HomePageTest {
                         driver.get(CHAMILO_URL);
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_NeedHelpLinks.png");
-                });
+                }, "HomePageTest");
     }
 
     // 3. Chamilo Universe
@@ -246,7 +246,7 @@ public class HomePageTest {
                         driver.get(CHAMILO_URL);
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Universe.png");
-                });
+                }, "HomePageTest");
     }
 
     // 4. Do you Like Chamilo
@@ -278,7 +278,7 @@ public class HomePageTest {
                     driver.get(CHAMILO_URL);
 
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Contribution.png");
-                });
+                }, "HomePageTest");
     }
 
     // 5. Acknowledgments
@@ -342,7 +342,7 @@ public class HomePageTest {
                         wait.until(ExpectedConditions.urlContains("chamilo.org"));
                     }
                     MainApp.captureFullPageScreenshot(driver, "cache/HomePage_Ack.png");
-                });
+                }, "HomePageTest");
     }
 
     private void acceptCookiesIfPresent() {

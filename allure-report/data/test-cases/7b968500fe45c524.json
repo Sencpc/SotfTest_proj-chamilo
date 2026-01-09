@@ -1,0 +1,92 @@
+{
+  "uid" : "7b968500fe45c524",
+  "name" : "Banner konferensi muncul di halaman download",
+  "fullName" : "com.selenium.DownloadPageTest.shouldDisplayConferenceBanner",
+  "historyId" : "37846a8c2ed6ba9703629679202ffe1b",
+  "time" : {
+    "start" : 1767873638284,
+    "stop" : 1767873652365,
+    "duration" : 14081
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767873541424,
+      "stop" : 1767873544255,
+      "duration" : 2831
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767873668327,
+      "stop" : 1767873668496,
+      "duration" : 169
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayConferenceBanner"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-da76f243-dd0e-400c-a721-de54d5aed273"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "19836@SencPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7b968500fe45c524.json",
+  "parameterValues" : [ ]
+}

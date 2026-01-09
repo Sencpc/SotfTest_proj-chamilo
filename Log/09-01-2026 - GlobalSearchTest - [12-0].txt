@@ -1,0 +1,163 @@
+================================================================================
+                         TEST EXECUTION REPORT
+================================================================================
+
+Test Suite    : GlobalSearchTest
+Execution Date: 09/01/2026
+Total Tests   : 12
+Passed        : 12
+Failed        : 0
+Status        : ✓ ALL TESTS PASSED
+
+================================================================================
+                           DETAILED TEST RESULTS
+================================================================================
+
+--------------------------------------------------------------------------------
+Test Name   : Search Input Visibility
+Description : Verify search box opens and shows placeholder
+Start Time  : 21:12:17.100
+✓ Search input box terbuka dan terlihat
+✓ Placeholder attribute tersedia
+✓ Placeholder mengandung kata 'search'
+End Time    : 21:13:10.496
+Duration    : 53395 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : Valid Search Query
+Description : Submit valid query and verify search results page loads
+Start Time  : 21:13:12.068
+✓ Query 'Chamilo LMS' diketik ke search input
+✓ Halaman hasil pencarian dimuat
+✓ Browser diarahkan ke halaman hasil pencarian
+✓ Pencarian selesai dalam waktu 7204 ms (< 10 detik)
+End Time    : 21:13:39.694
+Duration    : 27626 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : No Results Handling
+Description : Verify empty state message for non-existent query
+Start Time  : 21:13:41.205
+✓ Query non-existent 'zzzxxyyqnonexistent' diketik
+✓ Pesan 'No results found' ditampilkan untuk query non-existent
+✓ Pesan empty state bersifat ramah dan informatif
+End Time    : 21:14:06.537
+Duration    : 25332 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : Special Characters Handling
+Description : Verify page still renders after special character search
+Start Time  : 21:14:08.061
+✓ Query dengan karakter khusus '@#$%^&*()' diketik
+✓ Halaman tetap ter-render setelah submit karakter khusus
+✓ Page title tersedia
+✓ Halaman pencarian tidak error dan memiliki title yang valid
+End Time    : 21:14:32.758
+Duration    : 24697 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : Exact Match Search
+Description : Verify exact matching query returns the correct item
+Start Time  : 21:14:34.274
+✓ Query exact match 'Chamilo' diketik
+✓ Hasil pencarian mengandung exact match 'Chamilo'
+✓ Minimal satu hasil exact match ditemukan
+End Time    : 21:14:59.765
+Duration    : 25491 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : Partial Match Search
+Description : Verify partial query returns relevant results
+Start Time  : 21:15:01.275
+✓ Partial query 'Learn' diketik
+✓ Hasil pencarian mengandung partial match atau related terms
+✓ Minimal satu hasil partial match ditemukan
+End Time    : 21:15:27.195
+Duration    : 25920 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : Case Insensitive Search
+Description : Verify search is case-insensitive
+Start Time  : 21:15:28.718
+✓ Search lowercase 'chamilo' dijalankan
+✓ Lowercase search menghasilkan 53 hasil
+✓ Search uppercase 'CHAMILO' dijalankan
+✓ Uppercase search menghasilkan 53 hasil
+✓ Search adalah case-insensitive (hasil tidak berubah antara uppercase dan lowercase)
+End Time    : 21:16:19.565
+Duration    : 50847 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : Empty Search Handling
+Description : Verify empty search field does not trigger search
+Start Time  : 21:16:21.573
+✓ Halaman home dimuat di: https://chamilo.org/en/
+✓ Search input dikosongkan
+✓ Empty search ditangani dengan baik tanpa error
+End Time    : 21:16:44.761
+Duration    : 23187 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : Search Results Clickability
+Description : Verify search results are displayed and clickable
+Start Time  : 21:16:46.271
+✓ Query 'download' diketik
+✓ Hasil pencarian ditampilkan (total: 53 hasil)
+✓ Hasil pencarian pertama terlihat dan dapat diklik
+✓ Hasil pencarian memiliki link yang valid
+End Time    : 21:17:12.076
+Duration    : 25805 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : Search Results Categorization
+Description : Verify search results show category or type labels
+Start Time  : 21:17:13.594
+✓ Query 'Chamilo' diketik
+✓ Hasil pencarian menampilkan label/metadata: Chamilo
+✓ Hasil pencarian dikategorisasi dengan jelas
+End Time    : 21:17:40.888
+Duration    : 27293 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : Search Redirect Verification
+Description : Verify search redirects to results page with correct URL structure
+Start Time  : 21:17:42.395
+✓ Query 'forum' diketik
+✓ URL berubah dari home ke results page
+✓ URL results page memiliki struktur yang valid
+✓ Halaman hasil pencarian ter-load sepenuhnya
+End Time    : 21:18:08.368
+Duration    : 25973 ms
+Result      : ✓ PASSED
+
+--------------------------------------------------------------------------------
+Test Name   : Multiple Search Attempts
+Description : Verify user can perform multiple searches without issues
+Start Time  : 21:18:09.875
+✓ Search attempt 1 dengan query 'Chamilo'
+✓ Search attempt 1 berhasil
+✓ Search attempt 2 dengan query 'download'
+✓ Search attempt 2 berhasil
+✓ Search attempt 3 dengan query 'forum'
+✓ Search attempt 3 berhasil
+✓ Semua 3 search attempts selesai dengan sukses
+End Time    : 21:19:26.553
+Duration    : 76678 ms
+Result      : ✓ PASSED
+
+
+================================================================================
+                              END OF REPORT
+================================================================================
+Summary: 12 test(s) passed, 0 test(s) failed
+Result: ✓ All tests completed successfully!

@@ -1,0 +1,215 @@
+{
+  "uid" : "22cd2f85b1067f1a",
+  "name" : "Ikon download ditampilkan dengan ukuran masuk akal",
+  "fullName" : "com.selenium.DownloadPageTest.shouldRenderDownloadIcons",
+  "historyId" : "1aac31769e2b15f36ab734ebc075f3b0",
+  "time" : {
+    "start" : 1767968711355,
+    "stop" : 1767968712628,
+    "duration" : 1273
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767968642706,
+      "stop" : 1767968695924,
+      "duration" : 53218
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767968719684,
+      "stop" : 1767968719808,
+      "duration" : 124
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldRenderDownloadIcons"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "5268@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6da30681502d2457",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767942961164,
+        "stop" : 1767942962435,
+        "duration" : 1271
+      }
+    }, {
+      "uid" : "788336e8050f71fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767879437240,
+        "stop" : 1767879438513,
+        "duration" : 1273
+      }
+    }, {
+      "uid" : "e708edf379f5c14c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767878672719,
+        "stop" : 1767878673967,
+        "duration" : 1248
+      }
+    }, {
+      "uid" : "60582bf0e67a0af8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767877783122,
+        "stop" : 1767877784397,
+        "duration" : 1275
+      }
+    }, {
+      "uid" : "d135a4870bc8d0bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767877271825,
+        "stop" : 1767877273094,
+        "duration" : 1269
+      }
+    }, {
+      "uid" : "91399535cb34de8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767874826941,
+        "stop" : 1767874828207,
+        "duration" : 1266
+      }
+    }, {
+      "uid" : "4103a2fd4cd84872",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767873624143,
+        "stop" : 1767873638278,
+        "duration" : 14135
+      }
+    }, {
+      "uid" : "25e8e797f4cf7bc5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767870645547,
+        "stop" : 1767870659622,
+        "duration" : 14075
+      }
+    }, {
+      "uid" : "5efc524f90fd2383",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767868760555,
+        "stop" : 1767868796965,
+        "duration" : 36410
+      }
+    }, {
+      "uid" : "1ffb2a199bdf3c22",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767868319798,
+        "stop" : 1767868334843,
+        "duration" : 15045
+      }
+    }, {
+      "uid" : "4b7fbbb2c8d143eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767865213967,
+        "stop" : 1767865228951,
+        "duration" : 14984
+      }
+    }, {
+      "uid" : "8b50463f9c01a72c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767864672979,
+        "stop" : 1767864687356,
+        "duration" : 14377
+      }
+    }, {
+      "uid" : "26c353abfa889819",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767864130553,
+        "stop" : 1767864145021,
+        "duration" : 14468
+      }
+    }, {
+      "uid" : "4b8797379b8b6a72",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767863503291,
+        "stop" : 1767863518699,
+        "duration" : 15408
+      }
+    }, {
+      "uid" : "4f32c632aa8904ad",
+      "status" : "failed",
+      "statusDetails" : "Setidaknya satu ikon download harus ditemukan expected [false] but found [true]",
+      "time" : {
+        "start" : 1767857804781,
+        "stop" : 1767857815840,
+        "duration" : 11059
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "22cd2f85b1067f1a.json",
+  "parameterValues" : [ ]
+}

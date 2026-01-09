@@ -1,0 +1,1591 @@
+[ {
+  "uid" : "e47af81ab0d12bc3",
+  "name" : "Verifikasi Subject field ada dan berfungsi",
+  "time" : {
+    "start" : 1767951796122,
+    "stop" : 1767951796165,
+    "duration" : 43
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f8784418e278989",
+  "name" : "Verifikasi halaman content jelas untuk memahami sertifikasi",
+  "time" : {
+    "start" : 1767943781864,
+    "stop" : 1767943781890,
+    "duration" : 26
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe2e8838e7f1a37f",
+  "name" : "Verifikasi form accepts text input in semua fields",
+  "time" : {
+    "start" : 1767951796257,
+    "stop" : 1767951796990,
+    "duration" : 733
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a52e13540f8559c",
+  "name" : "Gambar forum utama dimuat dengan baik",
+  "time" : {
+    "start" : 1767968843367,
+    "stop" : 1767968845450,
+    "duration" : 2083
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da3686c37b92b725",
+  "name" : "Verifikasi deskripsi tentang CCHAPA professionals ditampilkan",
+  "time" : {
+    "start" : 1767943771146,
+    "stop" : 1767943771158,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f6ed36a09a96d16",
+  "name" : "Verifikasi tidak ada teks yang hilang atau masalah tata letak",
+  "time" : {
+    "start" : 1767943781892,
+    "stop" : 1767943781949,
+    "duration" : 57
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "772d1060c15fe863",
+  "name" : "Verifikasi informasi complex exam untuk CHACOBU terlihat",
+  "time" : {
+    "start" : 1767943771298,
+    "stop" : 1767943771309,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c24595a279b1aaf",
+  "name" : "Verifikasi halaman judul 'Contact' ditampilkan dengan benar",
+  "time" : {
+    "start" : 1767951769411,
+    "stop" : 1767951795816,
+    "duration" : 26405
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d24585e387b66bf",
+  "name" : "Verifikasi checkbox can be checked dan unchecked",
+  "time" : {
+    "start" : 1767951797214,
+    "stop" : 1767951798457,
+    "duration" : 1243
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23b6a9c82179edc6",
+  "name" : "Section Global Forum menampilkan CTA ke GitHub Discussions",
+  "time" : {
+    "start" : 1767968845460,
+    "stop" : 1767968848424,
+    "duration" : 2964
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d4971908a784011",
+  "name" : "Verifikasi teks 'If you need professional help' ditampilkan",
+  "time" : {
+    "start" : 1767951883217,
+    "stop" : 1767951883250,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f16cd3d69dd5e30",
+  "name" : "Verifikasi link 'Aviso Legal' ada dan dapat diklik",
+  "time" : {
+    "start" : 1767943782510,
+    "stop" : 1767943782539,
+    "duration" : 29
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbabf3f5e9b5dc71",
+  "name" : "Verifikasi link BeezNest website ada dan dapat diklik",
+  "time" : {
+    "start" : 1767951883658,
+    "stop" : 1767951883717,
+    "duration" : 59
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2da0017abd270582",
+  "name" : "Verifikasi link Portal Assistant berfungsi dengan benar",
+  "time" : {
+    "start" : 1767943781722,
+    "stop" : 1767943781733,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3ce7d46220de76b",
+  "name" : "Verifikasi tab 'History' dapat diklik dan kontennya muncul",
+  "time" : {
+    "start" : 1767954019492,
+    "stop" : 1767954020943,
+    "duration" : 1451
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "41071eac1a83b17",
+  "name" : "Verifikasi 'Otros cargos de responsabilidad' subjudul",
+  "time" : {
+    "start" : 1767954032855,
+    "stop" : 1767954032874,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "967aa2fac4dcb3bc",
+  "name" : "Verifikasi layanan 'Development' ditampilkan",
+  "time" : {
+    "start" : 1767951884057,
+    "stop" : 1767951884092,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ff4e4ac3d0f3877",
+  "name" : "Verifikasi penjelasan tentang CHACOBU certification details",
+  "time" : {
+    "start" : 1767943771311,
+    "stop" : 1767943771322,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9bfa8f0b24e454a4",
+  "name" : "Verifikasi link Course Builder berfungsi dengan benar",
+  "time" : {
+    "start" : 1767943781736,
+    "stop" : 1767943781747,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "408ec50f14d0730",
+  "name" : "Verifikasi address information ditampilkan",
+  "time" : {
+    "start" : 1767951798511,
+    "stop" : 1767951798531,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86803c715b0bdc91",
+  "name" : "Verifikasi halaman judul terlihat di browser tab",
+  "time" : {
+    "start" : 1767951795924,
+    "stop" : 1767951795977,
+    "duration" : 53
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a90c5dad648e680f",
+  "name" : "Verifikasi 'SEND' button terlihat",
+  "time" : {
+    "start" : 1767951798615,
+    "stop" : 1767951798687,
+    "duration" : 72
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2606367033962c8a",
+  "name" : "Verifikasi pesan tentang next levels of certification terlihat",
+  "time" : {
+    "start" : 1767943771374,
+    "stop" : 1767943771385,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11eac245ae26830d",
+  "name" : "Search results show content and can be clicked",
+  "time" : {
+    "start" : 1767968206270,
+    "stop" : 1767968233586,
+    "duration" : 27316
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15d5e5a35d6b6de9",
+  "name" : "Verifikasi semua bagian informasi terorganisir dengan logis",
+  "time" : {
+    "start" : 1767943781952,
+    "stop" : 1767943781964,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1d9e8de06959668",
+  "name" : "Verifikasi BeezNest Belgium provider card ditampilkan",
+  "time" : {
+    "start" : 1767951883290,
+    "stop" : 1767951883324,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cea21bdf65198938",
+  "name" : "Verifikasi informasi lokasi Spain ditampilkan",
+  "time" : {
+    "start" : 1767951883975,
+    "stop" : 1767951884012,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e3f98c537cf388d",
+  "name" : "Mengklik tombol Training, ChamiloTalks, Events, dan Tutorials di bagian Chamilo Universe",
+  "time" : {
+    "start" : 1767966294405,
+    "stop" : 1767966381535,
+    "duration" : 87130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "96bfe9e269ef097",
+  "name" : "Verifikasi informasi ranking CHACOBU terlihat",
+  "time" : {
+    "start" : 1767943771324,
+    "stop" : 1767943771336,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a98033caa41f8bf3",
+  "name" : "Verifikasi penjelasan tentang names, score, date of certification",
+  "time" : {
+    "start" : 1767943771175,
+    "stop" : 1767943771186,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6d75fc3c0e3903d1",
+  "name" : "Konten utama memuat link eksternal valid",
+  "time" : {
+    "start" : 1767968714712,
+    "stop" : 1767968718377,
+    "duration" : 3665
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a17415d53fa81b7d",
+  "name" : "Verifikasi link Contidos Dixitais website ada dan dapat diklik",
+  "time" : {
+    "start" : 1767951883774,
+    "stop" : 1767951883824,
+    "duration" : 50
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c778b3e7f76e47d",
+  "name" : "Verifikasi SEND button styling",
+  "time" : {
+    "start" : 1767951798746,
+    "stop" : 1767951798795,
+    "duration" : 49
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9fd0d90006f815d1",
+  "name" : "Verifikasi judul seksi 'Our community leaders' terlihat",
+  "time" : {
+    "start" : 1767954032316,
+    "stop" : 1767954032846,
+    "duration" : 530
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "831373ed270c5651",
+  "name" : "Mengklik semua link di footer dan kembali ke home",
+  "time" : {
+    "start" : 1767965850174,
+    "stop" : 1767965909851,
+    "duration" : 59677
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7248d993c38bcc8",
+  "name" : "Verifikasi profil Laura Guirao Rodríguez lengkap",
+  "time" : {
+    "start" : 1767954029146,
+    "stop" : 1767954029766,
+    "duration" : 620
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "984331cad5d68847",
+  "name" : "Verifikasi contact/mail image dimuat dengan benar",
+  "time" : {
+    "start" : 1767951798800,
+    "stop" : 1767951798813,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d38c1715462a6eca",
+  "name" : "Verifikasi informasi kontak phone numbers ada pada halaman",
+  "time" : {
+    "start" : 1767951883578,
+    "stop" : 1767951883619,
+    "duration" : 41
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe7b116160346311",
+  "name" : "Verifikasi Message/Tell Us field ada dan berfungsi",
+  "time" : {
+    "start" : 1767951796169,
+    "stop" : 1767951796209,
+    "duration" : 40
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f71fc1620284a819",
+  "name" : "Verifikasi link Bâtisseurs Numériques website ada dan dapat diklik",
+  "time" : {
+    "start" : 1767951883722,
+    "stop" : 1767951883769,
+    "duration" : 47
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79e7c47f4de6c63b",
+  "name" : "Verifikasi teks copyright 'Chamilo © 2024' ditampilkan",
+  "time" : {
+    "start" : 1767943781980,
+    "stop" : 1767943782507,
+    "duration" : 527
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa65bca359a1e54",
+  "name" : "Verifikasi informasi certification process ditampilkan",
+  "time" : {
+    "start" : 1767951884218,
+    "stop" : 1767951884784,
+    "duration" : 566
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73bd0f554a211b50",
+  "name" : "Verifikasi informasi untuk request quote ke semua providers ditampilkan",
+  "time" : {
+    "start" : 1767951886469,
+    "stop" : 1767951886508,
+    "duration" : 39
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "242714690e6187ea",
+  "name" : "Verifikasi semua gambar memiliki proper alt text",
+  "time" : {
+    "start" : 1767954035439,
+    "stop" : 1767954035527,
+    "duration" : 88
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7b7a65260f31da6",
+  "name" : "Verifikasi ikon media sosial YouTube terlihat dan berfungsi",
+  "time" : {
+    "start" : 1767943782579,
+    "stop" : 1767943782596,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc9f9cc20544ad",
+  "name" : "Verifikasi semua link profil LinkedIn membuka dengan benar",
+  "time" : {
+    "start" : 1767954035104,
+    "stop" : 1767954035144,
+    "duration" : 40
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7263ba46ccf5936",
+  "name" : "Blok informasi versi menampilkan detail rilis dan lisensi",
+  "time" : {
+    "start" : 1767968705456,
+    "stop" : 1767968708443,
+    "duration" : 2987
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abfd6feecf10e7e7",
+  "name" : "openEventsViaTopBarMenu",
+  "time" : {
+    "start" : 1767953293196,
+    "stop" : 1767953928507,
+    "duration" : 635311
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b17f53bf26214814",
+  "name" : "Verifikasi tidak ada gambar yang rusak (broken images)",
+  "time" : {
+    "start" : 1767954035536,
+    "stop" : 1767954035696,
+    "duration" : 160
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "674b7df85726040f",
+  "name" : "Banner konferensi muncul dan dapat diklik",
+  "time" : {
+    "start" : 1767968848431,
+    "stop" : 1767968850513,
+    "duration" : 2082
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64d06ab1ed66a4de",
+  "name" : "Verifikasi heading 'Providers' terlihat pada halaman",
+  "time" : {
+    "start" : 1767951883123,
+    "stop" : 1767951883172,
+    "duration" : 49
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "24f2a4076717c15b",
+  "name" : "Empty search field does not submit",
+  "time" : {
+    "start" : 1767968181573,
+    "stop" : 1767968206262,
+    "duration" : 24689
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e70fa3ed2e0ad8b2",
+  "name" : "Verifikasi passing score '74%' dijelaskan dengan benar",
+  "time" : {
+    "start" : 1767943771220,
+    "stop" : 1767943771231,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c366c78a5c158e8c",
+  "name" : "Memastikan link di section Acknowledgments dapat diklik dan kembali ke home",
+  "time" : {
+    "start" : 1767966403231,
+    "stop" : 1767966428484,
+    "duration" : 25253
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85f58060fcb57f7b",
+  "name" : "Verifikasi Contidos Dixitais provider card ditampilkan",
+  "time" : {
+    "start" : 1767951883364,
+    "stop" : 1767951883395,
+    "duration" : 31
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f32dd853f8c83b80",
+  "name" : "Verifikasi Email field ada dan berfungsi",
+  "time" : {
+    "start" : 1767951796078,
+    "stop" : 1767951796118,
+    "duration" : 40
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f073262007ea3b48",
+  "name" : "Verifikasi checkbox text 'I have read dan I accept the privacy policy' ditampilkan",
+  "time" : {
+    "start" : 1767951797028,
+    "stop" : 1767951797064,
+    "duration" : 36
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e033207789dc31f3",
+  "name" : "Verifikasi scroll dari Board of Directors ke Community Leaders",
+  "time" : {
+    "start" : 1767954030423,
+    "stop" : 1767954032307,
+    "duration" : 1884
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b033f708936e3e7d",
+  "name" : "Verifikasi semua link email diformat dengan benar (mailto:)",
+  "time" : {
+    "start" : 1767954035152,
+    "stop" : 1767954035210,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "25ee6b36e32f632d",
+  "name" : "Akses halaman Events dari navbar, lalu scroll perlahan sampai paling bawah",
+  "time" : {
+    "start" : 1767950067974,
+    "stop" : 1767950227177,
+    "duration" : 159203
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "81ac4ae16b466ddf",
+  "name" : "Verifikasi 'The Association' judul ditampilkan dengan benar",
+  "time" : {
+    "start" : 1767954018339,
+    "stop" : 1767954019482,
+    "duration" : 1143
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87fe875847826520",
+  "name" : "Verifikasi ikon media sosial Twitter terlihat dan berfungsi",
+  "time" : {
+    "start" : 1767943782558,
+    "stop" : 1767943782577,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f91287adbe45542",
+  "name" : "Verifikasi layanan 'SaaS' ditampilkan",
+  "time" : {
+    "start" : 1767951884096,
+    "stop" : 1767951884133,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48bc5077d1019f85",
+  "name" : "Karakter khusus tidak memicu error dan halaman tetap ter-render",
+  "time" : {
+    "start" : 1767968048060,
+    "stop" : 1767968074268,
+    "duration" : 26208
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "259438bb259c2ac6",
+  "name" : "Verifikasi profil Yannick Warnier lengkap",
+  "time" : {
+    "start" : 1767954028523,
+    "stop" : 1767954029138,
+    "duration" : 615
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9012ab453f2e8e5",
+  "name" : "Verifikasi 'Objective' section displays information",
+  "time" : {
+    "start" : 1767951798536,
+    "stop" : 1767951798561,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c55d25c9cd562d1f",
+  "name" : "Verifikasi ikon media sosial Facebook terlihat dan berfungsi",
+  "time" : {
+    "start" : 1767943782541,
+    "stop" : 1767943782557,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dec0c701855e5c59",
+  "name" : "Search bar toggle exposes input with placeholder",
+  "time" : {
+    "start" : 1767967937096,
+    "stop" : 1767967992002,
+    "duration" : 54906
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c5ff39a5fccfeb",
+  "name" : "Verifikasi Michela's website link (michelamosquera.com)",
+  "time" : {
+    "start" : 1767954035217,
+    "stop" : 1767954035232,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83833a8fa3948a19",
+  "name" : "Verifikasi tidak ada link yang rusak pada halaman",
+  "time" : {
+    "start" : 1767943781749,
+    "stop" : 1767943781862,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb4875e8f736907a",
+  "name" : "Verifikasi informasi lokasi Latin America ditampilkan",
+  "time" : {
+    "start" : 1767951884016,
+    "stop" : 1767951884051,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c7bfd4d239b536e",
+  "name" : "Verifikasi unique ID officially recognized dijelaskan",
+  "time" : {
+    "start" : 1767943771189,
+    "stop" : 1767943771201,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0dbc805d34fddd0",
+  "name" : "Verifikasi tab 'Mission' dapat diklik dan kontennya muncul",
+  "time" : {
+    "start" : 1767954020952,
+    "stop" : 1767954021848,
+    "duration" : 896
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "573406a8b2f41a3d",
+  "name" : "Verifikasi section heading CCHAPA terlihat",
+  "time" : {
+    "start" : 1767943771132,
+    "stop" : 1767943771144,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "253571aa37cc84cb",
+  "name" : "Verifikasi deskripsi tentang official providers ditampilkan",
+  "time" : {
+    "start" : 1767951883176,
+    "stop" : 1767951883213,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fdd2e8ea677e3280",
+  "name" : "Verifikasi layanan 'Content' ditampilkan",
+  "time" : {
+    "start" : 1767951884136,
+    "stop" : 1767951884158,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17352260fb1feb9a",
+  "name" : "Verifikasi 'privacy policy' link within checkbox text dapat diklik",
+  "time" : {
+    "start" : 1767951797069,
+    "stop" : 1767951797209,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "113c7eb420135350",
+  "name" : "Memastikan slider berfungsi dan tombol next dapat diklik",
+  "time" : {
+    "start" : 1767966122476,
+    "stop" : 1767966146622,
+    "duration" : 24146
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e71ff9a6dd09e6a",
+  "name" : "Verifikasi form submission secure (HTTPS)",
+  "time" : {
+    "start" : 1767951798901,
+    "stop" : 1767951798914,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c494fa55b6ec95d",
+  "name" : "Link eksternal utama valid",
+  "time" : {
+    "start" : 1767968850524,
+    "stop" : 1767968853425,
+    "duration" : 2901
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94d8af57f321dfe9",
+  "name" : "Verifikasi judul halaman terlihat di browser tab",
+  "time" : {
+    "start" : 1767943771101,
+    "stop" : 1767943771128,
+    "duration" : 27
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f4a06735461f463",
+  "name" : "Verifikasi informasi lokasi Belgium ditampilkan",
+  "time" : {
+    "start" : 1767951883894,
+    "stop" : 1767951883931,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34dd094cc156468",
+  "name" : "Verifikasi email addresses ada pada halaman",
+  "time" : {
+    "start" : 1767951883626,
+    "stop" : 1767951883652,
+    "duration" : 26
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e0419ea8b9eb442",
+  "name" : "Verifikasi URL halaman providers benar",
+  "time" : {
+    "start" : 1767951883108,
+    "stop" : 1767951883117,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4796865a8a2238ee",
+  "name" : "Verifikasi official Chamilo LMS campus link",
+  "time" : {
+    "start" : 1767954035238,
+    "stop" : 1767954035258,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f5b8858e9be0cb4",
+  "name" : "Verifikasi semua link website perusahaan berfungsi",
+  "time" : {
+    "start" : 1767954034884,
+    "stop" : 1767954035098,
+    "duration" : 214
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "afbaef3bbecc6887",
+  "name" : "Verifikasi contact form terlihat dan dengan benar displayed",
+  "time" : {
+    "start" : 1767951795982,
+    "stop" : 1767951796017,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47156a2377d6ffd8",
+  "name" : "Verifikasi Name field ada dan berfungsi",
+  "time" : {
+    "start" : 1767951796021,
+    "stop" : 1767951796073,
+    "duration" : 52
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7c88dff8fc0f4ca",
+  "name" : "Mengklik tombol Go to Free Campus dan kembali",
+  "time" : {
+    "start" : 1767965770079,
+    "stop" : 1767965778000,
+    "duration" : 7921
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34253fb5e11f31c9",
+  "name" : "Verifikasi 'SEND' button dapat diklik",
+  "time" : {
+    "start" : 1767951798692,
+    "stop" : 1767951798742,
+    "duration" : 50
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67100b10557dcb60",
+  "name" : "Verifikasi informasi 'Provider from' year ditampilkan",
+  "time" : {
+    "start" : 1767951884168,
+    "stop" : 1767951884214,
+    "duration" : 46
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "edeba61c281b8813",
+  "name" : "Verifikasi scroll dari tab section ke Board of Directors",
+  "time" : {
+    "start" : 1767954026054,
+    "stop" : 1767954027942,
+    "duration" : 1888
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c3c5c92ee679465",
+  "name" : "Verifikasi halaman judul 'Providers' ditampilkan dengan benar",
+  "time" : {
+    "start" : 1767951867629,
+    "stop" : 1767951882994,
+    "duration" : 15365
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce9f6183b383c834",
+  "name" : "Verifikasi halaman judul Forum ditampilkan dengan benar",
+  "time" : {
+    "start" : 1767968833781,
+    "stop" : 1767968840362,
+    "duration" : 6581
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "823256d10142b4a5",
+  "name" : "Verifikasi logo provider images dimuat dengan benar",
+  "time" : {
+    "start" : 1767951883471,
+    "stop" : 1767951883574,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc56f47a80d54fba",
+  "name" : "Verifikasi 'Legitimation' section displays 'User consent'",
+  "time" : {
+    "start" : 1767951798565,
+    "stop" : 1767951798585,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e09ef1836921b170",
+  "name" : "Search results are categorized or labeled",
+  "time" : {
+    "start" : 1767968233594,
+    "stop" : 1767968262388,
+    "duration" : 28794
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ecdf9cf2b14d18d6",
+  "name" : "Verifikasi profil Michela (Chamila) lengkap dengan sosmed",
+  "time" : {
+    "start" : 1767954032880,
+    "stop" : 1767954033525,
+    "duration" : 645
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2e6de7395748337",
+  "name" : "Multiple search attempts work correctly",
+  "time" : {
+    "start" : 1767968289875,
+    "stop" : 1767968368554,
+    "duration" : 78679
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6744f337f77d456",
+  "name" : "Masuk ke halaman Demo melalui Navbar",
+  "time" : {
+    "start" : 1767965749465,
+    "stop" : 1767965770036,
+    "duration" : 20571
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0602bd79e411208",
+  "name" : "Verifikasi informasi ranking 'from highest to lowest score' terlihat",
+  "time" : {
+    "start" : 1767943771203,
+    "stop" : 1767943771217,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "24f75793147d4b10",
+  "name" : "Verifikasi section heading CHACOBU terlihat",
+  "time" : {
+    "start" : 1767943771271,
+    "stop" : 1767943771282,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be0562bf29d9dd77",
+  "name" : "Verifikasi form has action attribute untuk submission",
+  "time" : {
+    "start" : 1767951798920,
+    "stop" : 1767951798946,
+    "duration" : 26
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d51010f684b1dca2",
+  "name" : "Verifikasi form has method POST",
+  "time" : {
+    "start" : 1767951798950,
+    "stop" : 1767951798970,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9e8aef260faa2a7",
+  "name" : "Verifikasi semua link media sosial membuka profil yang benar",
+  "time" : {
+    "start" : 1767943782598,
+    "stop" : 1767943782609,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d7ed389bd2f5770",
+  "name" : "Search preserves results order after redirect",
+  "time" : {
+    "start" : 1767968262395,
+    "stop" : 1767968289870,
+    "duration" : 27475
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b8b7afa508cd0666",
+  "name" : "Verifikasi judul seksi 'Board of directors' terlihat",
+  "time" : {
+    "start" : 1767954027950,
+    "stop" : 1767954028490,
+    "duration" : 540
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e49e0ae872d9cf3",
+  "name" : "Opsi download ZIP dan TAR.GZ terlihat dan mengarah ke GitHub release",
+  "time" : {
+    "start" : 1767968708450,
+    "stop" : 1767968711348,
+    "duration" : 2898
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "791908c4a27933d7",
+  "name" : "Verifikasi form field labels clear dan visible",
+  "time" : {
+    "start" : 1767951796214,
+    "stop" : 1767951796252,
+    "duration" : 38
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d5d1108a37f9d89",
+  "name" : "setUp",
+  "time" : {
+    "start" : 1764606548868,
+    "stop" : 1764606548870,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8a0bd5d907953396",
+  "name" : "Verifikasi link 'Chamilo Portal Assistant' terlihat dan dapat diklik",
+  "time" : {
+    "start" : 1767943771234,
+    "stop" : 1767943771269,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa45414864e91964",
+  "name" : "Verifikasi Nosolored provider card ditampilkan",
+  "time" : {
+    "start" : 1767951883400,
+    "stop" : 1767951883433,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc1474a4723a4ab4",
+  "name" : "Verifikasi Bâtisseurs Numériques provider card ditampilkan",
+  "time" : {
+    "start" : 1767951883328,
+    "stop" : 1767951883360,
+    "duration" : 32
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3589e84d927ac5c4",
+  "name" : "Verifikasi section 'PREMIUM' terlihat",
+  "time" : {
+    "start" : 1767951883254,
+    "stop" : 1767951883286,
+    "duration" : 32
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c60cb42596b607e1",
+  "name" : "Verifikasi 'Asociación Chamilo' organization ditampilkan",
+  "time" : {
+    "start" : 1767951798487,
+    "stop" : 1767951798506,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "892227a32d68b073",
+  "name" : "Verifikasi data privacy information terlihat below the checkbox",
+  "time" : {
+    "start" : 1767951798463,
+    "stop" : 1767951798480,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "acdd71c2971a1996",
+  "name" : "Memastikan blok 'Need help?' menampilkan tautan bantuan utama Chamilo",
+  "time" : {
+    "start" : 1767966212699,
+    "stop" : 1767966228113,
+    "duration" : 15414
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fcb1f204474176d",
+  "name" : "Verifikasi BeezNest Latino provider card ditampilkan",
+  "time" : {
+    "start" : 1767951883437,
+    "stop" : 1767951883466,
+    "duration" : 29
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15db88291619df14",
+  "name" : "Verifikasi copyright text 'Chamilo © 2024' ditampilkan",
+  "time" : {
+    "start" : 1767951884789,
+    "stop" : 1767951885345,
+    "duration" : 556
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba0fdafb2f97465b",
+  "name" : "Memeriksa tata bahasa pada semua elemen heading di halaman Demo",
+  "time" : {
+    "start" : 1767965778004,
+    "stop" : 1767965779154,
+    "duration" : 1150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "922ac791956ed8b7",
+  "name" : "Scroll ke bagian 'Do you like Chamilo?', klik tombol CONTRIBUTE, lalu kembali ke home via logo",
+  "time" : {
+    "start" : 1767901323083,
+    "stop" : 1767901348543,
+    "duration" : 25460
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4eaa269047fcbb6a",
+  "name" : "Verifikasi 'Rights' section menampilkan informasi tentang data rights",
+  "time" : {
+    "start" : 1767951798590,
+    "stop" : 1767951798611,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ee7d662fd1a2cf17",
+  "name" : "Verifikasi link Nosolored website ada dan dapat diklik",
+  "time" : {
+    "start" : 1767951883829,
+    "stop" : 1767951883890,
+    "duration" : 61
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be96804cc15f0cf2",
+  "name" : "Verifikasi profil Ángel lengkap",
+  "time" : {
+    "start" : 1767954033532,
+    "stop" : 1767954034186,
+    "duration" : 654
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b671213a42f174e2",
+  "name" : "Verifikasi semua foto profil dimuat tanpa error",
+  "time" : {
+    "start" : 1767954035265,
+    "stop" : 1767954035431,
+    "duration" : 166
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8371ebf56bdbde34",
+  "name" : "Membuka homepage Chamilo dan memastikan tombol TRAINING mengarah ke halaman training",
+  "time" : {
+    "start" : 1767882092677,
+    "stop" : 1767882115906,
+    "duration" : 23229
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d255dbef48ab5aaa",
+  "name" : "Query tidak ditemukan menampilkan pesan kosong yang ramah",
+  "time" : {
+    "start" : 1767968021204,
+    "stop" : 1767968048053,
+    "duration" : 26849
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4805353892649dc",
+  "name" : "Verifikasi email link 'michela@chamilo.org' dapat diklik",
+  "time" : {
+    "start" : 1767943771403,
+    "stop" : 1767943781719,
+    "duration" : 10316
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc9a1945b2eadf42",
+  "name" : "testNavbarNavigation",
+  "time" : {
+    "start" : 1767965625396,
+    "stop" : 1767965681168,
+    "duration" : 55772
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e527559b41fca030",
+  "name" : "Verifikasi call-to-action 'Want to get Chamilo-certified?' ditampilkan",
+  "time" : {
+    "start" : 1767943771388,
+    "stop" : 1767943771400,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6a25aec39b22761",
+  "name" : "Verifikasi privacy policy acceptance checkbox ada",
+  "time" : {
+    "start" : 1767951796994,
+    "stop" : 1767951797025,
+    "duration" : 31
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de906d0b2d6c0d15",
+  "name" : "Verifikasi deskripsi tentang CHACOBU professionals ditampilkan",
+  "time" : {
+    "start" : 1767943771283,
+    "stop" : 1767943771295,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89ead37051e6a11a",
+  "name" : "Mengklik tombol Download, Try It, dan Donate Now di dalam slider",
+  "time" : {
+    "start" : 1767966146657,
+    "stop" : 1767966212695,
+    "duration" : 66038
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "218fe4e4f139c1ca",
+  "name" : "Valid query returns results dalam waktu wajar",
+  "time" : {
+    "start" : 1767967992067,
+    "stop" : 1767968021196,
+    "duration" : 29129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ee7bb447ffd8817",
+  "name" : "Verifikasi social media icons (Facebook, Twitter, YouTube) ada di footer",
+  "time" : {
+    "start" : 1767951885907,
+    "stop" : 1767951886463,
+    "duration" : 556
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22cd2f85b1067f1a",
+  "name" : "Ikon download ditampilkan dengan ukuran masuk akal",
+  "time" : {
+    "start" : 1767968711355,
+    "stop" : 1767968712628,
+    "duration" : 1273
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86faa50da2c8afe9",
+  "name" : "Verifikasi typography dan formatting konsisten",
+  "time" : {
+    "start" : 1767943781966,
+    "stop" : 1767943781978,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a030d2f098b2c91c",
+  "name" : "Verifikasi link 'Chamilo Course Builder List' terlihat dan dapat diklik",
+  "time" : {
+    "start" : 1767943771338,
+    "stop" : 1767943771371,
+    "duration" : 33
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3bd4d7861c9558f4",
+  "name" : "Verifikasi konten default The Association tab",
+  "time" : {
+    "start" : 1767954024796,
+    "stop" : 1767954026046,
+    "duration" : 1250
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8855f323e8ddd323",
+  "name" : "Verifikasi profil Damien Renou lengkap",
+  "time" : {
+    "start" : 1767954034197,
+    "stop" : 1767954034877,
+    "duration" : 680
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d730c602951b1f0",
+  "name" : "Verifikasi judul seksi 'What Chamilo?' terlihat",
+  "time" : {
+    "start" : 1767954017625,
+    "stop" : 1767954018193,
+    "duration" : 568
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88f99a4a64fa1b0d",
+  "name" : "Verifikasi teks election informasi ditampilkan dengan benar",
+  "time" : {
+    "start" : 1767954028496,
+    "stop" : 1767954028515,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "38769d9607ef00f4",
+  "name" : "Verifikasi images dimuat tanpa error (no broken images)",
+  "time" : {
+    "start" : 1767951798818,
+    "stop" : 1767951798895,
+    "duration" : 77
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae93c0eec5f9a6e7",
+  "name" : "Banner konferensi muncul di halaman download",
+  "time" : {
+    "start" : 1767968712637,
+    "stop" : 1767968714707,
+    "duration" : 2070
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad5b2823f7ec192e",
+  "name" : "Partial match search returns relevant results",
+  "time" : {
+    "start" : 1767968101273,
+    "stop" : 1767968128710,
+    "duration" : 27437
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "77cf94085df9c1d4",
+  "name" : "Halaman forum menampilkan judul utama dan intro",
+  "time" : {
+    "start" : 1767968840432,
+    "stop" : 1767968843360,
+    "duration" : 2928
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79d2148cec47c370",
+  "name" : "Case insensitive search returns same results",
+  "time" : {
+    "start" : 1767968128717,
+    "stop" : 1767968181566,
+    "duration" : 52849
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c1b359b0c410567",
+  "name" : "Verifikasi informasi complex exam untuk CCHAPA terlihat",
+  "time" : {
+    "start" : 1767943771160,
+    "stop" : 1767943771172,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2aed15530fc9808",
+  "name" : "Memastikan blok ajakan kontribusi tampil dan dapat diklik",
+  "time" : {
+    "start" : 1767966381538,
+    "stop" : 1767966403228,
+    "duration" : 21690
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6544c7023be193ca",
+  "name" : "Verifikasi informasi lokasi France ditampilkan",
+  "time" : {
+    "start" : 1767951883937,
+    "stop" : 1767951883971,
+    "duration" : 34
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "91ee86425769e5b7",
+  "name" : "Exact match search returns correct item",
+  "time" : {
+    "start" : 1767968074274,
+    "stop" : 1767968101266,
+    "duration" : 26992
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8d43b31eb3bc704",
+  "name" : "Verifikasi halaman judul Download ditampilkan dengan benar",
+  "time" : {
+    "start" : 1767968695963,
+    "stop" : 1767968701501,
+    "duration" : 5538
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d6a75a29dd60cd61",
+  "name" : "Mengklik tautan FAQ, Forum, dan Services providers di bagian Need help?",
+  "time" : {
+    "start" : 1767966228116,
+    "stop" : 1767966294402,
+    "duration" : 66286
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb146ed23556b81f",
+  "name" : "Verifikasi akurasi konten dan informasi versi",
+  "time" : {
+    "start" : 1767968718383,
+    "stop" : 1767968719678,
+    "duration" : 1295
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15171a6232896627",
+  "name" : "Verifikasi judul halaman 'Training' ditampilkan dengan benar",
+  "time" : {
+    "start" : 1767943724107,
+    "stop" : 1767943771099,
+    "duration" : 46992
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4125f06d34d9de9",
+  "name" : "Verifikasi link 'Aviso Legal' ada di footer",
+  "time" : {
+    "start" : 1767951885350,
+    "stop" : 1767951885902,
+    "duration" : 552
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f54273dcce41cbe5",
+  "name" : "Verifikasi navigasi antara tab The Association, History, Mission",
+  "time" : {
+    "start" : 1767954021858,
+    "stop" : 1767954024787,
+    "duration" : 2929
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eeff7772795d5eb2",
+  "name" : "Dokumentasi resmi memiliki link dengan href yang benar",
+  "time" : {
+    "start" : 1767968701658,
+    "stop" : 1767968705448,
+    "duration" : 3790
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66c60b03e41434d4",
+  "name" : "Verifikasi profil Noa Orizales Iglesias lengkap",
+  "time" : {
+    "start" : 1767954029775,
+    "stop" : 1767954030413,
+    "duration" : 638
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

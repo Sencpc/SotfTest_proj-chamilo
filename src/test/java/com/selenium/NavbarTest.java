@@ -129,7 +129,7 @@ public class NavbarTest {
 
             // Capture final state
             MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Final.png");
-        });
+        }, "NavbarTest");
     }
 
     @AfterClass

@@ -1,0 +1,92 @@
+{
+  "uid" : "cf57ef5494658e49",
+  "name" : "Memastikan blok ajakan kontribusi tampil dan dapat diklik",
+  "fullName" : "com.selenium.HomePageTest.shouldPromoteContributionCTA",
+  "historyId" : "5cf402396f857f7d2d1bc2c88c561f00",
+  "time" : {
+    "start" : 1764694545450,
+    "stop" : 1764694559832,
+    "duration" : 14382
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1764694525388,
+      "stop" : 1764694528175,
+      "duration" : 2787
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1764694559837,
+      "stop" : 1764694560090,
+      "duration" : 253
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldPromoteContributionCTA"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "38940@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cf57ef5494658e49.json",
+  "parameterValues" : [ ]
+}

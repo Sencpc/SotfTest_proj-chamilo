@@ -1,0 +1,94 @@
+{
+  "uid" : "d7b7a65260f31da6",
+  "name" : "Verifikasi ikon media sosial YouTube terlihat dan berfungsi",
+  "fullName" : "com.selenium.TrainingPageTest.shouldDisplayYouTubeIcon",
+  "historyId" : "a14162d927a14ffcc566b4bfd6bca6ce",
+  "time" : {
+    "start" : 1767943782579,
+    "stop" : 1767943782596,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767943720988,
+      "stop" : 1767943724106,
+      "duration" : 3118
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767943782610,
+      "stop" : 1767943782807,
+      "duration" : 197
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.TrainingPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.TrainingPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayYouTubeIcon"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.TrainingPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d7b7a65260f31da6.json",
+  "parameterValues" : [ ]
+}

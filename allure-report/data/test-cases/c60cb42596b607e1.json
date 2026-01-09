@@ -1,0 +1,102 @@
+{
+  "uid" : "c60cb42596b607e1",
+  "name" : "Verifikasi 'Asociación Chamilo' organization ditampilkan",
+  "fullName" : "com.selenium.ContactPageTest.shouldDisplayOrganizationInfo",
+  "historyId" : "b6e7b48fa62c16f9b2f945e6319298e4",
+  "time" : {
+    "start" : 1767951798487,
+    "stop" : 1767951798506,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767951763389,
+      "stop" : 1767951769335,
+      "duration" : 5946
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767951798975,
+      "stop" : 1767951800149,
+      "duration" : 1174
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayOrganizationInfo"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "host",
+    "value" : "bas"
+  }, {
+    "name" : "thread",
+    "value" : "21388@bas.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "300a8bdd17bf1e56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767942832185,
+        "stop" : 1767942832196,
+        "duration" : 11
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c60cb42596b607e1.json",
+  "parameterValues" : [ ]
+}

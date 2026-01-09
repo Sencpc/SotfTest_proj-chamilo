@@ -1,0 +1,92 @@
+{
+  "uid" : "5b2106157dbaedda",
+  "name" : "Mengklik tombol Training, ChamiloTalks, Events, dan Tutorials di bagian Chamilo Universe",
+  "fullName" : "com.selenium.HomePageTest.shouldNavigateChamiloUniverseLinks",
+  "historyId" : "503377823eda71049d6155415312ce12",
+  "time" : {
+    "start" : 1767943453097,
+    "stop" : 1767943540356,
+    "duration" : 87259
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767943254706,
+      "stop" : 1767943257877,
+      "duration" : 3171
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767943585766,
+      "stop" : 1767943586062,
+      "duration" : 296
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldNavigateChamiloUniverseLinks"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5b2106157dbaedda.json",
+  "parameterValues" : [ ]
+}

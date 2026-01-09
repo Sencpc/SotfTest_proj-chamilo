@@ -1,0 +1,92 @@
+{
+  "uid" : "b58b70bfa05af2bb",
+  "name" : "testNavbarNavigation",
+  "fullName" : "com.selenium.NavbarTest.testNavbarNavigation",
+  "historyId" : "ed0a5c8bb45d318553b0156d7cc17f67",
+  "time" : {
+    "start" : 1767943626674,
+    "stop" : 1767943661755,
+    "duration" : 35081
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767943586063,
+      "stop" : 1767943626671,
+      "duration" : 40608
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767943661756,
+      "stop" : 1767943666959,
+      "duration" : 5203
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.NavbarTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.NavbarTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testNavbarNavigation"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.NavbarTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b58b70bfa05af2bb.json",
+  "parameterValues" : [ ]
+}

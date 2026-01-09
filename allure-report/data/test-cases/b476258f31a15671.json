@@ -1,0 +1,92 @@
+{
+  "uid" : "b476258f31a15671",
+  "name" : "Query tidak ditemukan menampilkan pesan kosong yang ramah",
+  "fullName" : "com.selenium.GlobalSearchTest.shouldShowNoResultsState",
+  "historyId" : "a4e1a8a80fe3201240bec9ed4208dbbd",
+  "time" : {
+    "start" : 1767877436296,
+    "stop" : 1767877461372,
+    "duration" : 25076
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startDriver",
+    "time" : {
+      "start" : 1767877350159,
+      "stop" : 1767877352368,
+      "duration" : 2209
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1767877486129,
+      "stop" : 1767877486267,
+      "duration" : 138
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldShowNoResultsState"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "37288@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b476258f31a15671.json",
+  "parameterValues" : [ ]
+}

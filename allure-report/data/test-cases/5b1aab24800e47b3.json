@@ -1,0 +1,60 @@
+{
+  "uid" : "5b1aab24800e47b3",
+  "name" : "Blok informasi versi menampilkan detail rilis dan lisensi",
+  "fullName" : "com.selenium.DownloadPageTest.shouldDisplayVersionInfo",
+  "historyId" : "4967a0ff9731a5224d475e9c2c507994",
+  "time" : {
+    "start" : 1767868703873,
+    "stop" : 1767868720509,
+    "duration" : 16636
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayVersionInfo"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-8844f30a-f514-4974-9818-a02f31dd5b09"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25044@SencPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5b1aab24800e47b3.json",
+  "parameterValues" : [ ]
+}

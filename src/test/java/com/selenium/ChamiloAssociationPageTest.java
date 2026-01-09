@@ -118,7 +118,7 @@ public class ChamiloAssociationPageTest {
         TestLogger.logTestEvent(className, "Starting test: testHistoryTabClick");
         
         // Scroll ke area tab
-        WebElement tabArea = scrollToElement(By.xpath("//*[contains(text(), 'The Association')]"));
+        scrollToElement(By.xpath("//*[contains(text(), 'The Association')]"));
         
         // Klik tab "History"
         WebElement historyTab = wait.until(ExpectedConditions.elementToBeClickable(

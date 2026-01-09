@@ -1,0 +1,184 @@
+{
+  "uid" : "acdd71c2971a1996",
+  "name" : "Memastikan blok 'Need help?' menampilkan tautan bantuan utama Chamilo",
+  "fullName" : "com.selenium.HomePageTest.shouldExposeNeedHelpResources",
+  "historyId" : "6ff992dbe23208c48eb4765da0d55144",
+  "time" : {
+    "start" : 1767966212699,
+    "stop" : 1767966228113,
+    "duration" : 15414
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767966118788,
+      "stop" : 1767966122436,
+      "duration" : 3648
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767966428486,
+      "stop" : 1767966428732,
+      "duration" : 246
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldExposeNeedHelpResources"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "host",
+    "value" : "MSI"
+  }, {
+    "name" : "thread",
+    "value" : "17256@MSI.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a3f328452849e41f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767945638372,
+        "stop" : 1767945654716,
+        "duration" : 16344
+      }
+    }, {
+      "uid" : "a54d8100f71baa37",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767943372967,
+        "stop" : 1767943388559,
+        "duration" : 15592
+      }
+    }, {
+      "uid" : "e005ee7e448106c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767449111537,
+        "stop" : 1767449155086,
+        "duration" : 43549
+      }
+    }, {
+      "uid" : "4ac282cb02ec0079",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767449036140,
+        "stop" : 1767449079649,
+        "duration" : 43509
+      }
+    }, {
+      "uid" : "a4bc4ebd6a55e106",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767448872348,
+        "stop" : 1767448915785,
+        "duration" : 43437
+      }
+    }, {
+      "uid" : "43aedff9500dc360",
+      "status" : "passed",
+      "time" : {
+        "start" : 1764694528200,
+        "stop" : 1764694545386,
+        "duration" : 17186
+      }
+    }, {
+      "uid" : "273e1bcf12fd6bec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1764694400588,
+        "stop" : 1764694416364,
+        "duration" : 15776
+      }
+    }, {
+      "uid" : "347325e6ed02b307",
+      "status" : "passed",
+      "time" : {
+        "start" : 1764606974926,
+        "stop" : 1764607024538,
+        "duration" : 49612
+      }
+    }, {
+      "uid" : "3c3d056adc7be0db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1764606728005,
+        "stop" : 1764606771476,
+        "duration" : 43471
+      }
+    }, {
+      "uid" : "4b507d82440fd796",
+      "status" : "skipped",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created\nfrom unknown error: no chrome binary at C:\\Path\\to\\brave.exe \nHost info: host: 'SENCPC', ip: '26.193.42.182'\nBuild info: version: '4.38.0', revision: '6b412e825c*'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized, --disable-infobars, --disable-extensions], binary: C:\\Path\\to\\brave.exe, extensions: []}}]}]",
+      "time" : {
+        "start" : 1764606548911,
+        "stop" : 1764606548912,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "45ed8c5f5a72e40",
+      "status" : "skipped",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created\nfrom unknown error: no chrome binary at C:\\Path\\to\\brave.exe \nHost info: host: 'SENCPC', ip: '26.193.42.182'\nBuild info: version: '4.38.0', revision: '6b412e825c*'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized, --disable-infobars, --disable-extensions], binary: C:\\Path\\to\\brave.exe, extensions: []}}]}]",
+      "time" : {
+        "start" : 1764606460182,
+        "stop" : 1764606460183,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "acdd71c2971a1996.json",
+  "parameterValues" : [ ]
+}

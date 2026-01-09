@@ -1,0 +1,92 @@
+{
+  "uid" : "3bc996447527ade9",
+  "name" : "Memastikan slider berfungsi dan tombol next dapat diklik",
+  "fullName" : "com.selenium.HomePageTest.shouldInteractWithSlider",
+  "historyId" : "3192e7b158345a59cb1b31a0712de733",
+  "time" : {
+    "start" : 1767943257879,
+    "stop" : 1767943307180,
+    "duration" : 49301
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767943254706,
+      "stop" : 1767943257877,
+      "duration" : 3171
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767943585766,
+      "stop" : 1767943586062,
+      "duration" : 296
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldInteractWithSlider"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.HomePageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3bc996447527ade9.json",
+  "parameterValues" : [ ]
+}

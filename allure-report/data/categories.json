@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Could not start a new session. Response code 500. Message: session not created\nfrom unknown error: no chrome binary at C:\\Path\\to\\brave.exe \nHost info: host: 'SENCPC', ip: '26.193.42.182'\nBuild info: version: '4.38.0', revision: '6b412e825c*'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized, --disable-infobars, --disable-extensions], binary: C:\\Path\\to\\brave.exe, extensions: []}}]}]",
+      "children" : [ {
+        "name" : "setUp",
+        "uid" : "4d5d1108a37f9d89",
+        "parentUid" : "996de601827b11101aa5d8fac98ab245",
+        "status" : "broken",
+        "time" : {
+          "start" : 1764606548868,
+          "stop" : 1764606548870,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "996de601827b11101aa5d8fac98ab245"
+    }, {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.xpath: //a[normalize-space()='Events' or normalize-space()='EVENTS'] (tried for 10 second(s) with 500 milliseconds interval)",
+      "children" : [ {
+        "name" : "Akses halaman Events dari navbar, lalu scroll perlahan sampai paling bawah",
+        "uid" : "25ee6b36e32f632d",
+        "parentUid" : "3bcbb04a236da04ce533699f5c0fe73a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1767950067974,
+          "stop" : 1767950227177,
+          "duration" : 159203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3bcbb04a236da04ce533699f5c0fe73a"
+    }, {
+      "name" : "Expected condition failed: waiting for element to be clickable: By.cssSelector: a.button[href='https://conference.chamilo.org/'] (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: '4.38.0', revision: '6b412e825c*'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\\Users\\NIKO\\AppData\\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51534}, goog:processID: 23544, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51534/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 704a90e958335c25e0578084b3f0e5d2",
+      "children" : [ {
+        "name" : "openEventsViaTopBarMenu",
+        "uid" : "abfd6feecf10e7e7",
+        "parentUid" : "7124808ce8ef8388cedcc32ee4222431",
+        "status" : "broken",
+        "time" : {
+          "start" : 1767953293196,
+          "stop" : 1767953928507,
+          "duration" : 635311
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7124808ce8ef8388cedcc32ee4222431"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

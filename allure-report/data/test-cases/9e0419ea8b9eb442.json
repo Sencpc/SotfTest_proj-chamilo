@@ -1,0 +1,102 @@
+{
+  "uid" : "9e0419ea8b9eb442",
+  "name" : "Verifikasi URL halaman providers benar",
+  "fullName" : "com.selenium.ProvidersPageTest.shouldHaveCorrectURL",
+  "historyId" : "649e0b7059d6a5f8947eb4f8c7573224",
+  "time" : {
+    "start" : 1767951883108,
+    "stop" : 1767951883117,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767951861376,
+      "stop" : 1767951867556,
+      "duration" : 6180
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767951886514,
+      "stop" : 1767951888269,
+      "duration" : 1755
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldHaveCorrectURL"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "host",
+    "value" : "bas"
+  }, {
+    "name" : "thread",
+    "value" : "26992@bas.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cc9649b6f1561116",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767943717873,
+        "stop" : 1767943717880,
+        "duration" : 7
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9e0419ea8b9eb442.json",
+  "parameterValues" : [ ]
+}

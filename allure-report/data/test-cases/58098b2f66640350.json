@@ -1,0 +1,92 @@
+{
+  "uid" : "58098b2f66640350",
+  "name" : "Valid query returns results dalam waktu wajar",
+  "fullName" : "com.selenium.GlobalSearchTest.shouldReturnResultsForValidQuery",
+  "historyId" : "2d7a1965c5668b033c0a601a6698b60a",
+  "time" : {
+    "start" : 1767874613464,
+    "stop" : 1767874641586,
+    "duration" : 28122
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startDriver",
+    "time" : {
+      "start" : 1767874555932,
+      "stop" : 1767874558692,
+      "duration" : 2760
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1767874691120,
+      "stop" : 1767874691242,
+      "duration" : 122
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldReturnResultsForValidQuery"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "38276@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "58098b2f66640350.json",
+  "parameterValues" : [ ]
+}

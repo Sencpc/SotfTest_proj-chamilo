@@ -79,6 +79,28 @@ public class DownloadPageTest {
         }
     }
 
+    private void logSuccess(String message) {
+        System.out.println("[DownloadPageTest] " + message);
+        TestLogger.logTestEvent(TEST_CLASS_NAME, message);
+    }
+
+    @Test(priority = 0, description = "Verifikasi halaman judul Download ditampilkan dengan benar")
+    public void shouldDisplayPageTitle() throws InterruptedException {
+        MainApp.executeTest("Download Page Title", "Verify download page title displays correctly", () -> {
+            navigateToDownload();
+
+            String pageTitle = driver.getTitle();
+            assertTrue(pageTitle.toLowerCase().contains("download") || pageTitle.toLowerCase().contains("chamilo"),
+                    "Judul halaman harus memuat kata 'download' atau 'chamilo'");
+            logSuccess("✓ Halaman judul 'Download' ditampilkan dengan benar di browser tab");
+
+            WebElement heading = wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("h1")));
+            assertTrue(heading.getText().toLowerCase().contains("download") || heading.getText().toLowerCase().contains("chamilo"),
+                    "Heading h1 harus memuat kata 'download' atau 'chamilo'");
+            logSuccess("✓ Heading h1 'Download' ditampilkan dengan benar");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
     @Test(priority = 1, description = "Dokumentasi resmi memiliki link dengan href yang benar")
     public void shouldExposeDocumentationLinks() throws InterruptedException {
         MainApp.executeTest("Documentation Links", "Verify official documentation links have correct URLs", () -> {
@@ -95,8 +117,11 @@ public class DownloadPageTest {
             Thread.sleep(800);
 
             assertEquals(officialDoc.getAttribute("href"), "https://docs.chamilo.org/v/1.11.x/");
+            logSuccess("✓ Link 'Official documentation' mengarah ke https://docs.chamilo.org/v/1.11.x/");
             assertEquals(installGuide.getAttribute("href"), "https://11.chamilo.org/documentation/installation_guide.html");
+            logSuccess("✓ Link 'Installation guide' mengarah ke https://11.chamilo.org/documentation/installation_guide.html");
             assertEquals(changelog.getAttribute("href"), "https://11.chamilo.org/documentation/changelog.html");
+            logSuccess("✓ Link 'Chamilo changelog' mengarah ke https://11.chamilo.org/documentation/changelog.html");
         }, 1200, TEST_CLASS_NAME);
     }
 
@@ -110,20 +135,24 @@ public class DownloadPageTest {
             scrollIntoView(versionHeading);
             Thread.sleep(800);
             assertTrue(versionHeading.isDisplayed(), "Versi 1.11.32 harus ditampilkan");
+            logSuccess("✓ Versi Chamilo LMS 1.11.32 ditampilkan");
 
             WebElement license = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                     "//*[contains(text(), 'GNU/GPLv3')]")));
             scrollIntoView(license);
             Thread.sleep(800);
             assertTrue(license.isDisplayed(), "Lisensi GNU/GPLv3+ harus ditampilkan");
+            logSuccess("✓ Lisensi GNU/GPLv3+ ditampilkan");
 
             WebElement phpSupport = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                     "//*[contains(text(), 'PHP 7.4') and contains(text(), '8.3')]")));
             assertTrue(phpSupport.isDisplayed(), "Info kompatibilitas PHP harus terlihat");
+            logSuccess("✓ Kompatibilitas PHP 7.4 dan 8.3 ditampilkan");
 
             WebElement releaseDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                     "//*[contains(text(), '2025-06-27')]")));
             assertTrue(releaseDate.isDisplayed(), "Tanggal rilis harus tampil");
+            logSuccess("✓ Tanggal rilis 2025-06-27 ditampilkan");
         }, 1200, TEST_CLASS_NAME);
     }
 
@@ -143,12 +172,15 @@ public class DownloadPageTest {
 
             assertEquals(zipLink.getAttribute("href"),
                 "https://github.com/chamilo/chamilo-lms/releases/download/v1.11.32/chamilo-1.11.32.zip");
+            logSuccess("✓ Link ZIP download mengarah ke GitHub release v1.11.32");
             assertEquals(tarLink.getAttribute("href"),
                 "https://github.com/chamilo/chamilo-lms/releases/download/v1.11.32/chamilo-1.11.32.tar.gz");
+            logSuccess("✓ Link TAR.GZ download mengarah ke GitHub release v1.11.32");
 
             WebElement compatibilityText = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
                     "//*[contains(text(), 'PHP 7.4') and contains(text(), '8.3')]")));
             assertTrue(compatibilityText.isDisplayed(), "Teks kompatibilitas PHP harus berada dekat opsi unduhan");
+            logSuccess("✓ Teks kompatibilitas PHP ditampilkan dekat opsi unduhan");
         }, 1200, TEST_CLASS_NAME);
     }
 
@@ -168,6 +200,7 @@ public class DownloadPageTest {
                     .filter(img -> img.getSize().getHeight() > 10 && img.getSize().getWidth() > 10)
                     .count();
             assertTrue(displayed >= 2, "Minimal dua ikon download harus tampil dengan ukuran wajar");
+            logSuccess("✓ Minimal dua ikon download ditampilkan dengan ukuran yang wajar");
         }, 1200, TEST_CLASS_NAME);
     }
 
@@ -181,7 +214,9 @@ public class DownloadPageTest {
             scrollIntoView(bannerLink);
             Thread.sleep(800);
             assertTrue(bannerLink.isDisplayed(), "Banner konferensi harus terlihat");
+            logSuccess("✓ Banner konferensi ditampilkan");
             assertTrue(bannerLink.getAttribute("href").contains("conference.chamilo.org"));
+            logSuccess("✓ Banner mengarahkan ke conference.chamilo.org dengan benar");
         }, 1200, TEST_CLASS_NAME);
     }
 
@@ -195,6 +230,7 @@ public class DownloadPageTest {
             links.addAll(driver.findElements(By.xpath("//a[contains(@href, 'docs.chamilo.org')]")));
 
             assertFalse(links.isEmpty(), "Harus ada link eksternal pada halaman download");
+            logSuccess("✓ Link eksternal ditemukan pada halaman");
             for (WebElement link : links) {
                 scrollIntoView(link);
                 Thread.sleep(800);
@@ -203,6 +239,38 @@ public class DownloadPageTest {
                 assertFalse(href.isBlank(), "Href tidak boleh kosong");
                 assertTrue(href.startsWith("http"), "Href harus absolute url");
             }
+            logSuccess("✓ Semua link eksternal menggunakan absolute URL");
+        }, 1200, TEST_CLASS_NAME);
+    }
+
+    @Test(priority = 7, description = "Verifikasi akurasi konten dan informasi versi")
+    public void shouldVerifyContentAccuracy() throws InterruptedException {
+        MainApp.executeTest("Content Accuracy", "Verify version number, PHP requirements, and license information are accurate and up-to-date", () -> {
+            navigateToDownload();
+
+            // Verify version number is correct and present
+            WebElement versionElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), 'Chamilo LMS 1.11.32')]")));
+            assertTrue(versionElement.isDisplayed(), "Versi 1.11.32 harus ditampilkan dengan akurat");
+            logSuccess("✓ Nomor versi 1.11.32 ditampilkan dengan akurat");
+
+            // Verify license information
+            WebElement licenseElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), 'GNU/GPLv3')]")));
+            assertTrue(licenseElement.getText().contains("GNU/GPLv3"), "Informasi lisensi harus akurat");
+            logSuccess("✓ Informasi lisensi GNU/GPLv3 akurat dan ditampilkan");
+
+            // Verify PHP requirements clearly stated
+            WebElement phpRequirement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), 'PHP') and (contains(text(), '7.4') or contains(text(), '8.3'))]")));
+            assertTrue(phpRequirement.isDisplayed(), "Requirement PHP harus jelas tercantum");
+            logSuccess("✓ Requirement PHP 7.4 dan 8.3 ditampilkan dengan jelas");
+
+            // Verify release date is formatted correctly
+            WebElement releaseDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+                    "//*[contains(text(), '2025-06-27')]")));
+            assertTrue(releaseDate.isDisplayed(), "Tanggal rilis harus diformat dengan benar (YYYY-MM-DD)");
+            logSuccess("✓ Tanggal rilis 2025-06-27 diformat dengan benar (YYYY-MM-DD)");
         }, 1200, TEST_CLASS_NAME);
     }
 

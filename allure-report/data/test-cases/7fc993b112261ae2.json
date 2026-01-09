@@ -1,0 +1,92 @@
+{
+  "uid" : "7fc993b112261ae2",
+  "name" : "Verifikasi teks 'If you need professional help' ditampilkan",
+  "fullName" : "com.selenium.ProvidersPageTest.shouldDisplayProfessionalHelpText",
+  "historyId" : "e7c9d98128d667ec4f0323c88423996",
+  "time" : {
+    "start" : 1767943717939,
+    "stop" : 1767943717963,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767943666961,
+      "stop" : 1767943670064,
+      "duration" : 3103
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767943720799,
+      "stop" : 1767943720987,
+      "duration" : 188
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayProfessionalHelpText"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7fc993b112261ae2.json",
+  "parameterValues" : [ ]
+}

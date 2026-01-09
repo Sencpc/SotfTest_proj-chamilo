@@ -388,7 +388,6 @@ public class ContactPageTest {
     public void shouldHaveFormAction() {
         WebElement form = wait.until(ExpectedConditions.presenceOfElementLocated(
                 By.cssSelector("form.wpcf7-form")));
-        String action = form.getAttribute("action");
         // Form action can be empty for AJAX submissions or have a value
         assertNotNull(form, "Form should exist");
         logSuccess("Form is present and ready for submission");

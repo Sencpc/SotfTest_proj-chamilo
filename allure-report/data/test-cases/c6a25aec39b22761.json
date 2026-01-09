@@ -1,0 +1,102 @@
+{
+  "uid" : "c6a25aec39b22761",
+  "name" : "Verifikasi privacy policy acceptance checkbox ada",
+  "fullName" : "com.selenium.ContactPageTest.shouldDisplayPrivacyCheckbox",
+  "historyId" : "86450a1047c813d75fb852576a2812bd",
+  "time" : {
+    "start" : 1767951796994,
+    "stop" : 1767951797025,
+    "duration" : 31
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767951763389,
+      "stop" : 1767951769335,
+      "duration" : 5946
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767951798975,
+      "stop" : 1767951800149,
+      "duration" : 1174
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayPrivacyCheckbox"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "host",
+    "value" : "bas"
+  }, {
+    "name" : "thread",
+    "value" : "21388@bas.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ee272cd8ce8aba3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767942832038,
+        "stop" : 1767942832054,
+        "duration" : 16
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c6a25aec39b22761.json",
+  "parameterValues" : [ ]
+}

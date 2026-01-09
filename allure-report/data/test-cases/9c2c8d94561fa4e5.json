@@ -1,0 +1,92 @@
+{
+  "uid" : "9c2c8d94561fa4e5",
+  "name" : "Verifikasi informasi lokasi Belgium ditampilkan",
+  "fullName" : "com.selenium.ProvidersPageTest.shouldDisplayBelgiumLocation",
+  "historyId" : "6a24865e452f9b6f4cfd31ecf22afe93",
+  "time" : {
+    "start" : 1767943718397,
+    "stop" : 1767943718419,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767943666961,
+      "stop" : 1767943670064,
+      "duration" : 3103
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767943720799,
+      "stop" : 1767943720987,
+      "duration" : 188
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayBelgiumLocation"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9c2c8d94561fa4e5.json",
+  "parameterValues" : [ ]
+}

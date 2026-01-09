@@ -1,0 +1,60 @@
+{
+  "uid" : "5983d810e670c45a",
+  "name" : "Banner konferensi muncul di halaman download",
+  "fullName" : "com.selenium.DownloadPageTest.shouldDisplayConferenceBanner",
+  "historyId" : "37846a8c2ed6ba9703629679202ffe1b",
+  "time" : {
+    "start" : 1767857815847,
+    "stop" : 1767857827564,
+    "duration" : 11717
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayConferenceBanner"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-3095cf88-adea-4e20-a6d0-1fc8e09d600e"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.DownloadPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "37564@SencPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5983d810e670c45a.json",
+  "parameterValues" : [ ]
+}

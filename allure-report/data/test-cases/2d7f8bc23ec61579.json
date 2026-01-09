@@ -1,0 +1,92 @@
+{
+  "uid" : "2d7f8bc23ec61579",
+  "name" : "Mengklik tombol Go to Free Campus dan kembali",
+  "fullName" : "com.selenium.DemoPageTest.shouldClickFreeCampusButton",
+  "historyId" : "daf06b36415a24e7b155fb2bc7eeed23",
+  "time" : {
+    "start" : 1767942885398,
+    "stop" : 1767942891068,
+    "duration" : 5670
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767942832602,
+      "stop" : 1767942834760,
+      "duration" : 2158
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767942892296,
+      "stop" : 1767942892510,
+      "duration" : 214
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.DemoPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.DemoPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldClickFreeCampusButton"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.DemoPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2d7f8bc23ec61579.json",
+  "parameterValues" : [ ]
+}

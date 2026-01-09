@@ -1,0 +1,92 @@
+{
+  "uid" : "fce640c8e7a5e256",
+  "name" : "Banner konferensi muncul dan dapat diklik",
+  "fullName" : "com.selenium.ForumPageTest.shouldDisplayConferenceBanner",
+  "historyId" : "f67cee9ab8efb4251a56fe214b736c1a",
+  "time" : {
+    "start" : 1767863640407,
+    "stop" : 1767863655862,
+    "duration" : 15455
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767863552128,
+      "stop" : 1767863554601,
+      "duration" : 2473
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767863671941,
+      "stop" : 1767863672095,
+      "duration" : 154
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplayConferenceBanner"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-397786a9-0268-4f66-854c-ab1cdddc64d5"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ForumPageTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "29028@SencPC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fce640c8e7a5e256.json",
+  "parameterValues" : [ ]
+}

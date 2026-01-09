@@ -1,0 +1,265 @@
+{
+  "uid" : "dec0c701855e5c59",
+  "name" : "Search bar toggle exposes input with placeholder",
+  "fullName" : "com.selenium.GlobalSearchTest.shouldShowSearchInputAndPlaceholder",
+  "historyId" : "1f4f2538c0b8487fa5e4997c4d6634e1",
+  "time" : {
+    "start" : 1767967937096,
+    "stop" : 1767967992002,
+    "duration" : 54906
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startDriver",
+    "time" : {
+      "start" : 1767967934161,
+      "stop" : 1767967937060,
+      "duration" : 2899
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "quitDriver",
+    "time" : {
+      "start" : 1767968368561,
+      "stop" : 1767968368814,
+      "duration" : 253
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldShowSearchInputAndPlaceholder"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.GlobalSearchTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "31524@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b3d139930a549c3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767943121396,
+        "stop" : 1767943176234,
+        "duration" : 54838
+      }
+    }, {
+      "uid" : "cab0650cf2eeeb0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767879965414,
+        "stop" : 1767880021169,
+        "duration" : 55755
+      }
+    }, {
+      "uid" : "17113de55959a28d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767879901865,
+        "stop" : 1767879957870,
+        "duration" : 56005
+      }
+    }, {
+      "uid" : "ab6ce2b47906d9bc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767878752898,
+        "stop" : 1767878807734,
+        "duration" : 54836
+      }
+    }, {
+      "uid" : "c10ed2a31360be88",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767877863291,
+        "stop" : 1767877918066,
+        "duration" : 54775
+      }
+    }, {
+      "uid" : "b88fdaeb34964032",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767877352370,
+        "stop" : 1767877407226,
+        "duration" : 54856
+      }
+    }, {
+      "uid" : "1b2e6e61f09b4ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767874906219,
+        "stop" : 1767874960558,
+        "duration" : 54339
+      }
+    }, {
+      "uid" : "a29f322e8a92357d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767874558730,
+        "stop" : 1767874613405,
+        "duration" : 54675
+      }
+    }, {
+      "uid" : "860084671781eedd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767874126514,
+        "stop" : 1767874181863,
+        "duration" : 55349
+      }
+    }, {
+      "uid" : "8e4c7dbc2d85753f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767873826545,
+        "stop" : 1767873881710,
+        "duration" : 55165
+      }
+    }, {
+      "uid" : "3af415a571358d84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767870311391,
+        "stop" : 1767870367828,
+        "duration" : 56437
+      }
+    }, {
+      "uid" : "f48992284e8ec7de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767868385944,
+        "stop" : 1767868443780,
+        "duration" : 57836
+      }
+    }, {
+      "uid" : "d165ae02d3fab57c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767867969400,
+        "stop" : 1767868027154,
+        "duration" : 57754
+      }
+    }, {
+      "uid" : "3cd6095eaf26701",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767864864774,
+        "stop" : 1767864923083,
+        "duration" : 58309
+      }
+    }, {
+      "uid" : "8aa7cce4c9694d5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767864325420,
+        "stop" : 1767864383681,
+        "duration" : 58261
+      }
+    }, {
+      "uid" : "798dff543e6a34d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767863782629,
+        "stop" : 1767863840500,
+        "duration" : 57871
+      }
+    }, {
+      "uid" : "6233ece7961f6911",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of element located by By.cssSelector: .search_wrapper, div.search_wrapper (tried for 12 second(s) with 500 milliseconds interval)\nBuild info: version: '4.38.0', revision: '6b412e825c*'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.169, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\\Users\\seanc\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40121}, goog:processID: 24920, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:40121/devtoo..., se:cdpVersion: 143.0.7499.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 381ba071f8a5fd3f282be789cb73d0a4",
+      "time" : {
+        "start" : 1767863138271,
+        "stop" : 1767863204842,
+        "duration" : 66571
+      }
+    }, {
+      "uid" : "45488d48cd57d0c",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.cssSelector: .icon-search-fine, i.icon-search-fine (tried for 12 second(s) with 500 milliseconds interval)\nBuild info: version: '4.38.0', revision: '6b412e825c*'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.169, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\\Users\\seanc\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56086}, goog:processID: 35312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56086/devtoo..., se:cdpVersion: 143.0.7499.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: bb080205772c99091eb8e7d1366623cf",
+      "time" : {
+        "start" : 1767862851201,
+        "stop" : 1767862913375,
+        "duration" : 62174
+      }
+    }, {
+      "uid" : "829831075bbbdb58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767862674592,
+        "stop" : 1767862724476,
+        "duration" : 49884
+      }
+    }, {
+      "uid" : "2bc4322e555e3442",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for element to be clickable: By.id: search_button (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1767857698921,
+        "stop" : 1767857731783,
+        "duration" : 32862
+      }
+    }, {
+      "uid" : "30fb851b021ba89d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767857592229,
+        "stop" : 1767857642733,
+        "duration" : 50504
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dec0c701855e5c59.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,92 @@
+{
+  "uid" : "1c9821409cdb7903",
+  "name" : "Mengklik semua link di footer dan kembali ke home",
+  "fullName" : "com.selenium.FooterTest.shouldClickAllFooterLinks",
+  "historyId" : "280cf1df405928a10818c8a107348e04",
+  "time" : {
+    "start" : 1767942971580,
+    "stop" : 1767943046266,
+    "duration" : 74686
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767942968440,
+      "stop" : 1767942971578,
+      "duration" : 3138
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767943046268,
+      "stop" : 1767943046593,
+      "duration" : 325
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.FooterTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.FooterTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldClickAllFooterLinks"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.FooterTest"
+  }, {
+    "name" : "host",
+    "value" : "SencPC"
+  }, {
+    "name" : "thread",
+    "value" : "25956@SencPC.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1c9821409cdb7903.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,92 @@
+{
+  "uid" : "9ea12dc15addd8a5",
+  "name" : "Scroll ke bagian 'Do you like Chamilo?', klik tombol CONTRIBUTE, lalu kembali ke home via logo",
+  "fullName" : "com.selenium.ContributePageTest.shouldNavigateToContributeAndBackHomeViaLogo",
+  "historyId" : "bd2e65553131cd98038da87a74a30169",
+  "time" : {
+    "start" : 1767900811338,
+    "stop" : 1767900835032,
+    "duration" : 23694
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpBase",
+    "time" : {
+      "start" : 1767900810175,
+      "stop" : 1767900811239,
+      "duration" : 1064
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownBase",
+    "time" : {
+      "start" : 1767900835113,
+      "stop" : 1767901072918,
+      "duration" : 237805
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ContributePageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ContributePageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldNavigateToContributeAndBackHomeViaLogo"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "TestNGTest-4a6b48d4-6197-4ed3-a79a-3c722018ac4e"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ContributePageTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-AOFLLK79"
+  }, {
+    "name" : "thread",
+    "value" : "66024@LAPTOP-AOFLLK79.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9ea12dc15addd8a5.json",
+  "parameterValues" : [ ]
+}

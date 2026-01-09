@@ -104,7 +104,7 @@
   - Physical Address
   - Map Testing
   - Contact Form (done)
-  - Form Submission 
+  - Form Submission
   - Form Validation (error handling)
   - Link Validation
 
@@ -215,6 +215,11 @@
 
 1. **Person 1 bertanggung jawab untuk shared components**: Test navbar (basic navigation only) dan footer sekali saja pada halaman apapun, hasilnya berlaku untuk semua halaman
 2. **Person 2 test Global Search**: Fitur kompleks yang search seluruh website - bukan bagian dari basic navbar testing
+   - **Automated Test Suite**: GlobalSearchTest.java memiliki 12 test cases komprehensif:
+     - 4 original tests (search input, valid query, no results, special chars)
+     - 8 new comprehensive tests (exact match, partial match, case insensitive, empty, clickability, categorization, redirect, multiple searches)
+     - Semua tests termasuk detailed logging dengan logSuccess() method
+     - Run: `mvn test -Dtest=GlobalSearchTest`
 3. **Tidak perlu duplicate**: Setiap orang fokus hanya pada konten unik halaman mereka
 4. **Person 4 paling banyak**: Events page sangat comprehensive, tapi mereka dapat halaman lain yang lebih simple
 5. **File lengkap**: Semua tetap ada di `CekList.md` - cukup cari halaman yang ditugaskan

@@ -1,0 +1,102 @@
+{
+  "uid" : "1f91287adbe45542",
+  "name" : "Verifikasi layanan 'SaaS' ditampilkan",
+  "fullName" : "com.selenium.ProvidersPageTest.shouldDisplaySaaSService",
+  "historyId" : "758134b35af00b9861d08b9d29af75f3",
+  "time" : {
+    "start" : 1767951884096,
+    "stop" : 1767951884133,
+    "duration" : 37
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767951861376,
+      "stop" : 1767951867556,
+      "duration" : 6180
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767951886514,
+      "stop" : 1767951888269,
+      "duration" : 1755
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDisplaySaaSService"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ProvidersPageTest"
+  }, {
+    "name" : "host",
+    "value" : "bas"
+  }, {
+    "name" : "thread",
+    "value" : "26992@bas.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f578cc90d0036b4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767943718525,
+        "stop" : 1767943718548,
+        "duration" : 23
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1f91287adbe45542.json",
+  "parameterValues" : [ ]
+}

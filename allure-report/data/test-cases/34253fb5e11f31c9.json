@@ -1,0 +1,102 @@
+{
+  "uid" : "34253fb5e11f31c9",
+  "name" : "Verifikasi 'SEND' button dapat diklik",
+  "fullName" : "com.selenium.ContactPageTest.shouldHaveClickableSendButton",
+  "historyId" : "cf971301cf570590d6b26023031c11ea",
+  "time" : {
+    "start" : 1767951798692,
+    "stop" : 1767951798742,
+    "duration" : 50
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1767951763389,
+      "stop" : 1767951769335,
+      "duration" : 5946
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1767951798975,
+      "stop" : 1767951800149,
+      "duration" : 1174
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldHaveClickableSendButton"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.selenium.ContactPageTest"
+  }, {
+    "name" : "host",
+    "value" : "bas"
+  }, {
+    "name" : "thread",
+    "value" : "21388@bas.main(3)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "63832840e805b3f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767942832294,
+        "stop" : 1767942832332,
+        "duration" : 38
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "34253fb5e11f31c9.json",
+  "parameterValues" : [ ]
+}
