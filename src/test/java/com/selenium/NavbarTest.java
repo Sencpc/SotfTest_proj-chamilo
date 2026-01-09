@@ -58,7 +58,7 @@ public class NavbarTest {
             chamiloMenu.click();
             logSuccess("Clicked Chamilo menu");
 
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Chamilo.png");
             driver.get(CHAMILO_URL);
 
@@ -67,7 +67,7 @@ public class NavbarTest {
             demoMenu.click();
             logSuccess("Clicked Demo menu");
 
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Demo.png");
 
             driver.get(CHAMILO_URL);
@@ -77,7 +77,7 @@ public class NavbarTest {
             forumMenu.click();
             logSuccess("Clicked Forum menu");
 
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Forum.png");
 
             driver.get(CHAMILO_URL);
@@ -87,7 +87,7 @@ public class NavbarTest {
             downloadMenu.click();
             logSuccess("Clicked Download menu");
 
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Download.png");
 
             driver.get(CHAMILO_URL);
@@ -97,7 +97,7 @@ public class NavbarTest {
             eventsMenu.click();
             logSuccess("Clicked Events menu");
 
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Events.png");
 
             driver.get(CHAMILO_URL);
@@ -107,7 +107,7 @@ public class NavbarTest {
             contactMenu.click();
             logSuccess("Clicked Contact menu");
 
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             MainApp.captureFullPageScreenshot(driver, "cache/NavbarTest_Contact.png");
 
             driver.get(CHAMILO_URL);
