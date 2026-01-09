@@ -124,60 +124,6 @@ public class DemoPageTest {
         }, "DemoPageTest");
     }
 
-<<<<<<< HEAD
-=======
-    @Test(priority = 3, description = "Memeriksa tata bahasa pada semua elemen heading di halaman Demo")
-    public void shouldCheckHeadingsGrammar() throws Exception {
-        MainApp.executeTest("Check Headings Grammar", "Memeriksa tata bahasa pada semua elemen heading di halaman Demo",
-                () -> {
-                    if (!driver.getCurrentUrl().contains("demo")) {
-                        driver.get(CHAMILO_URL);
-                        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#menu-item-2897 a")))
-                                .click();
-                    }
-
-                    java.util.Map<String, String> informalWords = new java.util.HashMap<>();
-                    informalWords.put("wanna", "want to");
-                    informalWords.put("gonna", "going to");
-                    informalWords.put("gotta", "have got to");
-
-                    List<WebElement> headings = driver.findElements(By.cssSelector("h1, h2, h3, h4, h5, h6"));
-                    boolean foundGrammarIssue = false;
-
-                    logSuccess("Scanning " + headings.size() + " headings for grammar police check...");
-
-                    for (WebElement heading : headings) {
-                        if (!heading.isDisplayed())
-                            continue;
-
-                        String text = heading.getText().toLowerCase();
-
-                        for (java.util.Map.Entry<String, String> entry : informalWords.entrySet()) {
-                            String badWord = entry.getKey();
-                            String correction = entry.getValue();
-
-                            if (text.contains(badWord)) {
-                                ((JavascriptExecutor) driver)
-                                        .executeScript("arguments[0].scrollIntoView({block: 'center'});", heading);
-
-                                String alertMessage = String.format(
-                                        "GRAMMAR POLICE ALERT! Found slang '%s' in heading \"%s\". The Queen demands '%s'!",
-                                        badWord.toUpperCase(), heading.getText(), correction.toUpperCase());
-                                System.err.println(alertMessage);
-                                foundGrammarIssue = true;
-                            }
-                        }
-                    }
-
-                    if (!foundGrammarIssue) {
-                        logSuccess("All headings passed the grammar check. The Queen is pleased.");
-                    }
-
-                    MainApp.captureFullPageScreenshot(driver, "cache/DemoPage_GrammarCheck.png");
-                }, "DemoPageTest");
-    }
-
->>>>>>> 1a543c1e8c6b2e863575d98f827f3e21990509f1
     private void acceptCookiesIfPresent() {
         List<By> cookieLocators = Arrays.asList(
                 By.cssSelector("a.cc-dismiss"),
