@@ -30,6 +30,10 @@ public abstract class ChamiloBaseTest {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
+        String customBinary = System.getProperty("chromeBinary");
+        if (customBinary != null && !customBinary.isBlank()) {
+            options.setBinary(customBinary);
+        }
         options.addArguments(
                 "--disable-notifications",
                 "--start-maximized",
@@ -83,6 +87,47 @@ public abstract class ChamiloBaseTest {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
+    protected WebElement waitClickable(By locator, Duration timeout) {
+        try {
+            return new WebDriverWait(driver, timeout)
+                    .until(ExpectedConditions.elementToBeClickable(locator));
+        } catch (Exception e) {
+            throw e;
+        }
+    }
+
+    protected void safeClick(By locator) {
+        safeClick(locator, Duration.ofSeconds(8));
+    }
+
+    protected void safeClick(By locator, Duration timeout) {
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                WebElement el = waitClickable(locator, timeout);
+                scrollIntoView(el);
+                try {
+                    el.click();
+                } catch (Exception clickEx) {
+                    try {
+                        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
+                    } catch (Exception jsEx) {
+                        throw clickEx;
+                    }
+                }
+                return;
+            } catch (org.openqa.selenium.StaleElementReferenceException stale) {
+                attempts++;
+            } catch (Exception e) {
+                attempts++;
+                if (attempts >= 3) {
+                    throw e;
+                }
+                pause1s();
+            }
+        }
+    }
+
     protected void acceptCookiesIfPresent() {
         // Keep this method non-blocking: do NOT introduce multi-second waits.
         // The banner can appear at the bottom (vh100% overlay). We click it as
@@ -124,6 +169,38 @@ public abstract class ChamiloBaseTest {
                 Thread.currentThread().interrupt();
                 return;
             }
+        }
+    }
+
+    protected void openEventsFromNavbar() {
+        acceptCookiesIfPresent();
+
+        By[] candidates = new By[] {
+                By.cssSelector("#menu-item-2525 a"),
+                By.cssSelector("nav#menu ul#menu-main-menu-en li#menu-item-2525 > a"),
+                By.cssSelector("a[href='https://chamilo.org/en/eventos/']"),
+                // Tolerant text fallback (handles 'Events'/'Eventos')
+                By.xpath("//nav//a[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'event')]")
+        };
+
+        Exception last = null;
+        for (By locator : candidates) {
+            try {
+                safeClick(locator, Duration.ofSeconds(10));
+                acceptCookiesIfPresent();
+                new WebDriverWait(driver, Duration.ofSeconds(10))
+                        .until(ExpectedConditions.or(
+                                ExpectedConditions.urlContains("/eventos"),
+                                ExpectedConditions.urlContains("/en")));
+                return;
+            } catch (Exception e) {
+                last = e;
+            }
+        }
+        if (last != null) {
+            throw new RuntimeException("Failed to open Events from navbar using known locators", last);
+        } else {
+            throw new RuntimeException("Failed to open Events from navbar: no candidates tried");
         }
     }
 
@@ -175,6 +252,7 @@ public abstract class ChamiloBaseTest {
                 Scanner scanner = new Scanner(System.in);
                 scanner.nextLine();
                 shouldClose.set(true);
+                scanner.close();
             } catch (Exception ignored) {
                 // ignore
             }

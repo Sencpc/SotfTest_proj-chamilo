@@ -778,30 +778,30 @@
 
 ### Search Input & Basic Functionality
 
-- ✅ Verifikasi search box terbuka dengan placeholder "Search"
-- ✅ Verifikasi search query valid menampilkan results page
-- ✅ Verifikasi query tidak ditemukan menampilkan pesan "No results found"
-- ✅ Verifikasi karakter khusus (@#$%^&\*) tidak memicu error
+- Verifikasi search box terbuka dengan placeholder "Search"
+- Verifikasi search query valid menampilkan results page
+- Verifikasi query tidak ditemukan menampilkan pesan "No results found"
+- Verifikasi karakter khusus (@#$%^&\*) tidak memicu error
 
 ### Search Accuracy Tests
 
-- ✅ Verifikasi exact match - query "Chamilo" menampilkan hasil exact match
-- ✅ Verifikasi partial match - query "Learn" menampilkan "Learning" dan related terms
-- ✅ Verifikasi case insensitive - "chamilo" = "CHAMILO" = "Chamilo" (results sama)
-- ✅ Verifikasi empty search field tidak submit form
+- Verifikasi exact match - query "Chamilo" menampilkan hasil exact match
+- Verifikasi partial match - query "Learn" menampilkan "Learning" dan related terms
+- Verifikasi case insensitive - "chamilo" = "CHAMILO" = "Chamilo" (results sama)
+- Verifikasi empty search field tidak submit form
 
 ### Search Results Functionality
 
-- ✅ Verifikasi hasil pencarian ditampilkan dalam list
-- ✅ Verifikasi setiap hasil pencarian dapat diklik (memiliki link valid)
-- ✅ Verifikasi hasil pencarian menunjukkan kategori/label/metadata
-- ✅ Verifikasi hasil pencarian ter-redirect dengan URL parameter yang valid
+- Verifikasi hasil pencarian ditampilkan dalam list
+- Verifikasi setiap hasil pencarian dapat diklik (memiliki link valid)
+- Verifikasi hasil pencarian menunjukkan kategori/label/metadata
+- Verifikasi hasil pencarian ter-redirect dengan URL parameter yang valid
 
 ### Search Experience
 
-- ✅ Verifikasi dapat melakukan multiple searches berturut-turut tanpa error
-- ✅ Verifikasi search load time < 10 detik
-- ✅ Verifikasi page tetap ter-render dengan baik setelah search
+- Verifikasi dapat melakukan multiple searches berturut-turut tanpa error
+- Verifikasi search load time < 10 detik
+- Verifikasi page tetap ter-render dengan baik setelah search
 
 ## Catatan
 
